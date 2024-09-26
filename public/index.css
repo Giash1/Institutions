@@ -1,0 +1,173 @@
+:root {
+    --primary-font: 'Roboto', sans-serif;
+    --primary-color: #333;
+    --secondary-color: #666;
+    --background-overlay: rgba(255, 255, 255, 0.8);
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --h1-font-size: 35px;
+    --h1-font-weight: bold;
+    --h2-font-size: 25px;
+    --h2-font-weight: normal;
+    --h3-font-size: 20px;
+    --h3-font-weight: bold;
+    --p-font-size: 16px;
+    --p-font-weight: normal;
+    --link-color: #007bff;
+    --link-hover-color: #0056b3;
+    --link-font-size: 16px;
+    --border-radius: 4px;
+    --transition-speed: 0.3s;
+}
+
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Applying the background video to the body */
+body {
+    font-family: var(--primary-font); /* Use the primary font from the root variables */
+    background: transparent; /* Background handled by video */
+    min-height: 100vh; /* Ensures the body takes up the full viewport height */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling the video background */
+/* Fix video positioning and ensure it's behind content */
+#background-video {
+    position: fixed; /* Fixes the video to the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Keeps it behind other elements */
+    pointer-events: none; /* Ensures video does not interfere with user interactions */
+}
+
+
+/* Styling for sections */
+section {
+    background-color: var(--background-overlay); /* Semi-transparent background */
+    padding: 20px; /* Uniform padding for all sections */
+    margin: 10px; /* Uniform margin for all sections */
+    box-shadow: var(--box-shadow); /* Slight shadow for all sections */
+}
+
+/* Header Styling */
+#top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-overlay); /* Semi-transparent background */
+    box-shadow: var(--box-shadow); /* Shadow */
+    padding: 10px; /* Padding for the header */
+}
+
+/* Styling the logo */
+#logo img {
+    width: 80px; /* Adjust the size of the logo */
+    height: auto;
+}
+
+/* Styling the title */
+#top-bar h1 {
+    font-size: 24px;
+    color: var(--primary-color); /* Primary text color */
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Styling the login link */
+#login a {
+    font-size: var(--link-font-size);
+    color: var(--primary-color); /* Primary text color */
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: var(--border-radius);
+    transition: all var(--transition-speed) ease;
+}
+
+#login a:hover {
+    border-color: var(--primary-color); /* Border color on hover */
+}
+
+/* Navigation Section */
+#nav {
+    box-shadow: var(--box-shadow); /* Slight shadow */
+}
+
+/* Main Content Section */
+#main {
+    flex-grow: 1;
+    box-shadow: var(--box-shadow); /* Slight shadow */
+}
+
+/* Footer Section */
+#footer {
+    background-color: var(--background-overlay); /* Semi-transparent background */
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+/* Responsive Design */
+
+/* For tablets and small devices */
+@media (max-width: 768px) {
+    #top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #top-bar h1 {
+        font-size: 20px;
+    }
+
+    #logo img {
+        width: 60px;
+    }
+
+    #login a {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    #nav,
+    #main,
+    #footer {
+        padding: 15px;
+        margin: 5px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    #top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #top-bar h1 {
+        font-size: 18px;
+    }
+
+    #logo img {
+        width: 50px;
+    }
+
+    #login a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    #nav,
+    #main,
+    #footer {
+        padding: 10px;
+        margin: 5px;
+    }
+}

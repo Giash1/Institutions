@@ -1,0 +1,90 @@
+/* Main content styling for Floor Cleaning Services */
+#home-cleaning-content {
+    background-color: var(--background-overlay);
+    padding: 30px;
+    margin: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+#home-cleaning-content h1 {
+    font-size: var(--h1-font-size);
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#home-cleaning-content p {
+    font-size: var(--p-font-size);
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+#home-cleaning-content h2 {
+    font-size: var(--h2-font-size);
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+#home-cleaning-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+#home-cleaning-content li {
+    font-size: var(--p-font-size);
+    color: var(--primary-color);
+    margin: 10px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+#home-cleaning-content li::before {
+    content: "✔"; /* Checkmark icon for list items */
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+/* Styles for the "More" button */
+#moreBtn {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Initially hide the additional content */
+#moreContent {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #home-cleaning-content {
+        padding: 20px;
+        margin: 15px;
+    }
+
+    #home-cleaning-content h1 {
+        font-size: var(--h2-font-size);
+    }
+
+    #home-cleaning-content h2 {
+        font-size: var(--h3-font-size);
+    }
+}
+
+@media (max-width: 480px) {
+    #home-cleaning-content {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    #home-cleaning-content h1 {
+        font-size: var(--h3-font-size);
+    }
+
+    #home-cleaning-content h2 {
+        font-size: var(--p-font-size);
+    }
+}

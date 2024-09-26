@@ -1,0 +1,81 @@
+/* Styling for the footer */
+#footer {
+    background-color: var(--background-overlay);
+    padding: 20px;
+    box-shadow: 0 -2px 6px var(--box-shadow);
+    width: 100%; /* Ensure full width */
+    position: relative; /* Relative positioning to stay within the flow of the document */
+    clear: both; /* Clears any floating content above */
+    margin-top: auto; /* Adds some spacing above */
+}
+
+/* Container for the footer content */
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Footer sections styling */
+.footer-left img {
+    width: 80px;
+    height: auto;
+}
+
+.footer-center {
+    flex-grow: 1;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.social-media-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media-list img {
+    width: 24px;
+    height: 24px;
+    transition: opacity var(--transition-speed) ease;
+}
+
+.social-media-list a:hover img {
+    opacity: 0.8;
+}
+
+.footer-right {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-media-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-media-list img {
+        width: 20px;
+        height: 20px;
+    }
+}

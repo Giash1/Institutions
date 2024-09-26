@@ -1,0 +1,84 @@
+/* Header Styling */
+#top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-overlay);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    position: relative;
+}
+
+/* Styling the logo */
+#logo img {
+    width: 80px; /* Default size for larger screens */
+    height: auto;
+}
+
+/* Styling the title */
+#top-bar h1 {
+    font-size: var(--h1-font-size);
+    color: var(--primary-color);
+    text-align: center;
+    flex-grow: 1;
+}
+
+/* Styling the login link */
+#login a {
+    font-size: var(--link-font-size);
+    color: var(--primary-color);
+    text-decoration: none;
+    pointer-events: auto;
+    z-index: 10;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: var(--border-radius);
+    transition: all var(--transition-speed) ease;
+}
+
+#login a:hover {
+    border-color: var(--primary-color);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #top-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    #logo img {
+        width: 60px; /* Smaller logo size */
+    }
+
+    #top-bar h1 {
+        font-size: var(--h2-font-size); /* Adjust font size */
+    }
+
+    #login a {
+        font-size: var(--link-font-size);
+        padding: 8px 12px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    #top-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px; /* Further adjusted padding */
+    }
+
+    #logo img {
+        width: 50px; /* Even smaller logo size */
+    }
+
+    #top-bar h1 {
+        font-size: var(--h3-font-size); /* Further reduce font size */
+    }
+
+    #login a {
+        font-size: var(--link-font-size);
+        padding: 6px 10px; /* Further adjust padding */
+    }
+}
