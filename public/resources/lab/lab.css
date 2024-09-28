@@ -1,4 +1,4 @@
-/* Main content styling for Floor Cleaning Services */
+/* Main content styling for the Computer Science Lab */
 #home-cleaning-content {
     background-color: var(--background-overlay);
     padding: 30px;
@@ -44,18 +44,6 @@
     position: absolute;
     left: 0;
     color: var(--primary-color);
-}
-
-/* Styles for the "More" button */
-#moreBtn {
-    color: blue;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-/* Initially hide the additional content */
-#moreContent {
-    display: none;
 }
 
 /* Responsive Design */

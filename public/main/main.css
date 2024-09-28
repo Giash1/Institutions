@@ -1,11 +1,11 @@
 /* Styling the main content section */
 .main-content {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center horizontally */
-    padding: 20px; /* Add padding */
-    margin: 20px auto; /* Center and add margin */
-    max-width: 1200px; /* Max width for larger screens */
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
 }
 
 /* Title styling */
@@ -20,7 +20,68 @@
     color: var(--primary-color);
     text-align: center;
     width: auto;
-    transition: box-shadow var(--transition-speed) ease, transform var(--transition-speed) ease;
+}
+
+/* Animated Arabic text styling */
+.animated-text {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #ff4500; /* Use a bright color like OrangeRed */
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    animation: scrollText 25s linear infinite;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Adds a shadow for depth */
+}
+
+/* Animation for scrolling text */
+@keyframes scrollText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Arabic sentence and translation styling */
+.arabic-sentence {
+    display: inline-block;
+    margin-right: 20px; /* Gap between Arabic sentence and its translation */
+    white-space: nowrap; /* Ensure the sentence stays on one line */
+}
+
+.translation {
+    display: inline-block;
+    margin-right: 40px; /* Gap between sentences */
+    white-space: nowrap;
+}
+
+/* Animation for scrolling text */
+@keyframes scrollText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Styling for the Islamic divisions list */
+.divisions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.divisions-list li {
+    margin: 10px 0;
 }
 
 /* Styling each box within the main content */
@@ -30,7 +91,7 @@
     border-radius: 8px;
     padding: 20px;
     box-shadow: var(--box-shadow);
-    width: 700px; /* Default width */
+    width: 700px;
     margin: 10px;
     box-sizing: border-box;
     opacity: 0;
@@ -38,7 +99,7 @@
     animation: fadeInUp 0.5s ease-out forwards;
 }
 
-/* Sequential delay for each box */
+/* Animation delays for main content boxes */
 .main-content > .main-box:nth-of-type(1) { animation-delay: 0s; }
 .main-content > .main-box:nth-of-type(2) { animation-delay: 0.2s; }
 .main-content > .main-box:nth-of-type(3) { animation-delay: 0.4s; }
@@ -46,7 +107,7 @@
 .main-content > .main-box:nth-of-type(5) { animation-delay: 0.8s; }
 .main-content > .main-box:nth-of-type(6) { animation-delay: 1.0s; }
 
-/* Animation keyframes */
+/* Keyframes for fade-in effect */
 @keyframes fadeInUp {
     from {
         transform: translateY(20px);
@@ -58,25 +119,6 @@
     }
 }
 
-
-.main-box:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transform: translateY(-10px);
-    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
-}
-
-
-/* Title within each box */
-.main-box h3 {
-    text-align: center;
-    font-size: var(--h3-font-size);
-}
-
-/* Paragraph styling within each box */
-.main-box p {
-    font-size: var(--p-font-size);
-}
-
 /* Call-to-action styling */
 .cta {
     text-align: center;
@@ -84,47 +126,44 @@
     background-color: var(--background-overlay);
     border: 1px solid #ddd;
     padding: 20px;
-    width: 700px; /* Default width */
+    width: 700px;
 }
 
-.cta h3 {
-    font-size: var(--h3-font-size);
-    color: var(--primary-color);
-}
-
-.cta p {
-    font-size: var(--p-font-size);
-    color: var(--primary-color);
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: var(--link-color);
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: var(--border-radius);
-    font-size: var(--link-font-size);
-    transition: background-color var(--transition-speed) ease;
-}
-
-.cta-button:hover {
-    background-color: var(--link-hover-color);
-}
-
-/* Responsive Styles */
+/* Responsive design */
 @media (max-width: 768px) {
     .main-box {
-        width: calc(50% - 20px); /* Two boxes per row */
+        width: calc(90% - 20px); /* Reduce box size for medium screens */
+    }
+
+    .cta {
+        width: calc(90% - 20px); /* Responsive call-to-action */
+    }
+    
+    /* Adjust text size for Arabic sentences and translations */
+    .animated-text {
+        font-size: 20px; /* Reduce font size for smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     .main-box {
-        width: calc(100% - 20px); /* One box per row */
+        width: calc(100% - 20px); /* One box per row for small screens */
     }
 
     .cta {
-        width: calc(100% - 20px); /* Full width for call-to-action */
+        width: calc(100% - 20px); /* Full-width call-to-action on mobile */
+    }
+
+    /* Adjust text size for Arabic sentences and translations */
+    .animated-text {
+        font-size: 18px; /* Further reduce font size for mobile screens */
+    }
+
+    .arabic-sentence {
+        margin-right: 10px; /* Smaller gap for small screens */
+    }
+
+    .translation {
+        margin-right: 20px;
     }
 }

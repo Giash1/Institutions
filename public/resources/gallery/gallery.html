@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nursing Homes Cleaning Services</title>
+    <title>Madrasa Gallery</title>
     <link rel="stylesheet" href="./gallery.css">
     <link rel="stylesheet" href="../../index.css">
     <link rel="stylesheet" href="../../heading/heading.css">
@@ -16,39 +16,56 @@
     <div id="nav"></div> <!-- Nav Placeholder -->
 
     <div id="home-cleaning-content">
-        <!-- Ensure video file path is correct -->
         <video id="background-video" autoplay muted loop>
             <source src="../../images/reading-quran.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <h1>Nursing Homes Cleaning Services</h1>
-        <p>Ensure a clean and healthy environment for residents with our specialized nursing home cleaning services. We offer a range of tailored solutions to maintain the highest standards of hygiene and comfort.</p>
+        <h1>Explore Our Vibrant Gallery</h1>
+        <p>Dive into our vibrant gallery, showcasing the heart and soul of our madrasa. Each image captures the joy of learning, the dedication of our students, and the sense of community that defines our institution.</p>
 
-        <h2>Why Choose Us?</h2>
-        <ul>
-            <li>Highly trained and compassionate staff</li>
-            <li>Flexible scheduling to minimize disruption</li>
-            <li>Use of advanced, eco-friendly cleaning products</li>
-            <li>Thorough and detailed cleaning approach</li>
-        </ul>
+        <h2>Celebrating Our Students’ Achievements</h2>
+        <p>Our gallery is a celebration of our students’ achievements, illustrating the dedication and hard work they put into their studies every day.</p>
 
-        <!-- More section that is initially hidden -->
-        <div id="moreContent">
-            <h3>Comprehensive Cleaning Plans</h3>
-            <p>Our cleaning services cover every area of the nursing home, including common areas, private rooms, and bathrooms. We ensure that each space is cleaned to the highest standards to provide a safe and welcoming environment for residents.</p>
+        <h2>Capturing Moments of Growth</h2>
+        <p>From engaging classroom activities to cultural events, our gallery captures moments of growth, laughter, and discovery that enrich the lives of our students.</p>
 
-            <h3>Specialized Sanitization</h3>
-            <p>We use advanced sanitization techniques to prevent the spread of infections. Our protocols include deep cleaning and disinfecting frequently touched surfaces and high-risk areas.</p>
+        <h2>A Snapshot of Our Community Spirit</h2>
+        <p>Step into our gallery for a snapshot of our community spirit—where knowledge meets camaraderie, and every student is encouraged to thrive.</p>
 
-            <h3>Customizable Service Packages</h3>
-            <p>We offer flexible packages tailored to the specific needs of each nursing home. Whether it's daily, weekly, or monthly cleaning, we adapt our services to meet your requirements.</p>
+        <h2>Witness the Journey of Knowledge</h2>
+        <p>Witness the journey of knowledge in action through our captivating images, each telling a story of perseverance, friendship, and enlightenment.</p>
 
-            <h3>Quality Assurance</h3>
-            <p>Our rigorous quality control procedures ensure that our cleaning services consistently meet high standards. We conduct regular inspections and solicit feedback to continuously improve our services.</p>
+        <h2>Inspiring Future Generations</h2>
+        <p>Every picture in our gallery serves as a reminder of our mission to inspire future generations, fostering a love for learning and a commitment to excellence.</p>
+
+        <h2>A Tapestry of Tradition and Innovation</h2>
+        <p>Our gallery weaves together a tapestry of tradition and innovation, showcasing how we honor our roots while embracing modern educational methods.</p>
+
+        <h2>Join Us in Celebrating Diversity</h2>
+        <p>Join us in celebrating the diversity of our students and the unique perspectives they bring to our madrasa community, beautifully illustrated in our gallery.</p>
+
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <!-- Gallery Images -->
+            <div class="gallery-row">
+                <img src="../../images/gallery1.jpg" alt="Image 1">
+                <img src="../../images/gallery1.jpg" alt="Image 2">
+                <img src="../../images/gallery1.jpg"alt="Image 3">
+            </div>
+            <div class="gallery-row">
+                <img src="../../images/gallery1.jpg" alt="Image 4">
+                <img src="../../images/gallery1.jpg" alt="Image 5">
+                <img src="../../images/gallery1.jpg" alt="Image 6">
+            </div>
+            <div class="gallery-row" id="moreImages" style="display: none;">
+                <img src="../../images/gallery1.jpg" alt="Image 7">
+                <img src="../../images/gallery1.jpg" alt="Image 8">
+                <img src="../../images/gallery1.jpg" alt="Image 9">
+                <!-- Add more images as needed -->
+            </div>
         </div>
 
-        <!-- "More" button -->
-        <span id="moreBtn" onclick="toggleMore()">More</span>
+        <button id="loadMoreBtn" onclick="loadMore()">Load More</button>
     </div>
 
     <div id="footer"></div> <!-- Footer Placeholder -->

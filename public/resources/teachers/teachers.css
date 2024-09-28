@@ -1,0 +1,147 @@
+/* Main content styling for Madrasah Services */
+#home-cleaning-content {
+    background-color: var(--background-overlay);
+    padding: 30px;
+    margin: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+#home-cleaning-content h1 {
+    font-size: var(--h1-font-size);
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#home-cleaning-content p {
+    font-size: var(--p-font-size);
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+#home-cleaning-content h2 {
+    font-size: var(--h2-font-size);
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+#home-cleaning-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+#home-cleaning-content li {
+    font-size: var(--p-font-size);
+    color: var(--primary-color);
+    margin: 10px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+#home-cleaning-content li::before {
+    /* content: "✔";  */
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}
+
+/* Styles for the "More" button */
+#moreBtn {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Initially hide the additional content */
+#moreContent {
+    display: none;
+}
+
+/* Introductory Text Styles */
+.intro-text {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.intro-text h2 {
+    font-size: 32px;
+    color: #ff4500; /* Attractive color */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro-text p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Teachers Section Styling */
+.teachers-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Teacher Card */
+.teacher-card {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    width: calc(33.333% - 40px); /* Three cards in a row with space */
+    box-sizing: border-box;
+}
+
+.teacher-image {
+    width: 100%; /* Responsive image */
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px;
+}
+
+.teacher-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.teacher-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .teacher-card {
+        width: calc(50% - 40px); /* Two cards in a row */
+    }
+}
+
+@media (max-width: 480px) {
+    .teacher-card {
+        width: 100%; /* One card in a row */
+    }
+}
+
+@media (max-width: 480px) {
+    #home-cleaning-content {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    #home-cleaning-content h1 {
+        font-size: var(--h3-font-size);
+    }
+
+    #home-cleaning-content h2 {
+        font-size: var(--p-font-size);
+    }
+}

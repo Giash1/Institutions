@@ -43,29 +43,11 @@ function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
 
-    if (moreContent.style.display === "none" || moreContent.style.display === "") {
-        moreContent.style.display = "block"; // Show more content
+    if (moreContent.style.display === "none") {
+        moreContent.style.display = "block";
         moreBtn.innerText = "Less"; // Change button text to "Less"
     } else {
-        moreContent.style.display = "none"; // Hide more content
+        moreContent.style.display = "none";
         moreBtn.innerText = "More"; // Change button text to "More"
     }
 }
-
-// Function to load more images when the button is clicked
-function loadMore() {
-    const moreImages = document.getElementById("moreImages");
-    const loadMoreBtn = document.getElementById("loadMoreBtn");
-
-    if (moreImages.style.display === "none" || moreImages.style.display === "") {
-        moreImages.style.display = "flex"; // Show more images
-        loadMoreBtn.innerText = "Load Less"; // Change button text to "Load Less"
-    } else {
-        moreImages.style.display = "none"; // Hide additional images
-        loadMoreBtn.innerText = "Load More"; // Change button text to "Load More"
-    }
-}
-
-// Initially hide the "More" content and additional images
-document.getElementById("moreContent").style.display = "none";
-document.getElementById("moreImages").style.display = "none";
