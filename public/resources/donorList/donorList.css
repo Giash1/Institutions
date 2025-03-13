@@ -16,9 +16,11 @@
 .criteria ul {
     list-style: none; /* Remove default list style */
     padding: 0;
+ 
 }
 
 .criteria li {
+    
     font-size: 18px;
     color: #333;
     margin: 10px 0;
@@ -31,6 +33,14 @@
     position: absolute; /* Position it absolutely */
     left: 0; /* Align it to the left */
     color: #ff4500; /* Set color for checkmark */
+}
+.donor-marquee {
+    font-size: 20px;
+    font-weight: bold;
+    color:black; /* Highlight color */
+    background-color: #f8f9fa; /* Light background */
+    padding: 10px 0;
+    white-space: nowrap;
 }
 
 
@@ -88,6 +98,7 @@
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 /* Individual Donor Card */
@@ -123,6 +134,21 @@
 .donor-card p {
     font-size: 16px;
     color: #666;
+    margin-top: 10px;
+}
+.donor-card ul {
+    list-style: none; /* Remove default list style */
+    padding: 0;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.donor-card ul li {
+    color: #666;
+    font-size: 14px;
 }
 
 /* Responsive Design */

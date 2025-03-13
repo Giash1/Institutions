@@ -67,7 +67,14 @@
         margin: 10px 0;
     }
 }
-
+.donor-marquee {
+    font-size: 10px;
+    font-weight: bold;
+    color:black; /* Highlight color */
+    background-color: #f8f9fa; /* Light background */
+    padding: 10px 0;
+    white-space: nowrap;
+}
 @media (max-width: 480px) {
     .social-media-list {
         flex-direction: column;

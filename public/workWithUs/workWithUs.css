@@ -53,6 +53,15 @@
     text-decoration: underline;
 }
 
+.donors-section {
+    display: flex;
+    flex-direction: column; /* Ensure items stack vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
 /* Initially hide the additional content */
 #moreContent {
     display: none;
