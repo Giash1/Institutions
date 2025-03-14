@@ -48,6 +48,10 @@ body {
     pointer-events: none; /* Ensures video does not interfere with user interactions */
 }
 
+/* Style for the audio element */
+#audio-container {
+    display: none; /* Hide the audio element */
+}
 
 /* Styling for sections */
 section {

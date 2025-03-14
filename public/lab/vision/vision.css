@@ -29,6 +29,8 @@
 #home-vision-content ul {
     list-style: none;
     padding: 0;
+    width: 100%; /* Ensure the list takes full width */
+    background-color: var(--background-overlay); /* Add background color */
 }
 
 #home-vision-content li {
@@ -37,6 +39,7 @@
     margin: 10px 0;
     position: relative;
     padding-left: 20px;
+    background-color: var(--background-overlay); /* Add background color */
 }
 
 #home-vision-content li::before {
@@ -120,5 +123,14 @@
 
     #home-vision-content h2 {
         font-size: var(--p-font-size);
+    }
+
+    #home-vision-content ul {
+        width: 100%; /* Ensure the list takes full width */
+        background-color: var(--background-overlay); /* Add background color */
+    }
+
+    #home-vision-content li {
+        background-color: var(--background-overlay); /* Add background color */
     }
 }

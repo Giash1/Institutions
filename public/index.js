@@ -18,6 +18,16 @@ loadHTML('nav', './nav/nav.html');
 loadHTML('main', './main/main.html');
 loadHTML('footer', './footer/footer.html');
 
+// Ensure the audio element plays on page load
+document.addEventListener('DOMContentLoaded', () => {
+    const audioElement = document.getElementById('quran-recitation');
+    if (audioElement) {
+        audioElement.play().catch(error => {
+            console.error('Error playing audio:', error);
+        });
+    }
+});
+
 // Load additional JavaScript and CSS if needed
 const scriptFiles = ['./heading/heading.js', './nav/nav.js', './main/main.js', './footer/footer.js'];
 scriptFiles.forEach(file => {

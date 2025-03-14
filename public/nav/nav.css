@@ -89,6 +89,23 @@
     background-color: var(--link-hover-color);
 }
 
+/* Dropdown menu styling */
+.navbar .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%; /* Ensure the dropdown covers the entire width */
+    background-color: var(--background-overlay);
+    z-index: 1000; /* Ensure the dropdown is above other elements */
+    display: none; /* Initially hide the dropdown */
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+}
+
+.navbar .dropdown-menu.show {
+    display: flex; /* Show the dropdown when active */
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .nav-list {
@@ -99,10 +116,43 @@
     .nav-list a {
         padding: 12px 15px;
     }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%; /* Ensure the dropdown covers the entire width */
+        background-color: var(--background-overlay);
+        z-index: 1000; /* Ensure the dropdown is above other elements */
+        display: none; /* Initially hide the dropdown */
+    }
+
+    .navbar .dropdown-menu.show {
+        display: block; /* Show the dropdown when active */
+    }
 }
 
 @media (max-width: 480px) {
     .nav-list a {
         padding: 10px 12px;
+    }
+
+    .navbar .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%; /* Ensure the dropdown covers the entire width */
+        background-color: var(--background-overlay);
+        z-index: 1000; /* Ensure the dropdown is above other elements */
+        display: none; /* Initially hide the dropdown */
+    }
+
+    .navbar .dropdown-menu.show {
+        display: block; /* Show the dropdown when active */
     }
 }
