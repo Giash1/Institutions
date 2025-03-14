@@ -139,17 +139,17 @@ function setLanguage(language) {
             ]
         },
         'teacher6-name': {
-            en: 'Mohammad Rahat Islam',
-            bn: 'মোহাম্মদ রাহাত ইসলাম'
+            en: 'Rahatul Islam',
+            bn: 'রাহাতুল ইসলাম'
         },
         'teacher6-designation': {
             en: [
-                'Homeopathic Doctor',
+                'Homeopath, Private Farmacy',
                 'Part time instructor, Computer Lab Poschim Gaon Madrasa',
                 'Expert in English Language'
             ],
             bn: [
-                'হোমিওপ্যাথিক ডাক্তার',
+                'হোহোমিওপ্যাথ, বেসরকারি ফার্মেসি',
                 'পার্ট টাইম ইনস্ট্রাক্টর, কম্পিউটার ল্যাব পশ্চিমগাঁও মাদ্রাসা',
                 'ইংরেজি ভাষার বিশেষজ্ঞ'
             ]
