@@ -8,13 +8,13 @@
     padding: 20px;
     position: relative;
 }
-h1, h2 {
+h2, h3 {
     font-family: 'Roboto', sans-serif;
     gap: 30px;
     margin-top: 10px;
     
 }
-h2{
+h3{
     text-align: center;
     align-items: center;
 }
