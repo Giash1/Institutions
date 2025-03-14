@@ -16,7 +16,9 @@
         "দাতা হোন এবং পশ্চিমগাঁও মাদ্রাসার শিক্ষার্থীদের সহায়তা করুন, যেখানে অনেক এতিম বিনামূল্যে শিক্ষা লাভ করে 📖 এবং বিনামূল্যে খাবার খায় 🍴।"
     </marquee>
     
+    <!-- Language Buttons -->
     
+
     <!-- Main Content -->
     <div id="heading"></div> <!-- Heading Placeholder -->
     <div id="nav"></div> <!-- Nav Placeholder -->
@@ -25,13 +27,16 @@
             <source src="../../images/reading-quran.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <h2>Become a Donor</h2>
-            <p>We appreciate any support you can provide. Donors are crucial in sustaining our educational programs and improving our facilities. If you are living outside of Bangladesh, we encourage you to join our efforts.</p>
+        <div id="language-buttons">
+            <button id="language-en">English</button>
+            <button id="language-bn">বাংলা</button>
+        </div>
+        <h2 id="become-donor-title">Become a Donor</h2>
+        <p id="become-donor-description">We appreciate any support you can provide. Donors are crucial in sustaining our educational programs and improving our facilities. If you are living outside of Bangladesh, we encourage you to join our efforts.</p>
         
-
         <section class="criteria">
-            <h2>Donor Criteria</h2>
-            <ul>
+            <h2 id="donor-criteria-title">Donor Criteria</h2>
+            <ul id="donor-criteria-list">
                 <li>Must reside abroad.</li>
                 <li>Commit to donating monthly or annually.</li>
                 <li>Be a well-wisher of our Madrasah and its mission.</li>
@@ -39,7 +44,7 @@
         </section>
 
         <section class="donors-section">
-            <h2>Our Esteemed Donors</h2> <!-- Directly placed here -->
+            <h2 id="esteemed-donors-title">Our Esteemed Donors</h2> <!-- Directly placed here -->
             
             <div class="donor-card">
                 <img src="../../images/mosharof.jpeg" alt="Donor 2" class="donor-image">
@@ -51,14 +56,12 @@
                     <li>Secretary, Islamic Society and Cultural Center of Hyde Park, USA</li>
                 </ul>
                 <p><strong>Country:</strong> Boston, USA</p>
-                
             </div>
-            
         </section>
         
         <section class="contact-us">
-            <h2>Contact Us to be an Honourable Donor</h2>
-            <p>If you're interested in becoming a donor, please reach out to us through our contact page for more information on how you can help.</p>
+            <h2 id="contact-us-title">Contact Us to be an Honourable Donor</h2>
+            <p id="contact-us-description">If you're interested in becoming a donor, please reach out to us through our contact page for more information on how you can help.</p>
             <a href="../../contactUs/contactUs.html" class="cta-button">Get in Touch</a>
         </section>
 
@@ -73,5 +76,4 @@
 
 
 
-        
-       
+

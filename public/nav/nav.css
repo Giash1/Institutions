@@ -23,7 +23,9 @@
     background-color: var(--primary-color);
     padding: 10px 0;
 }
-
+#nav {
+    display: block !important;
+}
 .nav-list {
     list-style-type: none;
     margin: 0;

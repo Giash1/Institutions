@@ -8,6 +8,26 @@
     max-width: 1200px;
 }
 
+/* Styling each box within the main content */
+.main-box {
+    background-color: var(--background-overlay);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    width: 700px;
+    margin: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+/* Hover effect for .main-box */
+.main-box:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
 /* Title styling */
 .section-title {
     background-color: var(--background-overlay);
@@ -33,10 +53,36 @@
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 8px;
-    animation: scrollText 25s linear infinite;
+    animation: scrollText 35s linear infinite;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Adds a shadow for depth */
 }
 
+#language-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#language-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--background-overlay);
+    color: var(--primary-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#language-buttons button:hover {
+    background-color: var(--primary-color);
+    color: var(--background-overlay);
+}
+
+#language-buttons button:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--primary-color);
+}
 /* Animation for scrolling text */
 @keyframes scrollText {
     from {

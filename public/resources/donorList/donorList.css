@@ -151,6 +151,34 @@
     font-size: 14px;
 }
 
+
+#language-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#language-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--background-overlay);
+    color: var(--primary-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#language-buttons button:hover {
+    background-color: var(--primary-color);
+    color: var(--background-overlay);
+}
+
+#language-buttons button:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .donor-card {

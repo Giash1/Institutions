@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
     <title>Islamic Institution - Poschim Gaon Madrasha</title>
 </head>
-
 <body>
-    <header id="top-bar">
-        <!-- <div id="logo">
-            <img src="../images/po-removebg-preview.jpg" alt="Company Logo">
-        </div>
-        <h1>Poschim Gaon Madrasha -i- Islamia Jameul Ulom</h1>
-        <div id="logo">
-            <img src="../images/po-removebg-preview.jpg" alt="Company Logo">
-        </div> -->
-    </header>
+    
+
+    <!-- Language Buttons -->
+    
 
     <!-- Main Content Section -->
     <div class="main-content">
@@ -25,70 +18,69 @@
         <!-- Example usage of the new classes -->
         <div class="animated-text">
             <span class="arabic-sentence">اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَق</span>
-            <span class="translation">"Recite in the name of your Lord who created."</span>
+            <span class="translation">"Recite in the name of your Lord who created (তোমার প্রভুর নামে পাঠ করো, যিনি সৃষ্টি করেছেন)"</span>
              <span></span>
             <span class="arabic-sentence">خَيْرُكُمْ مَنْ تَعَلَّمَ اْلقُرْآنَ وَعَلَّمَهُ</span>
-            <span class="translation">"The best of you are those who learn the Qur’an and teach it."</span>
-
-           
+            <span class="translation">"The best of you are those who learn the Qur’an and teach it (তোমাদের মধ্যে সর্বোত্তম তারা, যারা কুরআন শেখে এবং অন্যকে শেখায়)"</span>
         </div>
-
-
+        <div id="language-buttons">
+            <button onclick="setLanguage('en')">English</button>
+            <button onclick="setLanguage('bn')">বাংলা</button>
+        </div>
         <!-- Title for the section -->
-        <h2 class="section-title">Islamic Institution Overview</h2>
+        <h2 class="section-title" id="islamic-institution-title">Islamic Institution Overview</h2>
 
-        <p class="description">
+        <p class="description" id="islamic-institution-description">
             Poschim Gaon Madrasha-i-Islamia Jameul Ulom is an Islamic institution where students can deeply learn Islam
             and its teachings. Our divisions include:
         </p>
-        <ul class="divisions-list">
-            <li>Hifzul Quran</li>
-            <li>Hifzul Hadith</li>
-            <li>Quran Nazera</li>
-            <li>Alim (Dawrah)</li>
+        <ul class="divisions-list" id="divisions-list">
+            <li>Ideal Nurani Department</li>
+            <li>Nazera Department</li>
+            <li>Hifz Department</li>
+            <li>Hadith Department</li>
         </ul>
 
         <!-- Main content boxes (as per your existing content) -->
         <div class="main-box">
-            <h3>Professional Staff</h3>
-            <p>Our teachers are highly trained scholars who are dedicated to providing Islamic education at the highest
+            <h3 id="professional-staff-title">Professional Staff</h3>
+            <p id="professional-staff-description">Our teachers are highly trained scholars who are dedicated to providing Islamic education at the highest
                 level.</p>
         </div>
         <div class="main-box">
-            <h3>Deep Knowledge</h3>
-            <p>We emphasize deep knowledge and understanding of Islamic subjects including Quran, Hadith, Fiqh, and
+            <h3 id="deep-knowledge-title">Deep Knowledge</h3>
+            <p id="deep-knowledge-description">We emphasize deep knowledge and understanding of Islamic subjects including Quran, Hadith, Fiqh, and
                 more.</p>
         </div>
         <div class="main-box">
-            <h3>Dedicated Curriculum</h3>
-            <p>Our curriculum is designed to cover all essential areas of Islamic learning, helping students grow
+            <h3 id="dedicated-curriculum-title">Dedicated Curriculum</h3>
+            <p id="dedicated-curriculum-description">Our curriculum is designed to cover all essential areas of Islamic learning, helping students grow
                 intellectually and spiritually.</p>
         </div>
         <div class="main-box">
-            <h3>Community Focus</h3>
-            <p>Our institution plays an active role in the community by organizing events and services for all age
+            <h3 id="community-focus-title">Community Focus</h3>
+            <p id="community-focus-description">Our institution plays an active role in the community by organizing events and services for all age
                 groups.</p>
         </div>
         <div class="main-box">
-            <h3>Holistic Approach</h3>
-            <p>We believe in a holistic approach to Islamic education that combines both religious and moral teachings.
+            <h3 id="holistic-approach-title">Holistic Approach</h3>
+            <p id="holistic-approach-description">We believe in a holistic approach to Islamic education that combines both religious and moral teachings.
             </p>
         </div>
         <div class="main-box">
-            <h3>Future Leaders</h3>
-            <p>Our aim is to shape the future leaders of the Muslim community, well-versed in both religious knowledge
+            <h3 id="future-leaders-title">Future Leaders</h3>
+            <p id="future-leaders-description">Our aim is to shape the future leaders of the Muslim community, well-versed in both religious knowledge
                 and societal responsibilities.</p>
         </div>
 
         <!-- Optional: Call-to-action -->
         <div class="cta">
-            <h3>Enroll Now to Learn and Grow</h3>
-            <p>Contact us to join one of the most prestigious Islamic educational institutions.</p>
+            <h3 id="enroll-now-title">Enroll Now to Learn and Grow</h3>
+            <p id="enroll-now-description">Contact us to join one of the most prestigious Islamic educational institutions.</p>
             <a href="../contactUs/contactUs.html" class="cta-button">Get in Touch</a>
         </div>
     </div>
 
     <script src="./main.js"></script>
 </body>
-
 </html>

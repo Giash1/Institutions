@@ -14,34 +14,37 @@
     <marquee behavior="scroll" direction="left" scrollamount="8" class="donor-marquee">
         📝 **Exam Terms and Norms at Poschim Gaon Madrasha** 📚  📝 **পশ্চিমগাঁও মাদ্রাসার পরীক্ষার শর্ত এবং নিয়মাবলী** 📚
     </marquee>
-<!-- Main Content -->
-<div id="heading"></div>
-<div id="nav"></div>
-<div id="home-cleaning-content">
-    <!-- Main content for window cleaning services -->
-    <video id="background-video" autoplay muted loop>
-        <source src="../../images/reading-quran.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
     
-    
-    <h2>Exam Terms and Norms</h2>
-    <p><strong>Terms of the Exams:</strong> Three terms</p>
-    <p><strong>Norms of the Exams:</strong> Written and Oral exams</p>
-    <p><strong>Exam Timing:</strong> Zilkod (زيلكاد), Safar (سفر), and Saban (سابان) (for all departments)</p>
-    
-    <h3>Marking System</h3>
-    <ul>
-        <li>🎯 **Full Marks**: 100</li>
-        <li>🏅 **Mumtaj (ممتاز)**: 80 and above</li>
-        <li>🥇 **Jayeed Jiddan (جيد جداً)**: 65 and above</li>
-        <li>🏆 **Jayeed (جيد)**: 50 and above</li>
-        <li>🎖️ **Makbul (مقبول)**: 33 and above</li>
-    </ul>
+    <!-- Main Content -->
+    <div id="heading"></div>
+    <div id="nav"></div>
+    <div id="home-cleaning-content">
+        <!-- Main content for window cleaning services -->
+        <video id="background-video" autoplay muted loop>
+            <source src="../../images/reading-quran.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Language Buttons -->
+    <div id="language-buttons">
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('bn')">বাংলা</button>
     </div>
-<div id="footer"></div>
+        <h2 id="exam-terms-title">Exam Terms and Norms</h2>
+        <p id="exam-terms"><strong>Terms of the Exams:</strong> Three terms</p>
+        <p id="exam-norms"><strong>Norms of the Exams:</strong> Written and Oral exams</p>
+        <p id="exam-timing"><strong>Exam Timing:</strong> Zilkod (زيلكاد), Safar (سفر), and Saban (سابان) (for all departments)</p>
+        
+        <h3 id="marking-system-title">Marking System</h3>
+        <ul>
+            <li id="full-marks">🎯 **Full Marks**: 100</li>
+            <li id="mumtaj">🏅 **Mumtaj (ممتاز)**: 80 and above</li>
+            <li id="jayeed-jiddan">🥇 **Jayeed Jiddan (جيد جداً)**: 65 and above</li>
+            <li id="jayeed">🏆 **Jayeed (جيد)**: 50 and above</li>
+            <li id="makbul">🎖️ **Makbul (مقبول)**: 33 and above</li>
+        </ul>
+    </div>
+    <div id="footer"></div>
 
-<script src="./exams.js"></script>
-
+    <script src="./exams.js"></script>
 </body>
 </html>

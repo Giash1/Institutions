@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grass Cutting Services</title>
+    <title>Our Departments and Programs</title>
     <link rel="stylesheet" href="./courses.css">
     <link rel="stylesheet" href="../../index.css">
     <link rel="stylesheet" href="../../heading/heading.css">
@@ -14,6 +14,9 @@
     <marquee behavior="scroll" direction="left" scrollamount="8" class="donor-marquee">
         🌟 **Our Departments and Programs at Poschim Gaon Madrasha** 📚 🌟 **পশ্চিমগাঁও মাদ্রাসার আমাদের বিভাগ ও প্রোগ্রাম** 📚
     </marquee>
+    <!-- Language Buttons -->
+    
+
     <!-- Main Content -->
     <div id="heading"></div> <!-- Heading Placeholder -->
     <div id="nav"></div> <!-- Nav Placeholder -->
@@ -23,22 +26,26 @@
             <source src="../../images/reading-quran.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <h2>Our Departments</h2>
+        <div id="language-buttons">
+            <button id="language-en">English</button>
+            <button id="language-bn">বাংলা</button>
+        </div>
+        <h2 id="departments-title">Our Departments</h2>
         
-        <h3>1. Ideal Nurani Department</h3>
-        <p><strong>Subjects:</strong> Kayda, Ampara, Hadith, Masnun Dua, Masayel, Bangla, English, Mathematics.</p>
+        <h3 id="ideal-nurani-title">1. Ideal Nurani Department</h3>
+        <p id="ideal-nurani-subjects"><strong>Subjects:</strong> Kayda, Ampara, Hadith, Masnun Dua, Masayel, Bangla, English, Mathematics.</p>
         
-        <h3>2. Nazera Department</h3>
-        <p><strong>Subjects:</strong> Quran, Hadith, Masnun Sura, Masayel, Bangla, English, Mathematics.</p>
+        <h3 id="nazera-title">2. Nazera Department</h3>
+        <p id="nazera-subjects"><strong>Subjects:</strong> Quran, Hadith, Masnun Sura, Masayel, Bangla, English, Mathematics.</p>
         
-        <h3>3. Hifz Department</h3>
-        <p><strong>Subjects:</strong> Hifzul Quran, Tajbid, Masayel.</p>
+        <h3 id="hifz-title">3. Hifz Department</h3>
+        <p id="hifz-subjects"><strong>Subjects:</strong> Hifzul Quran, Tajbid, Masayel.</p>
         
-        <h3>4. Hadith Department</h3>
-        <p><strong>Subjects:</strong> Quran, Hadith, Fiqah, Mantek, Tafseer, Balagat, Usul, Sorof, Nahw, Arabic Literature, Ilmol Farayez, Bangla, English, Mathematics, Computer, Arabic/Bangla/English Speaking, and more.</p>
+        <h3 id="hadith-title">4. Hadith Department</h3>
+        <p id="hadith-subjects"><strong>Subjects:</strong> Quran, Hadith, Fiqah, Mantek, Tafseer, Balagat, Usul, Sorof, Nahw, Arabic Literature, Ilmol Farayez, Bangla, English, Mathematics, Computer, Arabic/Bangla/English Speaking, and more.</p>
         
-        <h2>Why Choose Our Madrasha?</h2>
-        <ul>
+        <h2 id="why-choose-title">Why Choose Our Madrasha?</h2>
+        <ul id="why-choose-list">
             <li><strong>Comprehensive Islamic Education:</strong> Our curriculum includes Quranic studies, Hadith, Fiqh, and Arabic language courses to build a strong foundation in Islamic knowledge.</li>
             <li><strong>Modern Academic Subjects:</strong> In addition to Islamic studies, we offer courses in Mathematics, Science, English, and Computer Science to prepare students for the modern world.</li>
             <li><strong>Qualified Instructors:</strong> Our experienced and dedicated teachers ensure a high standard of education and personal guidance for students.</li>
@@ -47,11 +54,8 @@
         </ul>
         
         <div id="moreContent">
-            <h2>Extracurricular Activities</h2>
-            <p>We participate in various debates organized by the Befabol Madarisil Arabia Bangladesh Board to enhance students' intellectual and communication skills.</p>
-            
-            
-    
+            <h2 id="extracurricular-title">Extracurricular Activities</h2>
+            <p id="extracurricular-description">We participate in various debates organized by the Befabol Madarisil Arabia Bangladesh Board to enhance students' intellectual and communication skills.</p>
         </div>
         
         <span id="moreBtn" onclick="toggleMore()">More</span>

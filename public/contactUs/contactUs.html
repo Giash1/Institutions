@@ -13,8 +13,9 @@
 <body>
     <marquee behavior="scroll" direction="left" scrollamount="8" class="donor-marquee">
         🌟 An Islamic Research Institution 📚, along with Computer Science 💻, English 📖, and Mathematics ➗, established by Hafezzī Huzūrm in 1954. "🌟 একটি ইসলামী গবেষণা প্রতিষ্ঠান 📚, যার সাথে রয়েছে কম্পিউটার বিজ্ঞান 💻, ইংরেজি 📖 এবং গণিত ➗, প্রতিষ্ঠা করেছেন হাফেজী হুজুর ১৯৬৭ সালে।
-    "
     </marquee>
+    <!-- Language Buttons -->
+  
     <!-- Main Content -->
     <div id="heading"></div>
     <div id="nav"></div>
@@ -24,25 +25,29 @@
             <source src="../images/reading-quran.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <h1>Contact Us</h1>
-        <p>If you have questions about our educational programs, admissions, or general inquiries, we are here to assist you. Please reach out to our dedicated staff via phone or email.</p>
+        <div id="language-buttons">
+            <button onclick="setLanguage('en')">English</button>
+            <button onclick="setLanguage('bn')">বাংলা</button>
+        </div>
+        <h1 id="contact-title">Contact Us</h1>
+        <p id="contact-description">If you have questions about our educational programs, admissions, or general inquiries, we are here to assist you. Please reach out to our dedicated staff via phone or email.</p>
         <br>
         
-        <h2>Customer Support</h2>
-        <p>For any questions regarding admissions, educational services, or assistance with the application process, please contact our customer support team. Most common questions and answers can also be found on our FAQ page.</p>
-        <p>Phone: <strong>008801926174311</strong></p>
-        <p>Email: <strong>pgmadrasha@gmail.com</strong></p>
+        <h2 id="support-title">Customer Support</h2>
+        <p id="support-description">For any questions regarding admissions, educational services, or assistance with the application process, please contact our customer support team. Most common questions and answers can also be found on our FAQ page.</p>
+        <p id="support-phone">Phone: <strong>008801926174311</strong></p>
+        <p id="support-email">Email: <strong>pgmadrasha@gmail.com</strong></p>
         <br>
         
-        <h2>Need Assistance on Weekends?</h2>
-        <p>If you need immediate assistance regarding your inquiries during the weekend or on public holidays, please contact our weekend support line.</p>
-        <p>Emergency Number: <strong>008801831889749</strong> (Available Sat-Sun: 9.00-17.00)</p>
+        <h2 id="weekend-title">Need Assistance on Weekends?</h2>
+        <p id="weekend-description">If you need immediate assistance regarding your inquiries during the weekend or on public holidays, please contact our weekend support line.</p>
+        <p id="weekend-phone">Emergency Number: <strong>008801831889749</strong> (Available Sat-Sun: 9.00-17.00)</p>
         <br>
         
-        <h2>General Inquiries</h2>
-        <p>For non-urgent questions related to educational programs, events, or general inquiries, please reach out to us during the weekdays using our regular contact details:</p>
-        <p>Phone: <strong>008801632482306</strong></p>
-        <p>Email: <strong>pgmadrasha@gmail.com</strong></p>
+        <h2 id="inquiries-title">General Inquiries</h2>
+        <p id="inquiries-description">For non-urgent questions related to educational programs, events, or general inquiries, please reach out to us during the weekdays using our regular contact details:</p>
+        <p id="inquiries-phone">Phone: <strong>008801632482306</strong></p>
+        <p id="inquiries-email">Email: <strong>pgmadrasha@gmail.com</strong></p>
     </div>
     
     <!-- Footer Placeholder -->

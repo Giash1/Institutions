@@ -13,8 +13,9 @@
 <body>
     <marquee behavior="scroll" direction="left" scrollamount="8" class="donor-marquee">
         🌟 An Islamic Research Institution 📚, along with Computer Science 💻, English 📖, and Mathematics ➗, established by Hafezzī Huzūrm in 1954. "🌟 একটি ইসলামী গবেষণা প্রতিষ্ঠান 📚, যার সাথে রয়েছে কম্পিউটার বিজ্ঞান 💻, ইংরেজি 📖 এবং গণিত ➗, প্রতিষ্ঠা করেছেন হাফেজী হুজুর ১৯৬৭ সালে।
-    "
     </marquee>
+    <!-- Language Buttons -->
+   
     <!-- Main Content -->
     <div id="heading"></div>
     <div id="nav"></div>
@@ -23,28 +24,32 @@
             <source src="../images/reading-quran.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <h1>About Poschim Gaon Madrasha -i- Islamia Jameul Ulum</h1>
-        <h2>Elevating Education Through Excellence and Innovation</h2>
-        <p>At Poschim Gaon Madrasha -i- Islamia Jameul Ulom, we are dedicated to providing a holistic and modern educational experience. Our mission is to cultivate a generation of learners equipped with both traditional values and contemporary knowledge, preparing them for success in a rapidly evolving world.</p>
+        <div id="language-buttons">
+            <button onclick="setLanguage('en')">English</button>
+            <button onclick="setLanguage('bn')">বাংলা</button>
+        </div>
+        <h1 id="about-title">About Poschim Gaon Madrasha -i- Islamia Jameul Ulum</h1>
+        <h2 id="education-title">Elevating Education Through Excellence and Innovation</h2>
+        <p id="mission-statement">At Poschim Gaon Madrasha -i- Islamia Jameul Ulom, we are dedicated to providing a holistic and modern educational experience. Our mission is to cultivate a generation of learners equipped with both traditional values and contemporary knowledge, preparing them for success in a rapidly evolving world.</p>
         
-        <h3>A Commitment to Qualified Education</h3>
-        <p>Our madrasha is more than just a place of learning; it is a nurturing ground for scholars. We focus on qualified education that combines rigorous academics with moral and spiritual development. Our curriculum is designed to meet the diverse needs of our students while promoting critical thinking and creativity.</p>
+        <h3 id="commitment-title">A Commitment to Qualified Education</h3>
+        <p id="commitment-description">Our madrasha is more than just a place of learning; it is a nurturing ground for scholars. We focus on qualified education that combines rigorous academics with moral and spiritual development. Our curriculum is designed to meet the diverse needs of our students while promoting critical thinking and creativity.</p>
         
-        <h3>Innovative Teaching Methods</h3>
-        <p>Emphasizing modernized education, we employ innovative teaching methods that engage students actively. Our educators are trained in the latest pedagogical techniques, ensuring that lessons are not only informative but also inspiring. We believe in the power of interactive learning to make education enjoyable and effective.</p>
+        <h3 id="teaching-methods-title">Innovative Teaching Methods</h3>
+        <p id="teaching-methods-description">Emphasizing modernized education, we employ innovative teaching methods that engage students actively. Our educators are trained in the latest pedagogical techniques, ensuring that lessons are not only informative but also inspiring. We believe in the power of interactive learning to make education enjoyable and effective.</p>
 
-        <h3>Experienced and Qualified Teachers</h3>
-        <p>Our team of qualified teachers is passionate about education and dedicated to fostering a love for learning in every student. With extensive backgrounds in their respective fields, our educators are committed to personalizing the learning experience, ensuring that every student receives the attention they deserve.</p>
+        <h3 id="teachers-title">Experienced and Qualified Teachers</h3>
+        <p id="teachers-description">Our team of qualified teachers is passionate about education and dedicated to fostering a love for learning in every student. With extensive backgrounds in their respective fields, our educators are committed to personalizing the learning experience, ensuring that every student receives the attention they deserve.</p>
         
         <div id="moreContent">
-            <h3>State-of-the-Art Facilities</h3>
-            <p>We pride ourselves on our state-of-the-art facilities, which include well-equipped laboratories, libraries, and technology centers. Our labs provide hands-on learning experiences, allowing students to apply theoretical knowledge in practical settings, fostering a deeper understanding of their subjects.</p>
+            <h3 id="facilities-title">State-of-the-Art Facilities</h3>
+            <p id="facilities-description">We pride ourselves on our state-of-the-art facilities, which include well-equipped laboratories, libraries, and technology centers. Our labs provide hands-on learning experiences, allowing students to apply theoretical knowledge in practical settings, fostering a deeper understanding of their subjects.</p>
             
-            <h3>A Focus on Modernized Education</h3>
-            <p>At Poschim Gaon Madrasha, we are committed to staying at the forefront of educational advancements. Our modernized approach includes the integration of technology in the classroom, ensuring our students are not only well-versed in traditional knowledge but also prepared for future challenges in a digital world.</p>
+            <h3 id="modern-education-title">A Focus on Modernized Education</h3>
+            <p id="modern-education-description">At Poschim Gaon Madrasha, we are committed to staying at the forefront of educational advancements. Our modernized approach includes the integration of technology in the classroom, ensuring our students are not only well-versed in traditional knowledge but also prepared for future challenges in a digital world.</p>
             
-            <h3>Building a Bright Future</h3>
-            <p>We believe in building a bright future for our students by providing a supportive and encouraging environment. Every aspect of our madrasha is designed to empower students, fostering resilience and a lifelong love for learning. We invite you to join us on this journey toward excellence in education.</p>
+            <h3 id="future-title">Building a Bright Future</h3>
+            <p id="future-description">We believe in building a bright future for our students by providing a supportive and encouraging environment. Every aspect of our madrasha is designed to empower students, fostering resilience and a lifelong love for learning. We invite you to join us on this journey toward excellence in education.</p>
         </div>
         <span id="moreBtn" onclick="toggleMore()">More</span>
     </div>
