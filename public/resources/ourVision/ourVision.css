@@ -58,7 +58,14 @@
 #moreContent {
     display: none;
 }
-
+.donor-marquee {
+    font-size: 20px;
+    font-weight: bold;
+    color:black; /* Highlight color */
+    background-color: #f8f9fa; /* Light background */
+    padding: 10px 0;
+    white-space: nowrap;
+}
 
 #language-buttons {
     text-align: center;

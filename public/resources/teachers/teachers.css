@@ -99,7 +99,14 @@
     width: calc(33.333% - 40px); /* Three cards in a row with space */
     box-sizing: border-box;
 }
-
+.donor-marquee {
+    font-size: 20px;
+    font-weight: bold;
+    color:black; /* Highlight color */
+    background-color: #f8f9fa; /* Light background */
+    padding: 10px 0;
+    white-space: nowrap;
+}
 .teacher-image {
     width: 100%; /* Responsive image */
     height: auto;
