@@ -63,8 +63,8 @@ function setLanguage(language) {
         },
         'offer-list': {
             en: [
-'A collaborative atmosphere with a focus on innovative teaching methods',
-'Support for language development and integration for our staff'
+                'A collaborative atmosphere with a focus on innovative teaching methods',
+                'Support for language development and integration for our staff'
             ],
             bn: [
                 'উদ্ভাবনী শিক্ষণ পদ্ধতির উপর ফোকাস সহ একটি সহযোগী পরিবেশ',
@@ -100,11 +100,11 @@ function setLanguage(language) {
     for (const id in elements) {
         if (Array.isArray(elements[id][language])) {
             const listItems = elements[id][language].map(item => `<li>${item}</li>`).join('');
-        document.getElementById(id).innerHTML = listItems;
+            document.getElementById(id).innerHTML = listItems;
         } else {
             document.getElementById(id).innerHTML = elements[id][language];
         }
-            }
+    }
 }
 
 // Function to toggle the visibility of the "More" content
