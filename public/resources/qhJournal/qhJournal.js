@@ -56,12 +56,12 @@ function toggleMore() {
 function setLanguage(language) {
     const elements = {
         'journal-title': {
-            en: 'QH Journal',
-            bn: 'কিউএইচ জার্নাল'
+            en: 'QH Research',
+            bn: 'কিউএইচ গবেষণা'
         },
         'journal-description': {
-            en: 'Welcome to the QH Journal, where we publish insightful articles and research on various topics related to Islamic studies, education, and more.',
-            bn: 'কিউএইচ জার্নালে স্বাগতম, যেখানে আমরা ইসলামী শিক্ষা, শিক্ষা এবং আরও অনেক বিষয়ে বিভিন্ন বিষয়ে অন্তর্দৃষ্টিপূর্ণ নিবন্ধ এবং গবেষণা প্রকাশ করি।'
+            en: 'Welcome to Quran and Hadith Research, where we publish insightful articles and research on various topics related to Islamic studies, education, and more.',
+            bn: 'কুরআন ও হাদিস গবেষণায় আপনাকে স্বাগতম, যেখানে আমরা ইসলামিক স্টাডিজ, শিক্ষা এবং আরও অনেক কিছু সম্পর্কিত বিভিন্ন বিষয়ের উপর অন্তর্দৃষ্টিপূর্ণ নিবন্ধ এবং গবেষণা প্রকাশ করি।।'
         },
         'latest-articles-title': {
             en: 'Latest Articles',
@@ -69,14 +69,14 @@ function setLanguage(language) {
         },
         'latest-articles-list': {
             en: [
-                '<a href="../../articles/quranic-studies.html">The Importance of Quranic Studies in Modern Education</a>',
-                '<a href="../../articles/technology-in-education.html">Integrating Technology in Islamic Education</a>',
-                '<a href="../../articles/hadith-jurisprudence.html">The Role of Hadith in Shaping Islamic Jurisprudence</a>'
+                'The Importance of Quranic Studies in Modern Education',
+                'Integrating Technology in Islamic Education',
+                'The Role of Hadith in Shaping Islamic Jurisprudence'
             ],
             bn: [
-                '<a href="../../articles/quranic-studies.html">আধুনিক শিক্ষায় কুরআনিক স্টাডিজের গুরুত্ব</a>',
-                '<a href="../../articles/technology-in-education.html">ইসলামী শিক্ষায় প্রযুক্তির সংমিশ্রণ</a>',
-                '<a href="../../articles/hadith-jurisprudence.html">ইসলামী আইনশাস্ত্র গঠনে হাদিসের ভূমিকা</a>'
+                'আধুনিক শিক্ষায় কুরআনিক স্টাডিজের গুরুত্ব',
+                'ইসলামী শিক্ষায় প্রযুক্তির সংমিশ্রণ',
+                'ইসলামী আইনশাস্ত্র গঠনে হাদিসের ভূমিকা'
             ]
         },
         'research-papers-title': {
@@ -85,14 +85,34 @@ function setLanguage(language) {
         },
         'research-papers-list': {
             en: [
-                '<a href="../../papers/comparative-study.html">A Comparative Study of Islamic and Western Educational Systems</a>',
-                '<a href="../../papers/islamic-teachings-impact.html">The Impact of Islamic Teachings on Modern Society</a>',
-                '<a href="../../papers/evolution-of-fiqh.html">The Evolution of Fiqh: Historical Perspectives and Contemporary Issues</a>'
+                'A Comparative Study of Islamic and Western Educational Systems',
+                'The Impact of Islamic Teachings on Modern Society',
+                'The Evolution of Fiqh: Historical Perspectives and Contemporary Issues'
             ],
             bn: [
-                '<a href="../../papers/comparative-study.html">ইসলামী এবং পশ্চিমা শিক্ষাব্যবস্থার তুলনামূলক অধ্যয়ন</a>',
-                '<a href="../../papers/islamic-teachings-impact.html">আধুনিক সমাজে ইসলামী শিক্ষার প্রভাব</a>',
-                '<a href="../../papers/evolution-of-fiqh.html">ফিকহের বিবর্তন: ঐতিহাসিক দৃষ্টিভঙ্গি এবং সমসাময়িক বিষয়</a>'
+                'ইসলামী এবং পশ্চিমা শিক্ষাব্যবস্থার তুলনামূলক অধ্যয়ন',
+                'আধুনিক সমাজে ইসলামী শিক্ষার প্রভাব',
+                'ফিকহের বিবর্তন: ঐতিহাসিক দৃষ্টিভঙ্গি এবং সমসাময়িক বিষয়'
+            ]
+        },
+        'research-topics-title': {
+            en: 'Research Topics for Hadith Department Students',
+            bn: 'হাদিস বিভাগের শিক্ষার্থীদের জন্য গবেষণার বিষয়'
+        },
+        'research-topics-list': {
+            en: [
+                'The Historical Context of Quranic Revelations',
+                'The Compilation and Preservation of Hadith',
+                'The Role of Women in Early Islamic History',
+                'Comparative Analysis of Islamic and Western Legal Systems',
+                'The Influence of Islamic Philosophy on Modern Thought'
+            ],
+            bn: [
+                'কুরআনিক প্রকাশনার ঐতিহাসিক প্রেক্ষাপট',
+                'হাদিসের সংকলন এবং সংরক্ষণ',
+                'প্রাথমিক ইসলামী ইতিহাসে নারীদের ভূমিকা',
+                'ইসলামী এবং পশ্চিমা আইনি ব্যবস্থার তুলনামূলক বিশ্লেষণ',
+                'আধুনিক চিন্তায় ইসলামী দর্শনের প্রভাব'
             ]
         }
     };
