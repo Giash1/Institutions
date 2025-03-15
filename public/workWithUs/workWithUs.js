@@ -112,7 +112,7 @@ function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
 
-    if (moreContent.style.display === "none") {
+    if (moreContent.style.display === "none" || moreContent.style.display === "") {
         moreContent.style.display = "block";
         moreBtn.innerText = "Less"; // Change button text to "Less"
     } else {
@@ -124,4 +124,10 @@ function toggleMore() {
 // Load initial content
 document.addEventListener('DOMContentLoaded', () => {
     setLanguage(document.documentElement.lang || 'en');
+
+    // Set initial state for "More" content and button text
+    const moreContent = document.getElementById("moreContent");
+    const moreBtn = document.getElementById("moreBtn");
+    moreContent.style.display = "none";
+    moreBtn.innerText = "More";
 });

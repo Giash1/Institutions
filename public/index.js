@@ -26,6 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
             console.error('Error playing audio:', error);
         });
     }
+
+    // Set initial state for "More" content and button text
+    const moreContent = document.getElementById("moreContent");
+    const moreBtn = document.getElementById("moreBtn");
+    if (moreContent && moreBtn) {
+        moreContent.style.display = "none";
+        moreBtn.innerText = "More";
+    }
 });
 
 // Load additional JavaScript and CSS if needed
@@ -42,4 +50,42 @@ cssFiles.forEach(file => {
     link.rel = 'stylesheet';
     link.href = file;
     document.head.appendChild(link);
+});
+
+// Function to set the language
+function setLanguage(language) {
+    const elements = {
+        'heading-title': {
+            en: 'Welcome to Poschim Gaon Madrasha -E- Islamia Jameul Ulum',
+            bn: 'পশ্চিমগাঁও মাদ্রাসা -ই- ইসলামিয়া জামেউল উলুমে স্বাগতম'
+        },
+        'heading-description': {
+            en: 'Providing quality Islamic education along with modern academic subjects.',
+            bn: 'আধুনিক একাডেমিক বিষয়গুলির পাশাপাশি মানসম্পন্ন ইসলামী শিক্ষা প্রদান।'
+        },
+        // Add more elements as needed
+    };
+
+    for (const id in elements) {
+        if (Array.isArray(elements[id][language])) {
+            const listItems = elements[id][language].map(item => `<li>${item}</li>`).join('');
+            document.getElementById(id).innerHTML = listItems;
+        } else {
+            document.getElementById(id).innerHTML = elements[id][language];
+        }
+    }
+}
+
+// Add event listeners for language buttons
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById('language-en').addEventListener('click', () => setLanguage('en'));
+    document.getElementById('language-bn').addEventListener('click', () => setLanguage('bn'));
+
+    // Set initial state for "More" content and button text
+    const moreContent = document.getElementById("moreContent");
+    const moreBtn = document.getElementById("moreBtn");
+    if (moreContent && moreBtn) {
+        moreContent.style.display = "none";
+        moreBtn.innerText = "More";
+    }
 });
