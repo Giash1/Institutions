@@ -273,6 +273,20 @@ function loadHTML(section, filePath, cssPath, jsPath) {
         .catch(err => console.error(`Error loading ${filePath}:`, err));
 }
 
+// Function to toggle the visibility of the "More" content
+function toggleMore() {
+    const moreContent = document.getElementById("moreContent");
+    const moreBtn = document.getElementById("moreBtn");
+
+    if (moreContent.style.display === "none" || moreContent.style.display === "") {
+        moreContent.style.display = "block";
+        moreBtn.innerText = "Less"; // Change button text to "Less"
+    } else {
+        moreContent.style.display = "none";
+        moreBtn.innerText = "More"; // Change button text to "More"
+    }
+}
+
 // Load components
 loadHTML('heading', '../../heading/heading.html', '../../heading/heading.css', '../../heading/heading.js');
 loadHTML('nav', '../../nav/nav.html', '../../nav/nav.css', '../../nav/nav.js');
