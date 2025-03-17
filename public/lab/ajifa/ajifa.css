@@ -1,4 +1,4 @@
-/* Main content styling for Ajifa */
+/* Main content styling for Floor Cleaning Services */
 #home-cleaning-content {
     background-color: var(--background-overlay);
     padding: 30px;
@@ -40,81 +40,47 @@
 }
 
 #home-cleaning-content li::before {
-     /* Checkmark icon for list items */
+    content: "✔"; /* Checkmark icon for list items */
     position: absolute;
     left: 0;
     color: var(--primary-color);
 }
-#home-cleaning-content
-#moreBtn,
-#moreContent {
-    background-color: inherit; /* Use the parent's background */
-    
+.donor-marquee {
+    font-size: 12px;
+    font-weight: bold;
+    color:black; /* Highlight color */
+    background-color: #f8f9fa; /* Light background */
+    padding: 10px 0;
+    white-space: nowrap;
 }
 /* Styles for the "More" button */
 #moreBtn {
     color: blue;
     cursor: pointer;
     text-decoration: underline;
-    font-size: 16px;
-    margin-top: 20px;
-    border: none;
-    /* Light background */
-    padding: 5px 10px; /* Smaller padding */
-    border-radius: 5px;
-   
-    border: 1px solid #dee2e6; /* Light border */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* ...matching styling from other pages... */
 }
 
 /* Initially hide the additional content */
 #moreContent {
     display: none;
-    margin-bottom: 20px;
-    /* Light background */
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid #dee2e6; /* Light border */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Same styling as other "More" sections */
 }
-
-/* Styles for the language selection buttons */
 #language-buttons {
     text-align: center;
     margin: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #language-buttons button {
-    width: 80px; /* Smaller width */
-    height: 40px; /* Smaller height */
     margin: 0 10px;
-    padding: 5px 10px; /* Smaller padding */
-    font-size: 14px; /* Smaller font size */
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
     border: 2px solid var(--primary-color);
     border-radius: 5px;
     background-color: var(--background-overlay);
     color: var(--primary-color);
     transition: background-color 0.3s, color 0.3s;
-    position: relative; /* For animated border */
-    overflow: hidden; /* Hide overflow for animated border */
-}
-
-#language-buttons button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(90deg, var(--primary-color) 50%, transparent 50%);
-    background-size: 50% 50%;
-    border: 2px dotted var(--primary-color);
-    border-radius: 5px;
-    animation: animateBorder 2s linear infinite;
 }
 
 #language-buttons button:hover {
@@ -126,16 +92,6 @@
     outline: none;
     box-shadow: 0 0 5px var(--primary-color);
 }
-
-@keyframes animateBorder {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(-50%, -50%);
-    }
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     #home-cleaning-content {
