@@ -277,15 +277,36 @@ function loadHTML(section, filePath, cssPath, jsPath) {
 function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
+    const lessBtn = document.getElementById("lessBtn");
 
     if (moreContent.style.display === "none" || moreContent.style.display === "") {
-        moreContent.style.display = "block";
+        moreContent.style.display = "flex";
+        moreContent.style.flexWrap = "wrap";
+        moreBtn.style.display = "none";
+        lessBtn.style.display = "inline-block";
         moreBtn.innerText = "Less"; // Change button text to "Less"
     } else {
         moreContent.style.display = "none";
+        moreBtn.style.display = "inline-block";
+        lessBtn.style.display = "none";
         moreBtn.innerText = "More"; // Change button text to "More"
     }
 }
+
+// Initially hide the "More" content and "Less" button
+document.addEventListener("DOMContentLoaded", () => {
+    const moreContent = document.getElementById("moreContent");
+    const moreBtn = document.getElementById("moreBtn");
+    const lessBtn = document.getElementById("lessBtn");
+
+    moreContent.style.display = "none";
+    if (moreBtn) {
+        moreBtn.style.display = "inline-block";
+    }
+    if (lessBtn) {
+        lessBtn.style.display = "none";
+    }
+});
 
 // Load components
 loadHTML('heading', '../../heading/heading.html', '../../heading/heading.css', '../../heading/heading.js');

@@ -47,15 +47,41 @@
 }
 
 /* Styles for the "More" button */
-#moreBtn {
+#moreBtn,
+#lessBtn {
     color: blue;
     cursor: pointer;
     text-decoration: underline;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    background-color: #f8f9fa; /* Light background */
+    padding: 5px 10px; /* Smaller padding */
+    border-radius: 5px;
+    border: 1px solid #dee2e6; /* Light border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Ensure it is inline-block */
 }
 
 /* Initially hide the additional content */
 #moreContent {
     display: none;
+    margin-bottom: 20px;
+    background-color: #f8f9fa; /* Light background */
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6; /* Light border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Center the toggle container */
+#toggleContainer {
+    text-align: center;
+    margin-top: 20px;
 }
 
 /* Introductory Text Styles */
@@ -208,4 +234,45 @@
     #home-cleaning-content h2 {
         font-size: var(--p-font-size);
     }
+}
+
+/* Container for first row */
+.visible-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Container for extra teacher cards; note: extra-cards is inside #moreContent */
+.extra-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Toggle button container (for More and Less) */
+.toggle-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styles for the More and Less buttons */
+#moreBtn,
+#lessBtn {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+/* Initially hide the extra cards section */
+#moreContent {
+    display: none;
 }

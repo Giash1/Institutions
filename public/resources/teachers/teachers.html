@@ -45,123 +45,136 @@
         </section>
 
         <section class="teachers-section">
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0000.jpg" alt="Teacher 1" class="teacher-image">
-                <h3 id="teacher1-name">Hafej Mawlana Mufti Anamul Haque Sharif</h3>
-                <p id="teacher1-designation">Designation: Principle</p>
-                <p id="teacher1-subjects">Subjects: Hadith Department</p>
-            </div>
+            <!-- First row: Visible teacher cards -->
+            <div class="visible-cards">
+                <div class="teacher-card">
+                    <img src="../../images/IMG-20241214-WA0000.jpg" alt="Teacher 1" class="teacher-image">
+                    <h3 id="teacher1-name">Hafej Mawlana Mufti Anamul Haque Sharif</h3>
+                    <p id="teacher1-designation">Designation: Principle</p>
+                    <p id="teacher1-subjects">Subjects: Hadith Department</p>
+                </div>
 
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0001.jpg" alt="Teacher 2" class="teacher-image">
-                <h3 id="teacher2-name">Hafej Mawlana Mufassir Hossain Ahmed</h3>
-                <p id="teacher2-designation">Designation: Education Secretary</p>
-                <p id="teacher2-subjects">Subjects: Hadith Department</p>
+                <div class="teacher-card">
+                    <img src="../../images/IMG-20241214-WA0001.jpg" alt="Teacher 2" class="teacher-image">
+                    <h3 id="teacher2-name">Hafej Mawlana Mufassir Hossain Ahmed</h3>
+                    <p id="teacher2-designation">Designation: Education Secretary</p>
+                    <p id="teacher2-subjects">Subjects: Hadith Department</p>
+                </div>
+                <div class="teacher-card">
+                    <img src="../../images/IMG-20241214-WA0004.jpg" alt="Teacher 5" class="teacher-image">
+                    <h3 id="teacher3-name">Hafej Mawlana Mufti Abu Raihan</h3>
+                    <p id="teacher3-designation">Designation: Assistant Education Secretary</p>
+                    <p id="teacher3-subjects">Subjects: Hadith Department</p>
+                </div>
             </div>
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0004.jpg" alt="Teacher 5" class="teacher-image">
-                <h3 id="teacher3-name">Hafej Mawlana Mufti Abu Raihan</h3>
-                <p id="teacher3-designation">Designation: Assistant Education Secretary</p>
-                <p id="teacher3-subjects">Subjects: Hadith Department</p>
+            <!-- Centered More button below the first row -->
+            <div class="toggle-container">
+                <span id="moreBtn" onclick="toggleMore()">More</span>
             </div>
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0005.jpg" alt="Teacher 6" class="teacher-image">
-                <h3 id="teacher4-name"> Hafej Mawlana Mufti Shoaib Ahmed</h3>
-                <p id="teacher4-designation">Designation: General Teacher</p>
-                <p id="teacher4-subjects">Subjects: Hadith Department</p>
-            </div>
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0003.jpg" alt="Teacher 4" class="teacher-image">
-                <h3 id="teacher5-name">Hafej Mawlana Mufti Sayad Bin Bashir</h3>
-                <p id="teacher5-designation">Designation: Assistant Resident In-charge</p>
-                <p id="teacher5-subjects">Subjects: Hadith Department</p>
-            </div>
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0002.jpg" alt="Teacher 3" class="teacher-image">
-                <h3 id="teacher6-name">Mawlana Mufti Monir Hossain</h3>
-                <p id="teacher6-designation">Designation: Resident In-charge</p>
-                <p id="teacher6-subjects">Subjects: Islamic Jurisprudence, Alim</p>
-            </div>
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241215.jpg" alt="Teacher 3" class="teacher-image">
-                <h3 id="teacher7-name">Mawlana Mufti Ariful Islam</h3>
-                <p id="teacher7-designation">Designation:General Teacher </p>
-                <p id="teacher7-subjects">Subjects: Hadith Department</p>
-            </div>
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0008.jpg" alt="Teacher 9" class="teacher-image">
-                <h3 id="teacher8-name">Hafej Mawlana Abu Yusuf</h3>
-                <p id="teacher8-designation">Designation: General Teacher</p>
-                <p id="teacher8-subjects">Subjects: Hifz Department</p>
-            </div>
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0006.jpg" alt="Teacher 8" class="teacher-image">
-                <h3 id="teacher9-name">Hafej Mawlana Irfan Hossain</h3>
-                <p id="teacher9-designation">Designation: Head of the department</p>
-                <p id="teacher9-subjects">Subjects: Nazera Department</p>
-            </div>
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0011.jpg" alt="Teacher 12" class="teacher-image">
-                <h3 id="teacher10-name">Hafej Mawlana Shibbir Ahmed</h3>
-                <p id="teacher10-designation">Designation: General Teacher</p>
-                <p id="teacher10-subjects">Subjects: Nazera Department</p>
-            </div>
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0018.jpg" alt="Teacher 12" class="teacher-image">
-                <h3 id="teacher11-name">Hafej Kari Habibur Rahman</h3>
-                <p id="teacher11-designation">Designation: General Teacher</p>
-                <p id="teacher11-subjects">Subjects: Nurani Department</p>
-            </div>
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0007.jpg" alt="Teacher 7" class="teacher-image">
-                <h3 id="teacher12-name">Hafej Mohammad Yakub Ali</h3>
-                <p id="teacher12-designation">Designation: General Teacher</p>
-                <p id="teacher12-subjects">Subjects: Hifz Department</p>
-            </div>
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0012.jpg" alt="Teacher 12" class="teacher-image">
-                <h3 id="teacher13-name">Kari Mawlana Rois Uddin</h3>
-                <p id="teacher13-designation">Designation: Head of the department</p>
-                <p id="teacher13-subjects">Subjects: Nurani Department</p>
-            </div>
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0013.jpg" alt="Teacher 12" class="teacher-image">
-                <h3 id="teacher14-name">Hafej Kari Tufayel Alam</h3>
-                <p id="teacher14-designation">Designation: General Teacher</p>
-                <p id="teacher14-subjects">Subjects: Nurani Department</p>
-            </div>
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0009.jpg" alt="Teacher 10" class="teacher-image">
-                <h3 id="teacher15-name">Hafej Mawlana Yousuf</h3>
-                <p id="teacher15-designation">Designation: General Teacher</p>
-                <p id="teacher15-subjects">Subjects: Hadith Department</p>
-            </div>
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0014.jpg" alt="Teacher 12" class="teacher-image">
-                <h3 id="teacher16-name">Hafej Shafiqul Islam</h3>
-                <p id="teacher16-designation">Designation: Accountant and Boarding Superintendent</p>
-                <p id="teacher16-subjects">Subjects: Hifz Department</p>
-            </div>
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0015.jpg" alt="Teacher 12" class="teacher-image">
-                <h3 id="teacher17-name">Mohammad Rafiqul Islam Altaf, Bcom</h3>
-                <p id="teacher17-designation">Designation: Teacher</p>
-                <p id="teacher17-subjects">Subjects: General Education</p>
-            </div>
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0016.jpg" alt="Teacher 12" class="teacher-image">
-                <h3 id="teacher18-name">Mohammad Rayhan</h3>
-                <p id="teacher18-designation">Designation: Head Chef</p>
-            </div>
-            <div class="teacher-card">
-                <img src="../../images/IMG-20241214-WA0017.jpg" alt="Teacher 12" class="teacher-image">
-                <h3 id="teacher19-name">Mohammad Faizul Haque</h3>
-                <p id="teacher19-designation">Designation: Assistant Chef</p>
+            <!-- Extra teacher cards container (flex layout) -->
+            <div id="moreContent">
+                <div class="extra-cards">
+                    <div class="teacher-card">
+                        <img src="../../images/IMG-20241214-WA0005.jpg" alt="Teacher 6" class="teacher-image">
+                        <h3 id="teacher4-name"> Hafej Mawlana Mufti Shoaib Ahmed</h3>
+                        <p id="teacher4-designation">Designation: General Teacher</p>
+                        <p id="teacher4-subjects">Subjects: Hadith Department</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="../../images/IMG-20241214-WA0003.jpg" alt="Teacher 4" class="teacher-image">
+                        <h3 id="teacher5-name">Hafej Mawlana Mufti Sayad Bin Bashir</h3>
+                        <p id="teacher5-designation">Designation: Assistant Resident In-charge</p>
+                        <p id="teacher5-subjects">Subjects: Hadith Department</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="../../images/IMG-20241214-WA0002.jpg" alt="Teacher 3" class="teacher-image">
+                        <h3 id="teacher6-name">Mawlana Mufti Monir Hossain</h3>
+                        <p id="teacher6-designation">Designation: Resident In-charge</p>
+                        <p id="teacher6-subjects">Subjects: Islamic Jurisprudence, Alim</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="../../images/IMG-20241215.jpg" alt="Teacher 3" class="teacher-image">
+                        <h3 id="teacher7-name">Mawlana Mufti Ariful Islam</h3>
+                        <p id="teacher7-designation">Designation:General Teacher </p>
+                        <p id="teacher7-subjects">Subjects: Hadith Department</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="../../images/IMG-20241214-WA0008.jpg" alt="Teacher 9" class="teacher-image">
+                        <h3 id="teacher8-name">Hafej Mawlana Abu Yusuf</h3>
+                        <p id="teacher8-designation">Designation: General Teacher</p>
+                        <p id="teacher8-subjects">Subjects: Hifz Department</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="../../images/IMG-20241214-WA0006.jpg" alt="Teacher 8" class="teacher-image">
+                        <h3 id="teacher9-name">Hafej Mawlana Irfan Hossain</h3>
+                        <p id="teacher9-designation">Designation: Head of the department</p>
+                        <p id="teacher9-subjects">Subjects: Nazera Department</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="../../images/IMG-20241214-WA0011.jpg" alt="Teacher 12" class="teacher-image">
+                        <h3 id="teacher10-name">Hafej Mawlana Shibbir Ahmed</h3>
+                        <p id="teacher10-designation">Designation: General Teacher</p>
+                        <p id="teacher10-subjects">Subjects: Nazera Department</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="../../images/IMG-20241214-WA0018.jpg" alt="Teacher 12" class="teacher-image">
+                        <h3 id="teacher11-name">Hafej Kari Habibur Rahman</h3>
+                        <p id="teacher11-designation">Designation: General Teacher</p>
+                        <p id="teacher11-subjects">Subjects: Nurani Department</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="../../images/IMG-20241214-WA0007.jpg" alt="Teacher 7" class="teacher-image">
+                        <h3 id="teacher12-name">Hafej Mohammad Yakub Ali</h3>
+                        <p id="teacher12-designation">Designation: General Teacher</p>
+                        <p id="teacher12-subjects">Subjects: Hifz Department</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="../../images/IMG-20241214-WA0012.jpg" alt="Teacher 12" class="teacher-image">
+                        <h3 id="teacher13-name">Kari Mawlana Rois Uddin</h3>
+                        <p id="teacher13-designation">Designation: Head of the department</p>
+                        <p id="teacher13-subjects">Subjects: Nurani Department</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="../../images/IMG-20241214-WA0013.jpg" alt="Teacher 12" class="teacher-image">
+                        <h3 id="teacher14-name">Hafej Kari Tufayel Alam</h3>
+                        <p id="teacher14-designation">Designation: General Teacher</p>
+                        <p id="teacher14-subjects">Subjects: Nurani Department</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="../../images/IMG-20241214-WA0009.jpg" alt="Teacher 10" class="teacher-image">
+                        <h3 id="teacher15-name">Hafej Mawlana Yousuf</h3>
+                        <p id="teacher15-designation">Designation: General Teacher</p>
+                        <p id="teacher15-subjects">Subjects: Hadith Department</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="../../images/IMG-20241214-WA0014.jpg" alt="Teacher 12" class="teacher-image">
+                        <h3 id="teacher16-name">Hafej Shafiqul Islam</h3>
+                        <p id="teacher16-designation">Designation: Accountant and Boarding Superintendent</p>
+                        <p id="teacher16-subjects">Subjects: Hifz Department</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="../../images/IMG-20241214-WA0015.jpg" alt="Teacher 12" class="teacher-image">
+                        <h3 id="teacher17-name">Mohammad Rafiqul Islam Altaf, Bcom</h3>
+                        <p id="teacher17-designation">Designation: Teacher</p>
+                        <p id="teacher17-subjects">Subjects: General Education</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="../../images/IMG-20241214-WA0016.jpg" alt="Teacher 12" class="teacher-image">
+                        <h3 id="teacher18-name">Mohammad Rayhan</h3>
+                        <p id="teacher18-designation">Designation: Head Chef</p>
+                    </div>
+                    <div class="teacher-card">
+                        <img src="../../images/IMG-20241214-WA0017.jpg" alt="Teacher 12" class="teacher-image">
+                        <h3 id="teacher19-name">Mohammad Faizul Haque</h3>
+                        <p id="teacher19-designation">Designation: Assistant Chef</p>
+                    </div>
+                </div>
+                <!-- Centered Less button outside the flex container -->
+                <div class="toggle-container">
+                    <span id="lessBtn" onclick="toggleMore()">Less</span>
+                </div>
             </div>
         </section>
-        <div id="moreContent">
-        </div>
-        <span id="moreBtn" onclick="toggleMore()">More</span>
     </div>
 
     <div id="footer"></div>

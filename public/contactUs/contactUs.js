@@ -98,3 +98,23 @@ function setLanguage(language) {
         document.getElementById(id).innerHTML = elements[id][language];
     }
 }
+
+function toggleMore() {
+    const moreContent = document.getElementById("moreContent");
+    const moreBtn = document.getElementById("moreBtn");
+
+    if (window.getComputedStyle(moreContent).display === "none") {
+        moreContent.style.display = "block";
+        moreBtn.innerText = "Less";
+    } else {
+        moreContent.style.display = "none";
+        moreBtn.innerText = "More";
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const moreContent = document.getElementById("moreContent");
+    if (moreContent) {
+        moreContent.style.display = "none";
+    }
+});

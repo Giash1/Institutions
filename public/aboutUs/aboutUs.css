@@ -58,11 +58,13 @@
     color: blue;
     cursor: pointer;
     text-decoration: underline;
+    /* ...matching styling from other pages... */
 }
 
 /* Initially hide the additional content */
 #moreContent {
     display: none;
+    /* Same styling as other "More" sections */
 }
 #language-buttons {
     text-align: center;

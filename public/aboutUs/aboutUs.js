@@ -43,12 +43,12 @@ function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
 
-    if (moreContent.style.display === "none" || moreContent.style.display === "") {
+    if (window.getComputedStyle(moreContent).display === "none") {
         moreContent.style.display = "block";
-        moreBtn.innerText = "Less"; // Change button text to "Less"
+        moreBtn.innerText = "Less";
     } else {
         moreContent.style.display = "none";
-        moreBtn.innerText = "More"; // Change button text to "More"
+        moreBtn.innerText = "More";
     }
 }
 
@@ -154,4 +154,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Set initial language based on document language or default to English
     setLanguage(document.documentElement.lang || 'en');
+
+    moreContent = document.getElementById("moreContent");
+    if (moreContent) {
+        moreContent.style.display = "none";
+    }
 });
