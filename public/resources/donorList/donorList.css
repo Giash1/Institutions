@@ -1,9 +1,30 @@
 /* Donor Criteria Section */
+:root {
+    --primary-font: 'Roboto', sans-serif;
+    --primary-color: #333;
+    --secondary-color: #666;
+    --background-overlay: rgba(255, 255, 255, 0.8);
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --h1-font-size: 35px;
+    --h1-font-weight: bold;
+    --h2-font-size: 25px;
+    --h2-font-weight: normal;
+    --h3-font-size: 20px;
+    --h3-font-weight: bold;
+    --p-font-size: 16px;
+    --p-font-weight: normal;
+    --link-color: #007bff;
+    --link-hover-color: #0056b3;
+    --link-font-size: 16px;
+    --border-radius: 4px;
+    --transition-speed: 0.3s;
+}
 .criteria {
     text-align: center;
     margin: 20px auto;
     padding: 20px;
     max-width: 600px;
+    background-color: var(--background-overlay);
 }
 
 .criteria h2 {
@@ -87,7 +108,19 @@
     color: var(--primary-color);
     margin-bottom: 15px;
 }
-
+.criteria {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: var(--background-overlay); /* Explicitly set to same value */
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    color: var(--primary-color);
+    font-size: var(--h2-font-size);
+    justify-content: center;
+    align-items: center;
+}
 /* Donors Section Styling */
 .donors-section {
     display: flex;
@@ -211,6 +244,11 @@
 @media (max-width: 768px) {
     .donor-card {
         width: calc(50% - 40px); /* Two cards in a row */
+    }
+}
+@media (max-width: 400px) {
+    .criteria {
+        font-size: 16px;
     }
 }
 

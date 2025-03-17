@@ -64,19 +64,37 @@ function setLanguage(language) {
             bn: 'আপনার যে কোনও সহায়তার জন্য আমরা কৃতজ্ঞ। দাতারা আমাদের শিক্ষামূলক প্রোগ্রামগুলি বজায় রাখতে এবং আমাদের সুবিধাগুলি উন্নত করতে গুরুত্বপূর্ণ। আপনি যদি বাংলাদেশের বাইরে থাকেন, আমরা আপনাকে আমাদের প্রচেষ্টায় যোগ দেওয়ার জন্য উত্সাহিত করি।'
         },
         'donor-criteria-title': {
-            en: 'Donor Criteria',
-            bn: 'দাতা মানদণ্ড'
+            en: 
+                'Donor Criteria',
+                
+           
+            bn: 
+                'দাতা মানদণ্ড',
+                
+            
+            
         },
+        'donor-criteria-subtitle': {
+            en:  'As per the decision of the Poschim Gaon Madrasha Committee Board, individuals who wish to become donors must meet the following criteria:',
+            
+           
+            bn:  'পশ্চিম গাঁও মাদ্রাসা কমিটি বোর্ডের সিদ্ধান্ত অনুসারে, দাতা হতে ইচ্ছুক ব্যক্তিদের নিম্নলিখিত মানদণ্ড পূরণ করতে হবে:'
+
+            
+            
+        },
+
+       
         'donor-criteria-list': {
             en: [
-                'Must reside abroad.',
+                'No one can be a permanent or temporary resident of Paschimgaon, Kewdhala and Dakshinpara.',
                 'Commit to donating monthly or annually.',
-                'Be a well-wisher of our Madrasah and its mission.'
+                'Support the mission and values of our Madrasha as a dedicated well-wisher.'
             ],
             bn: [
-                'বিদেশে বসবাস করতে হবে।',
-                'মাসিক বা বার্ষিক দান করতে প্রতিশ্রুতিবদ্ধ।',
-                'আমাদের মাদ্রাসা এবং এর মিশনের শুভাকাঙ্ক্ষী হতে হবে।'
+                'পশ্চিমগাঁও, কেউঢালা এবং দক্ষিণপাড়ার স্থায়ী বা অস্থায়ী বাসিন্দা হওয়া যাবে না।',
+                'মাসিক বা বার্ষিক ভিত্তিতে নিয়মিত অনুদানের প্রতিশ্রুতিবদ্ধ ।',
+                'একজন নিবেদিতপ্রাণ শুভাকাঙ্ক্ষী হিসেবে আমাদের মাদ্রাসার লক্ষ্য এবং মূল্যবোধকে সমর্থন করতে হবে।'
             ]
         },
         'esteemed-donors-title': {
