@@ -23,6 +23,10 @@ h3{
     width: 80px; /* Default size for larger screens */
     height: auto;
 }
+#logo-1 img {
+    width: 80px; /* Default size for larger screens */
+    height: auto;
+}
 
 /* Styling the title */
 #top-bar h1 {
