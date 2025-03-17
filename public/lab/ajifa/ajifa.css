@@ -45,7 +45,12 @@
     left: 0;
     color: var(--primary-color);
 }
-
+#home-cleaning-content
+#moreBtn,
+#moreContent {
+    background-color: inherit; /* Use the parent's background */
+    
+}
 /* Styles for the "More" button */
 #moreBtn {
     color: blue;
@@ -53,12 +58,11 @@
     text-decoration: underline;
     font-size: 16px;
     margin-top: 20px;
-    transition: background-color 0.3s, color 0.3s;
     border: none;
-    background-color: #f8f9fa; /* Light background */
+    /* Light background */
     padding: 5px 10px; /* Smaller padding */
     border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+   
     border: 1px solid #dee2e6; /* Light border */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -67,7 +71,7 @@
 #moreContent {
     display: none;
     margin-bottom: 20px;
-    background-color: #f8f9fa; /* Light background */
+    /* Light background */
     padding: 15px;
     border-radius: 5px;
     border: 1px solid #dee2e6; /* Light border */

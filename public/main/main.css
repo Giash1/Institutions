@@ -44,14 +44,15 @@
 
 /* Animated Arabic text styling */
 .animated-text {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
-    color: #ff4500; /* Use a bright color like OrangeRed */
+    color: #e9d0c8; /* Use a bright color like OrangeRed */
     white-space: nowrap;
     overflow: hidden;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
+   
     border-radius: 8px;
     animation: scrollText 35s linear infinite;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Adds a shadow for depth */
@@ -66,11 +67,10 @@
 }
 
 #language-buttons button {
-    width: 80px; /* Smaller width */
-    height: 40px; /* Smaller height */
+    width: 80px; 
     margin: 0 10px;
-    padding: 5px 10px; /* Smaller padding */
-    font-size: 14px; /* Smaller font size */
+    padding: 5px 10px; 
+    font-size: 14px; 
     cursor: pointer;
     border: 2px solid var(--primary-color);
     border-radius: 5px;

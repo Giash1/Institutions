@@ -38,6 +38,19 @@ loadHTML('heading', '../../heading/heading.html', '../../heading/heading.css', '
 loadHTML('nav', '../../nav/nav.html', '../../nav/nav.css', '../../nav/nav.js');
 loadHTML('footer', '../../footer/footer.html', '../../footer/footer.css', '../../footer/footer.js');
 
+// Function to toggle the visibility of the "More" content
+function toggleMore() {
+    const moreContent = document.getElementById("moreContent");
+    const moreBtn = document.getElementById("moreBtn");
+
+    if (moreContent.style.display === "none" || moreContent.style.display === "") {
+        moreContent.style.display = "block";
+        moreBtn.innerText = "Less"; // Change button text to "Less"
+    } else {
+        moreContent.style.display = "none";
+        moreBtn.innerText = "More"; // Change button text to "More"
+    }
+}
 // Function to set the language
 function setLanguage(language) {
     const elements = {
@@ -113,6 +126,18 @@ function setLanguage(language) {
         'dua-ayah12-translation-en': {
             en: 'With the Name of Allah, the Most Gracious, the Most Merciful . Say : He is Allah (the) One . The Self-Sufficient Master, Whom all creatures need, He begets not nor was He begotten , and none is equal to Him ',
             bn: ' পরম করুণাময়, অসীম দয়ালু আল্লাহর নামে শুরু।বলুনঃ তিনি আল্লাহ এক।  স্বয়ংসম্পূর্ণ প্রভু, তিনি জন্ম দেননি এবং তিনি জন্মগ্রহণ করেননি এবং কেউ তাঁর সমকক্ষ নয়।'
+        },
+        'dua-ayah13-translation-en': {
+            en: 'With the Name of Allah, the Most Gracious, the Most Merciful. Say: I seek refuge with (Allah) the Lord of the daybreak, from the evil of what He has created, and from the evil of the darkening (night) as it comes with its darkness, and from the evil of those who practice witchcraft when they blow in the knots, and from the evil of the envier when he envies.',
+            bn: ' পরম করুণাময়, অসীম দয়ালু আল্লাহর নামে শুরু।  বলুনঃ আমি প্রভাতের রব (আল্লাহর) কাছে আশ্রয় প্রার্থনা করছি, তিনি যা সৃষ্টি করেছেন তার অনিষ্ট থেকে এবং অন্ধকারের (রাত্রির) অনিষ্ট থেকে যেমন তা তার অন্ধকারের সাথে আসে এবং যারা জাদুবিদ্যা করে তাদের অনিষ্ট থেকে।  যখন তারা গিঁটে ফুঁ দেয়, এবং হিংসুকের অনিষ্ট থেকে যখন সে হিংসা করে।'
+        },
+        'dua-ayah14-translation-en': {
+            en: 'With the Name of Allah , the Most Gracious , the Most Merciful. Say: I seek refuge with (Allah) the Lord of mankind, the King of mankind , the God of mankind , from the evil of the whisperer who withdraws , who whispers in the breasts of mankind, of jinns and men .',
+            bn: ' পরম করুণাময়, অসীম দয়ালু আল্লাহর নামে শুরু।বলুন: আমি (আল্লাহর) আশ্রয় প্রার্থনা করছি মানবজাতির পালনকর্তা, মানবজাতির বাদশাহ, মানবজাতির রব, জাদুকারীর অনিষ্ট থেকে, যে পিছু হটে, যে মানবজাতির বুকে জাদু করে, জিন ও মানুষের।'
+        },
+        'dua-ayah15-translation-en': {
+            en: ' In the name of Allah, the Most Gracious, the Most Merciful.1. All praise is due to Allah, the Lord of all the worlds. 2.The Most Gracious, the Most Merciful. 3. Master of the Day of Judgment 4. You alone we worship, and You alone we ask for help. 5. Guide us on the Straight Path,6. the path of those who have received Your grace; 7.not the path of those who have brought down wrath upon themselves, nor of those who have gone astray.',
+        bn: ' পরম করুণাময়, পরম করুণাময় আল্লাহর নামে।১. সকল প্রশংসা আল্লাহর জন্য, যিনি সকল জগতের প্রতিপালক।২. পরম করুণাময়, পরম করুণাময়।৩. বিচার দিনের মালিক। ৪.আমরা একমাত্র তোমারই ইবাদত করি এবং একমাত্র তোমারই কাছে সাহায্য প্রার্থনা করি। ৫. আমাদের সরল পথে পরিচালিত করো; ৬. তাদের পথ যারা তোমার অনুগ্রহ পেয়েছে;৭. তাদের পথ নয় যারা নিজেদের উপর গজব নাযিল করেছে, না যারা পথভ্রষ্ট হয়েছে।'
         },
     };
 
