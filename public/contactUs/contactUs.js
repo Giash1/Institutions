@@ -1,3 +1,4 @@
+// Function to dynamically load HTML components into the specified section
 function loadHTML(section, filePath, cssPath, jsPath) {
     console.log(`Attempting to load ${filePath} into section #${section}`);
 
@@ -33,9 +34,9 @@ function loadHTML(section, filePath, cssPath, jsPath) {
 }
 
 // Load sections dynamically with specific paths
-loadHTML('heading', '../heading/heading.html', '../heading/heading.css', '../heading/heading.js');
-loadHTML('nav', '../nav/nav.html', '../nav/nav.css', '../nav/nav.js');
-loadHTML('footer', '../footer/footer.html', '../footer/footer.css', '../footer/footer.js');
+loadHTML('heading', '../../heading/heading.html', '../../heading/heading.css', '../../heading/heading.js');
+loadHTML('nav', '../../nav/nav.html', '../../nav/nav.css', '../../nav/nav.js');
+loadHTML('footer', '../../footer/footer.html', '../../footer/footer.css', '../../footer/footer.js');
 
 // Function to set the language
 function setLanguage(language) {
@@ -99,10 +100,23 @@ function setLanguage(language) {
     }
 }
 
+// Function to toggle the visibility of the map
+function toggleMap() {
+    const mapContainer = document.getElementById("mapContainer");
+    const mapBtn = document.getElementById("mapBtn");
+    if (window.getComputedStyle(mapContainer).display === "none") {
+        mapContainer.style.display = "block";
+        mapBtn.innerText = "Hide Map";
+    } else {
+        mapContainer.style.display = "none";
+        mapBtn.innerText = "Show Map";
+    }
+}
+
+// Function to toggle the visibility of the "More" content
 function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
-
     if (window.getComputedStyle(moreContent).display === "none") {
         moreContent.style.display = "block";
         moreBtn.innerText = "Less";
@@ -115,6 +129,10 @@ function toggleMore() {
 document.addEventListener("DOMContentLoaded", () => {
     const moreContent = document.getElementById("moreContent");
     if (moreContent) {
-        moreContent.style.display = "none";
+        moreContent.style.display = "none"; // Ensure initial state is set
+    }
+    const mapContainer = document.getElementById("mapContainer");
+    if (mapContainer) {
+        mapContainer.style.display = "none"; // Ensure initial state is set
     }
 });

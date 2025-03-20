@@ -1,4 +1,4 @@
-/* Main content styling for Floor Cleaning Services */
+/* Main content styling for QH Journal */
 #home-cleaning-content {
     background-color: var(--background-overlay);
     padding: 30px;
@@ -45,21 +45,56 @@
     left: 0;
     color: var(--primary-color);
 }
+
+/* Styles for the "More" button */
+#moreBtn {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Initially hide the additional content */
+#moreContent {
+    display: none;
+}
+
+/* Styles for the language selection buttons */
 #language-buttons {
     text-align: center;
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #language-buttons button {
+    width: 80px; /* Smaller width */
+    height: 40px; /* Smaller height */
     margin: 0 10px;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 5px 10px; /* Smaller padding */
+    font-size: 14px; /* Smaller font size */
     cursor: pointer;
     border: 2px solid var(--primary-color);
     border-radius: 5px;
     background-color: var(--background-overlay);
     color: var(--primary-color);
     transition: background-color 0.3s, color 0.3s;
+    position: relative; /* For animated border */
+    overflow: hidden; /* Hide overflow for animated border */
+}
+
+#language-buttons button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(90deg, var(--primary-color) 50%, transparent 50%);
+    background-size: 50% 50%;
+    border: 2px dotted var(--primary-color);
+    border-radius: 5px;
+    animation: animateBorder 2s linear infinite;
 }
 
 #language-buttons button:hover {
@@ -71,48 +106,14 @@
     outline: none;
     box-shadow: 0 0 5px var(--primary-color);
 }
-/* Styles for the "More" button */
-#moreBtn {
-    color: blue;
-    cursor: pointer;
-    text-decoration: underline;
-    font-size: 16px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid #dee2e6;
-    background-color: #f8f9fa;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-    margin-bottom: 10px; /* Add a little gap */
-}
 
-/* Styles for the "Show Map" button */
-#mapBtn {
-    color: blue;
-    cursor: pointer;
-    text-decoration: underline;
-    font-size: 16px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid #dee2e6;
-    background-color: #f8f9fa;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: inline-block;
-}
-
-/* Initially hide the additional content */
-#moreContent {
-    display: none;
-    /* Same styling as other "More" sections */
-}
-
-/* Optional: style adjustments for map container and button */
-#mapContainer {
-    margin-top: 20px;
-    width: 100%;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+@keyframes animateBorder {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
 }
 
 /* Responsive Design */
