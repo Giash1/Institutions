@@ -72,6 +72,16 @@
     margin: 20px auto;
     padding: 20px;
     max-width: 600px;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
 }
 
 .contact-us h2 {
@@ -297,6 +307,39 @@
     flex-wrap: wrap;
 }
 
+/* Contact Link Section Styling */
+.contact-link-section {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-button .arrow {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contact-button:hover .arrow {
+    transform: translateX(5px);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .donor-card {
@@ -389,6 +432,30 @@
 #moreContent {
     display: none;
     width: 100%;
+}
+
+/* Contact Link Section Styling */
+.contact-link-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#contact-link {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+#contact-link:hover {
+    background-color: var(--primary-color);
+    color: white;
 }
 
 /* Responsive Design */

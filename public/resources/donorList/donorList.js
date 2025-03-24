@@ -227,6 +227,10 @@ function setLanguage(language) {
         'donor6-contribution': {
             en: 'Contribution: $800',
             bn: 'অনুদান: ৮০০ ডলার'
+        },
+        'contact-link-text': {
+            en: 'Contact Us',
+            bn: 'যোগাযোগ করুন'
         }
     };
 
