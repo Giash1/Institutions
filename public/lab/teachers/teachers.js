@@ -49,8 +49,8 @@ function setLanguage(language) {
             bn: 'আমাদের মাদ্রাসায়, আমরা আমাদের শিক্ষার্থীদের উচ্চ-মানের ইসলামী শিক্ষা সহ কম্পিউটার বিজ্ঞান, ইংরেজি এবং গণিত প্রদান করতে প্রতিশ্রুতিবদ্ধ। আমাদের অভিজ্ঞ শিক্ষকেরা ইসলামী নীতিমালা এবং শিক্ষার গভীর বোঝাপড়া গড়ে তোলার জন্য নিবেদিত, নিশ্চিত করে যে আমাদের শিক্ষার্থীরা তাদের দৈনন্দিন জীবনে এই মূল্যবোধগুলি মেনে চলার জন্য ভালভাবে প্রস্তুত।'
         },
         'intro-title': {
-            en: '"Meet Our Dedicated Educators and Staff"',
-            bn: '"আমাদের নিবেদিত শিক্ষকদের সাথে পরিচিত হন"'
+            en: '"Meet Our Dedicated Educators and Managing Committee of Poschimgaon Madrasha Computer Lab"',
+            bn: '"আমাদের নিবেদিতপ্রাণ শিক্ষক এবং পছিমগাঁও মাদ্রাসা কম্পিউটার ল্যাবের ব্যবস্থাপনা কমিটির সাথে দেখা করুন"'
         },
         'intro-description': {
             en: 'Our dedicated and highly qualified teaching staff are experts in their fields, bringing a wealth of knowledge and experience to guide students through their journey of Islamic education.',
@@ -88,6 +88,22 @@ function setLanguage(language) {
                 'প্রথম সহকারী ভাইস প্রেসিডেন্ট এবং সাব ম্যানেজার, যমুনা ব্যাংক পিএলসি, মাধবদী ব্রাঞ্চ,',
                 'পার্ট টাইম ইনস্ট্রাক্টর, কম্পিউটার ল্যাব পশ্চিমগাঁও মাদ্রাসা',
                 'মাইক্রোসফট অফিস, ইংরেজি ভাষা এবং গণিতের বিশেষজ্ঞ'
+            ]
+        },
+        'teacher9-name': {
+            en: 'Hafej Mawlana Mufti Anamul Haque Sharif',
+            bn: 'হাফেজ মাওলানা মুফতি আনামুল হক শরীফ'
+        },
+        'teacher9-designation': {
+            en: [
+                'Principle, Poschimgaon Madrasha',
+                'Part time instructor, Computer Lab Poschim Gaon Madrasa',
+                'Expert in Microsoft Office, Arabic and English Language'
+            ],
+            bn: [
+                'প্রিন্সিপাল, পশ্চিমগাঁও মাদ্রাসা',
+                'পার্ট টাইম ইনস্ট্রাক্টর, কম্পিউটার ল্যাব পশ্চিমগাঁও মাদ্রাসা',
+                'মাইক্রোসফট অফিস, আরবি এবং ইংরেজি ভাষা বিশেষজ্ঞ'
             ]
         },
         'teacher3-name': {
