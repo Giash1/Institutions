@@ -61,7 +61,10 @@
     padding: 10px 0;
     white-space: nowrap;
 }
-
+.donor-card.donor-image-2{
+    margin-left: 20px;
+    padding-left: 20px;
+}
 
 /* Contact Us Section */
 .contact-us {
@@ -132,24 +135,41 @@
     justify-content: center;
 }
 
-/* Individual Donor Card */
+/* Styles for the donor cards */
+.donor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .donor-card {
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    border-radius: 8px;
+    width: 30%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 20px;
-    width: calc(33.333% - 40px); /* Three cards in a row with space */
-    box-sizing: border-box;
-    margin-bottom: 20px; /* Add margin below each card */
+    background-color: #f8f9fa;
 }
 
 .donor-image {
-    width: 100%; /* Responsive image */
+    width: 100%;
     height: auto;
-    border-radius: 50%; /* Circular image */
-    margin-bottom: 15px;
+    border-radius: 5px;
 }
+
+.donor-card h3 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+.donor-card p {
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
 .donors-section h2 {
     margin-bottom: 20px; /* Add space below the heading */
     color: var(--primary-color); /* Use your existing color variable */
@@ -167,6 +187,7 @@
     color: #666;
     margin-top: 10px;
 }
+
 .donor-card ul {
     list-style: none; /* Remove default list style */
     padding: 0;
@@ -182,6 +203,21 @@
     font-size: 14px;
 }
 
+.donor-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+
+.donor-card [id$="-designation"] {
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+.donor-card [id$="-address"] {
+    font-size: 13px;
+    color: #666;
+}
 
 #language-buttons {
     text-align: center;
@@ -240,12 +276,34 @@
     }
 }
 
+/* Styles for the "More" button */
+#moreBtn, #lessBtn {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Initially hide the additional content */
+#moreContent {
+    display: none;
+    flex-wrap: wrap;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .donor-card {
-        width: calc(50% - 40px); /* Two cards in a row */
+        width: 45%;
     }
 }
+
 @media (max-width: 400px) {
     .criteria {
         font-size: 16px;
@@ -270,5 +328,78 @@
 
     #home-cleaning-content h2 {
         font-size: var(--p-font-size);
+    }
+}
+
+/* Main content styling */
+.donors-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.visible-cards, .extra-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.donor-card {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.donor-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.toggle-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#moreBtn, #lessBtn {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+#moreContent {
+    display: none;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .donor-card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .donor-card {
+        width: 100%;
     }
 }
