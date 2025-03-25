@@ -34,65 +34,173 @@
             We are grateful for the support of our generous donors who make our mission possible.
         </p>
 
+        <div class="donor-categories-description">
+            <div id="non-resident-description" class="category-description">
+                <h3 id="non-resident-title">Non-Resident Donors</h3>
+                <p id="non-resident-text">These donors live outside our local area but within Bangladesh. They contribute to our madrasha while maintaining their residency in other parts of the country.</p>
+            </div>
+            
+            <div id="foreign-resident-description" class="category-description">
+                <h3 id="foreign-resident-title">Foreign Resident Donors</h3>
+                <p id="foreign-resident-text">These donors are originally from our local community but currently live abroad. They support our madrasha through their foreign earnings.</p>
+            </div>
+        </div>
+
+        <div class="click-indicator">
+            <span class="arrow-down">⬇</span>
+            <p id="click-instruction-text">Click below to view donor lists</p>
+            <span class="arrow-down">⬇</span>
+        </div>
+
         <section class="donors-section">
-            <div class="visible-cards">
-                <div class="donor-card">
-                    <img src="/images/mosharof.jpeg" alt="Donor 1" class="donor-image">
-                    <h3 id="donor1-name">Dm Mosharaf Hossain</h3>
-                    <p id="donor1-designation">Businessman</p>
-                    <p id="donor1-position">President, Bd Investment, Boston, USA<br>
-                    Secretary, Islamic Society and Cultural Center of Hyde Park, USA</p>
-                    <p id="donor1-address">Boston, USA</p>
-                    <p id="donor1-contribution">Contribution: 20000 taka /year</p>
+            <!-- Donor Categories -->
+            <div class="donor-categories">
+                <div id="overseas-category-title">
+                    <button id="overseasBtn" onclick="toggleCategory('overseas')">
+                        <span id="overseas-btn-text">Non-Resident Donors</span>
+                    </button>
                 </div>
-                <div class="donor-card">
-                    <img src="/images/mamun.jpeg" alt="Donor 2" class="donor-image">
-                    <h3 id="donor2-name">Abdullah Al Mamun</h3>
-                    <p id="donor2-designation">Businessman</p>
-                    <p id="donor2-position">M/S Awora Traders, Demra Dhaka</p>
-                    <p id="donor2-address">Demra, Dhaka, Bangladesh</p>
-                    <p id="donor2-contribution">Contribution: 5000 taka /year</p>
-                </div>
-                <div class="donor-card">
-                    <img src="/images/salim.jpg" alt="Donor 3" class="donor-image">
-                    <h3 id="donor3-name">Advocate Mohammad Selim Mia</h3>
-                    <p id="donor3-designation">Vice-President</p>
-                    <p id="donor3-position">Bangladesh Survey and Valuation Companies, Farms and Individual Concerns Association</p>
-                    <p id="donor3-address">Tarabo, Dhaka, Bangladesh</p>
-                    <p id="donor3-contribution">Contribution: 5000 taka /year</p>
+                <div id="migrant-category-title">
+                    <button id="migrantBtn" onclick="toggleCategory('migrant')">
+                        <span id="migrant-btn-text">Foreign Resident Donors</span>
+                    </button>
                 </div>
             </div>
-            
-            <div class="toggle-container">
-                <span id="moreBtn" onclick="toggleMore()">More</span>
+
+            <!-- Overseas Donors Section -->
+            <div id="overseas-section" class="donor-section">
+                <div class="visible-cards">
+                    <div class="donor-card">
+                        <img src="/images/mosharof.jpeg" alt="Donor 1" class="donor-image">
+                        <h3 id="donor1-name">Dm Mosharaf Hossain</h3>
+                        <p id="donor1-designation">Businessman</p>
+                        <p id="donor1-position">President, Bd Investment, Boston, USA<br>
+                        Secretary, Islamic Society and Cultural Center of Hyde Park, USA</p>
+                        <p id="donor1-address">Boston, USA</p>
+                        <p id="donor1-contribution">Contribution: 20000 taka /year</p>
+                    </div>
+                    <div class="donor-card">
+                        <img src="/images/mamun.jpeg" alt="Donor 2" class="donor-image">
+                        <h3 id="donor2-name">Abdullah Al Mamun</h3>
+                        <p id="donor2-designation">Businessman</p>
+                        <p id="donor2-position">M/S Awora Traders, Demra Dhaka</p>
+                        <p id="donor2-address">Demra, Dhaka, Bangladesh</p>
+                        <p id="donor2-contribution">Contribution: 5000 taka /year</p>
+                    </div>
+                    <div class="donor-card">
+                        <img src="/images/salim.jpg" alt="Donor 3" class="donor-image">
+                        <h3 id="donor3-name">Advocate Mohammad Selim Mia</h3>
+                        <p id="donor3-designation">Vice-President</p>
+                        <p id="donor3-position">Bangladesh Survey and Valuation Companies, Farms and Individual Concerns Association</p>
+                        <p id="donor3-address">Tarabo, Dhaka, Bangladesh</p>
+                        <p id="donor3-contribution">Contribution: 5000 taka /year</p>
+                    </div>
+                </div>
+                
+                <div class="toggle-container">
+                    <span id="moreBtn-overseas" onclick="toggleMore('overseas')">More</span>
+                </div>
+                
+                <div id="moreContent-overseas">
+                    <div class="extra-cards">
+                        <div class="donor-card">
+                            <img src="/images/donor4.jpg" alt="Donor 4" class="donor-image">
+                            <h3 id="donor4-name">Donor Name 4</h3>
+                            <p id="donor4-designation">Software Engineer</p>
+                            <p id="donor4-address">Sydney, Australia</p>
+                            <p id="donor4-contribution">Contribution: $1500</p>
+                        </div>
+                        <div class="donor-card">
+                            <img src="/images/donor5.jpg" alt="Donor 5" class="donor-image">
+                            <h3 id="donor5-name">Donor Name 5</h3>
+                            <p id="donor5-designation">Professor</p>
+                            <p id="donor5-address">Toronto, Canada</p>
+                            <p id="donor5-contribution">Contribution: $1000</p>
+                        </div>
+                        <div class="donor-card">
+                            <img src="/images/donor6.jpg" alt="Donor 6" class="donor-image">
+                            <h3 id="donor6-name">Donor Name 6</h3>
+                            <p id="donor6-designation">Architect</p>
+                            <p id="donor6-address">Berlin, Germany</p>
+                            <p id="donor6-contribution">Contribution: $800</p>
+                        </div>
+                    </div>
+                    <div class="toggle-container">
+                        <span id="lessBtn-overseas" onclick="toggleMore('overseas')">Less</span>
+                    </div>
+                </div>
             </div>
-            
-            <div id="moreContent">
-                <div class="extra-cards">
+
+            <!-- Migrant Donors Section -->
+            <div id="migrant-section" class="donor-section">
+                <div class="visible-cards">
                     <div class="donor-card">
-                        <img src="/images/donor4.jpg" alt="Donor 4" class="donor-image">
-                        <h3 id="donor4-name">Donor Name 4</h3>
-                        <p id="donor4-designation">Software Engineer</p>
-                        <p id="donor4-address">Sydney, Australia</p>
-                        <p id="donor4-contribution">Contribution: $1500</p>
+                        <img src="/images/giash.JPG" alt="Giash Uddin" class="donor-image">
+                        <h3 id="migrant0-name">Mohammad Giash Uddin Bhuiyan, MSc (Triple MSc)</h3>
+                        <ul id="migrant0-designation">
+                            <li>JavaScript FullStack Developer</li>
+                            <li>Founder of the Poschimgaon Madrasha Computer Lab</li>
+                            <li>Developer of the Poschimgaon Madrasha Website</li>
+                            <li>Social Counsellor, Stockholm Commune and Upplands Väsby Commune, Sweden</li>
+                        </ul>
+                        <p id="migrant0-address">Stockholm, Sweden</p>
+                        <p id="migrant0-contribution">Contribution: 50000 taka /year and other types of donations</p>
                     </div>
                     <div class="donor-card">
-                        <img src="/images/donor5.jpg" alt="Donor 5" class="donor-image">
-                        <h3 id="donor5-name">Donor Name 5</h3>
-                        <p id="donor5-designation">Professor</p>
-                        <p id="donor5-address">Toronto, Canada</p>
-                        <p id="donor5-contribution">Contribution: $1000</p>
+                        <img src="/images/donor-migrant1.jpg" alt="Migrant Donor 1" class="donor-image">
+                        <h3 id="migrant1-name">Dm Mosharaf Hossain</h3>
+                        <p id="migrant1-designation">Businessman</p>
+                        <p id="migrant1-position">President, Bd Investment</p>
+                        <p id="migrant1-address">Boston, USA</p>
+                        <p id="migrant1-contribution">Contribution: 20000 taka /year</p>
                     </div>
                     <div class="donor-card">
-                        <img src="/images/donor6.jpg" alt="Donor 6" class="donor-image">
-                        <h3 id="donor6-name">Donor Name 6</h3>
-                        <p id="donor6-designation">Architect</p>
-                        <p id="donor6-address">Berlin, Germany</p>
-                        <p id="donor6-contribution">Contribution: $800</p>
+                        <img src="/images/donor-migrant2.jpg" alt="Migrant Donor 2" class="donor-image">
+                        <h3 id="migrant2-name">Abdullah Al Mamun</h3>
+                        <p id="migrant2-designation">Businessman</p>
+                        <p id="migrant2-position">M/S Traders</p>
+                        <p id="migrant2-address">Demra, Dhaka</p>
+                        <p id="migrant2-contribution">Contribution: 5000 taka /year</p>
+                    </div>
+                    <div class="donor-card">
+                        <img src="/images/donor-migrant3.jpg" alt="Migrant Donor 3" class="donor-image">
+                        <h3 id="migrant3-name">Mohammad Selim Mia</h3>
+                        <p id="migrant3-designation">Vice-President</p>
+                        <p id="migrant3-position">Bangladesh Survey Association</p>
+                        <p id="migrant3-address">Tarabo, Dhaka</p>
+                        <p id="migrant3-contribution">Contribution: 5000 taka /year</p>
                     </div>
                 </div>
                 <div class="toggle-container">
-                    <span id="lessBtn" onclick="toggleMore()">Less</span>
+                    <span id="moreBtn-migrant" onclick="toggleMore('migrant')">More</span>
+                </div>
+                <div id="moreContent-migrant">
+                    <div class="extra-cards">
+                        <div class="donor-card">
+                            <img src="/images/donor-migrant4.jpg" alt="Migrant Donor 4" class="donor-image">
+                            <h3 id="migrant4-name">Donor Name 4</h3>
+                            <p id="migrant4-designation">Software Engineer</p>
+                            <p id="migrant4-address">Sydney, Australia</p>
+                            <p id="migrant4-contribution">Contribution: $1500</p>
+                        </div>
+                        <div class="donor-card">
+                            <img src="/images/donor-migrant5.jpg" alt="Migrant Donor 5" class="donor-image">
+                            <h3 id="migrant5-name">Donor Name 5</h3>
+                            <p id="migrant5-designation">Professor</p>
+                            <p id="migrant5-address">Toronto, Canada</p>
+                            <p id="migrant5-contribution">Contribution: $1000</p>
+                        </div>
+                        <div class="donor-card">
+                            <img src="/images/donor-migrant6.jpg" alt="Migrant Donor 6" class="donor-image">
+                            <h3 id="migrant6-name">Donor Name 6</h3>
+                            <p id="migrant6-designation">Architect</p>
+                            <p id="migrant6-address">Berlin, Germany</p>
+                            <p id="migrant6-contribution">Contribution: $800</p>
+                        </div>
+                    </div>
+                    <div class="toggle-container">
+                        <span id="lessBtn-migrant" onclick="toggleMore('migrant')">Less</span>
+                    </div>
                 </div>
             </div>
         </section>

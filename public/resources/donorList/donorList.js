@@ -45,10 +45,10 @@ loadHTML('nav', '/nav/nav.html', '/nav/nav.css', '/nav/nav.js');
 loadHTML('footer', '/footer/footer.html', '/footer/footer.css', '/footer/footer.js');
 
 // Function to toggle the visibility of the "More" content
-function toggleMore() {
-    const moreContent = document.getElementById("moreContent");
-    const moreBtn = document.getElementById("moreBtn");
-    const lessBtn = document.getElementById("lessBtn");
+function toggleMore(category) {
+    const moreContent = document.getElementById(`moreContent-${category}`);
+    const moreBtn = document.getElementById(`moreBtn-${category}`);
+    const lessBtn = document.getElementById(`lessBtn-${category}`);
 
     if (window.getComputedStyle(moreContent).display === "none") {
         moreContent.style.display = "flex";
@@ -241,7 +241,77 @@ function setLanguage(language) {
         'contact-link-text': {
             en: 'Contact Us',
             bn: 'যোগাযোগ করুন'
-        }
+        },
+        'overseas-btn-text': {
+            en: 'Non-Resident Donors',
+            bn: 'অনাবাসী দাতা'  // Donors who live outside the territory but in Bangladesh
+        },
+        'migrant-btn-text': {
+            en: 'Foreign Resident Donors',
+            bn: 'প্রবাসী দাতা'  // Donors who are from the territory but live abroad
+        },
+        'migrant1-name': {
+            en: 'Dm Mosharaf Hossain',
+            bn: 'ডি এম মোশারফ হোসেন'
+        },
+        'migrant1-designation': {
+            en: 'Businessman',
+            bn: 'ব্যবসায়ী'
+        },
+        'migrant1-position': {
+            en: 'President, Bd Investment',
+            bn: 'প্রেসিডেন্ট, বিডি ইনভেস্টমেন্ট'
+        },
+        'migrant1-contribution': {
+            en: 'Contribution: 20000 taka /year',
+            bn: 'অনুদান: ২০,০০০ টাকা /বছর'
+        },
+        'non-resident-title': {
+            en: 'Non-Resident Donors',
+            bn: 'অনাবাসী দাতা'
+        },
+        'non-resident-text': {
+            en: 'These donors live outside our local area but within Bangladesh. They contribute to our madrasha while maintaining their residency in other parts of the country.',
+            bn: 'এই দাতারা আমাদের এলাকার বাইরে কিন্তু বাংলাদেশের মধ্যে বসবাস করেন। তারা দেশের অন্যান্য অঞ্চলে বসবাস করার সময় আমাদের মাদ্রাসায় অবদান রাখেন।'
+        },
+        'foreign-resident-title': {
+            en: 'Foreign Resident Donors',
+            bn: 'প্রবাসী দাতা'
+        },
+        'foreign-resident-text': {
+            en: 'These donors are originally from our local community but currently live abroad. They support our madrasha through their foreign earnings.',
+            bn: 'এই দাতারা মূলত আমাদের স্থানীয় সম্প্রদায়ের অংশ কিন্তু বর্তমানে বিদেশে বসবাস করেন। তারা তাদের বিদেশী আয় থেকে আমাদের মাদ্রাসাকে সহায়তা করেন।'
+        },
+        'click-instruction-text': {
+            en: 'Click below to view donor lists',
+            bn: 'দাতাদের তালিকা দেখতে নীচে ক্লিক করুন'
+        },
+        'migrant0-name': {
+            en: 'Mohammad Giash Uddin Bhuiyan, MSc (Triple MSc)',
+            bn: 'মোহাম্মদ গিয়াস উদ্দিন ভূঁইয়া, এমএসসি (ট্রিপল এমএসসি)'
+        },
+        'migrant0-designation': {
+            en: [
+                'JavaScript FullStack Developer',
+                'Founder of the Poschimgaon Madrasha Computer Lab',
+                'Developer of the Poschimgaon Madrasha Website',
+                'Social Counsellor, Stockholm Commune and Upplands Väsby Commune, Sweden'
+            ],
+            bn: [
+                'জাভাস্ক্রিপ্ট ফুলস্ট্যাক ডেভেলপার',
+                'পশ্চিমগাঁও মাদ্রাসা কম্পিউটার ল্যাবের প্রতিষ্ঠাতা',
+                'পশ্চিমগাঁও মাদ্রাসা ওয়েবসাইটের ডেভেলপার',
+                'সামাজিক কাউন্সেলর, স্টকহোম কমিউন এবং উপল্যান্ডস ভেসবি কমিউন, সুইডেন'
+            ]
+        },
+        'migrant0-address': {
+            en: 'Stockholm, Sweden',
+            bn: 'স্টকহোম, সুইডেন'
+        },
+        'migrant0-contribution': {
+            en: 'Contribution: 50000 taka /year and other types of donations',
+            bn: 'অনুদান: ৫০,০০০ টাকা /বছর এবং অন্যান্য ধরনের অনুদান'
+        },
     };
 
     for (const id in elements) {
@@ -264,4 +334,33 @@ document.addEventListener("DOMContentLoaded", () => {
     
     // Set initial language
     setLanguage('en');
+    
+    // Initially hide all donor sections and more content
+    document.querySelectorAll('.donor-section').forEach(section => {
+        section.style.display = 'none';
+    });
+    
+    document.querySelectorAll('[id^="moreContent-"]').forEach(content => {
+        content.style.display = 'none';
+    });
+    
+    // Show overseas section by default
+    document.getElementById('overseas-section').style.display = 'block';
+    document.getElementById('overseasBtn').classList.add('active');
 });
+
+function toggleCategory(category) {
+    // Hide all sections
+    document.querySelectorAll('.donor-section').forEach(section => {
+        section.style.display = 'none';
+    });
+    
+    // Remove active class from all buttons
+    document.querySelectorAll('.donor-categories button').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    
+    // Show selected section and activate button
+    document.getElementById(`${category}-section`).style.display = 'block';
+    document.getElementById(`${category}Btn`).classList.add('active');
+}
