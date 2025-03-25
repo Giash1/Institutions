@@ -1,17 +1,18 @@
 // Function to dynamically load HTML components into the specified section
 function loadHTML(section, filePath, cssPath, jsPath) {
-    console.log(`Attempting to load ${filePath} into section #${section}`);
+    // Add error handling and base URL
+    const baseUrl = window.location.origin;
+    
+    console.log(`Loading ${filePath} into #${section}`);
 
-    // Load CSS if provided
     if (cssPath) {
         const link = document.createElement('link');
         link.rel = 'stylesheet';
-        link.href = cssPath;
+        link.href = baseUrl + cssPath;
         document.head.appendChild(link);
     }
 
-    // Fetch the HTML content and insert it into the specified section
-    fetch(filePath)
+    fetch(baseUrl + filePath)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Failed to load ${filePath}, status: ${response.status}`);
@@ -19,24 +20,29 @@ function loadHTML(section, filePath, cssPath, jsPath) {
             return response.text();
         })
         .then(data => {
-            document.getElementById(section).innerHTML = data;
-            console.log(`Loaded ${filePath} successfully`);
+            const element = document.getElementById(section);
+            if (element) {
+                element.innerHTML = data;
+                console.log(`Loaded ${filePath} successfully`);
 
-            // Load JavaScript if provided
-            if (jsPath) {
-                const script = document.createElement('script');
-                script.src = jsPath;
-                document.body.appendChild(script);
-                console.log(`Loaded script ${jsPath}`);
+                if (jsPath) {
+                    const script = document.createElement('script');
+                    script.src = baseUrl + jsPath;
+                    document.body.appendChild(script);
+                }
             }
         })
-        .catch(err => console.error(`Error loading ${filePath}:`, err));
+        .catch(err => {
+            console.error(`Error loading ${filePath}:`, err);
+            // Fallback content if loading fails
+            document.getElementById(section).innerHTML = `<p>Error loading content. Please try again.</p>`;
+        });
 }
 
 // Load sections dynamically with specific paths
-loadHTML('heading', '../../heading/heading.html', '../../heading/heading.css', '../../heading/heading.js');
-loadHTML('nav', '../../nav/nav.html', '../../nav/nav.css', '../../nav/nav.js');
-loadHTML('footer', '../../footer/footer.html', '../../footer/footer.css', '../../footer/footer.js');
+loadHTML('heading', '/heading/heading.html', '/heading/heading.css', '/heading/heading.js');
+loadHTML('nav', '/nav/nav.html', '/nav/nav.css', '/nav/nav.js');
+loadHTML('footer', '/footer/footer.html', '/footer/footer.css', '/footer/footer.js');
 
 // Function to toggle the visibility of the "More" content
 function toggleMore() {
@@ -111,9 +117,9 @@ function setLanguage(language) {
             bn: [
                 'পশ্চিমগাঁও, কেউঢালা এবং দক্ষিণপাড়ার স্থায়ী বা অস্থায়ী বাসিন্দা হওয়া যাবে না।',
                 'পশ্চিম গাঁও, কেওডালে এবং দক্ষিণপাড়ার বাসিন্দা কিন্তু বর্তমানে বিদেশে থাকেন (রেমিট্যান্স যোদ্ধা)।',
-            'দাতা হিসেবে তালিকাভুক্ত হতে হলে, মাদ্রাসায় অনুদানের ঘোষণা করা অর্থের পরিমাণ অবশ্যই দিতে হবে`।',
-                'মাসিক বা বার্ষিক ভিত্তিতে নিয়মিত অনুদানের প্রতিশ্রুতিবদ্ধ ।',
-                'একজন নিবেদিতপ্রাণ শুভাকাঙ্ক্ষী হিসেবে আমাদের মাদ্রাসার লক্ষ্য এবং মূল্যবোধকে সমর্থন করতে হবে।'
+            'মাসিক বা বার্ষিক ভিত্তিতে নিয়মিত অনুদানের প্রতিশ্রুতিবদ্ধ ।',
+                'দাতা হিসেবে তালিকাভুক্ত হতে হলে, মাদ্রাসায় অনুদানের ঘোষণা করা অর্থের পরিমাণ অবশ্যই দিতে হবে।',
+                 'একজন নিবেদিতপ্রাণ শুভাকাঙ্ক্ষী হিসেবে আমাদের মাদ্রাসার লক্ষ্য এবং মূল্যবোধকে সমর্থন করতে হবে।'
             ]
         },
         'contact-us-title': {
