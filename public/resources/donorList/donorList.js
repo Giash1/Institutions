@@ -103,11 +103,15 @@ function setLanguage(language) {
         'donor-criteria-list': {
             en: [
                 'No one can be a permanent or temporary resident of Paschimgaon, Kewdhala and Dakshinpara.',
+                'Resident of Poschimgaon, Kewdala, and Dokhinpara but currently live abroad (Remitance fighter).',
                 'Commit to donating monthly or annually.',
+                'To be listed as a donor, one must pay the amount of money they have declared to donate to the Madrasa',
                 'Support the mission and values of our Madrasha as a dedicated well-wisher.'
             ],
             bn: [
                 'পশ্চিমগাঁও, কেউঢালা এবং দক্ষিণপাড়ার স্থায়ী বা অস্থায়ী বাসিন্দা হওয়া যাবে না।',
+                'পশ্চিম গাঁও, কেওডালে এবং দক্ষিণপাড়ার বাসিন্দা কিন্তু বর্তমানে বিদেশে থাকেন (রেমিট্যান্স যোদ্ধা)।',
+            'দাতা হিসেবে তালিকাভুক্ত হতে হলে, মাদ্রাসায় অনুদানের ঘোষণা করা অর্থের পরিমাণ অবশ্যই দিতে হবে`।',
                 'মাসিক বা বার্ষিক ভিত্তিতে নিয়মিত অনুদানের প্রতিশ্রুতিবদ্ধ ।',
                 'একজন নিবেদিতপ্রাণ শুভাকাঙ্ক্ষী হিসেবে আমাদের মাদ্রাসার লক্ষ্য এবং মূল্যবোধকে সমর্থন করতে হবে।'
             ]
