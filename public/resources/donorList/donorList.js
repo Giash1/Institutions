@@ -191,52 +191,60 @@ function setLanguage(language) {
             bn: 'অনুদান: ৫,০০০ টাকা /বছর'
         },
         'donor4-name': {
-            en: 'Donor Name 4',
-            bn: 'দাতার নাম ৪'
+            en: 'Md. Abdur Rahim',
+            bn: 'মোঃ আব্দুর রহিম'
         },
         'donor4-designation': {
-            en: 'Software Engineer',
-            bn: 'সফটওয়্যার ইঞ্জিনিয়ার'
+            en: 'Director',
+            bn: 'পরিচালক'
+        },
+        'donor4-position': {
+            en: 'Tropical Hospital & Diagnostic Centre (pvt) Ltd, Staff Quarter, Demra Road, Dhaka',
+            bn: 'ট্রপিক্যাল হাসপাতাল ও ডায়াগনস্টিক সেন্টার (প্রা.) লিমিটেড, স্টাফ কোয়ার্টার, ডেমরা রোড, ঢাকা'
         },
         'donor4-address': {
-            en: 'Sydney, Australia',
-            bn: 'সিডনি, অস্ট্রেলিয়া'
+            en: 'Noraibag, Demra, Dhaka, Bangladesh',
+            bn: 'নরাইবাগ, ডেমরা, ঢাকা, বাংলাদেশ'
         },
         'donor4-contribution': {
-            en: 'Contribution: $1500',
-            bn: 'অনুদান: ১,৫০০ ডলার'
+            en: 'Contribution: 10000 taka /year',
+            bn: 'অনুদান: ১০,০০০ টাকা /বছর'
         },
         'donor5-name': {
-            en: 'Donor Name 5',
-            bn: 'দাতার নাম ৫'
+            en: 'Md Abdul Alim',
+            bn: 'মোঃ আবদুল আলিম'
         },
         'donor5-designation': {
-            en: 'Professor',
-            bn: 'অধ্যাপক'
+            en: 'Director',
+            bn: 'পরিচালক'
+        },
+        'donor5-position': {
+            en: 'Hass International Ltd',
+            bn: 'হাস ইন্টারন্যাশনাল লিমিটেড'
         },
         'donor5-address': {
-            en: 'Toronto, Canada',
-            bn: 'টরোন্টো, কানাডা'
+            en: 'Demra, Dhaka, Bangladesh',
+            bn: 'ডেমরা, ঢাকা, বাংলাদেশ'
         },
         'donor5-contribution': {
-            en: 'Contribution: $1000',
-            bn: 'অনুদান: ১,০০০ ডলার'
+            en: 'Contribution: 5000 taka /year',
+            bn: 'অনুদান: ৫,০০০ টাকা /বছর'
         },
         'donor6-name': {
-            en: 'Donor Name 6',
-            bn: 'দাতার নাম ৬'
+            en: 'Md. Mofazzal Hossain Biplob',
+            bn: 'মোঃ মফাজ্জল হোসেন বিপ্লব'
         },
         'donor6-designation': {
-            en: 'Architect',
-            bn: 'স্থপতি'
+            en: 'Businessman',
+            bn: 'ব্যবসায়ী'
         },
         'donor6-address': {
-            en: 'Berlin, Germany',
-            bn: 'বার্লিন, জার্মানি'
+            en: 'Noraipur, Demra, Dhaka, Bangladesh',
+            bn: 'নরাইপুর, ডেমরা, ঢাকা, বাংলাদেশ'
         },
         'donor6-contribution': {
-            en: 'Contribution: $800',
-            bn: 'অনুদান: ৮০০ ডলার'
+            en: 'Contribution: 5000 taka /year',
+            bn: 'অনুদান: ৫,০০০ টাকা /বছর'
         },
         'contact-link-text': {
             en: 'Contact Us',
@@ -250,22 +258,7 @@ function setLanguage(language) {
             en: 'Foreign Resident Donors',
             bn: 'প্রবাসী দাতা'  // Donors who are from the territory but live abroad
         },
-        'migrant1-name': {
-            en: 'Dm Mosharaf Hossain',
-            bn: 'ডি এম মোশারফ হোসেন'
-        },
-        'migrant1-designation': {
-            en: 'Businessman',
-            bn: 'ব্যবসায়ী'
-        },
-        'migrant1-position': {
-            en: 'President, Bd Investment',
-            bn: 'প্রেসিডেন্ট, বিডি ইনভেস্টমেন্ট'
-        },
-        'migrant1-contribution': {
-            en: 'Contribution: 20000 taka /year',
-            bn: 'অনুদান: ২০,০০০ টাকা /বছর'
-        },
+        
         'non-resident-title': {
             en: 'Non-Resident Donors',
             bn: 'অনাবাসী দাতা'
@@ -309,9 +302,31 @@ function setLanguage(language) {
             bn: 'স্টকহোম, সুইডেন'
         },
         'migrant0-contribution': {
-            en: 'Contribution: 50000 taka /year and other types of donations',
-            bn: 'অনুদান: ৫০,০০০ টাকা /বছর এবং অন্যান্য ধরনের অনুদান'
+            en: 'Contribution: 50.000 taka /year and other types of donations',
+            bn: 'অনুদান: ৫০,০০০টাকা /বছর এবং অন্যান্য ধরনের অনুদান'
         },
+        
+        'migrant1-name': {
+            en: 'Kaiser Ahmed',
+            bn: 'কায়সার আহমেদ'
+        },
+        'migrant1-designation': {
+            en: 'Civil Engineer',
+            bn: 'সিভিল ইঞ্জিনিয়ার'
+        },
+        'migrant1-position': {
+           en: 'Phd in Civil Engineering, UNSW, Sydney',
+            bn: ' সিভিল ইঞ্জিনিয়ারিংয়ে পিএইচডি, ইউএনএসডব্লিউ, সিডনি'
+        },
+        'migrant1-address': {
+            en: 'Sydney, Australia',
+            bn: 'সিডনি, অষ্ট্রেলিয়া'
+        },
+        'migrant1-contribution': {
+            en: 'Contribution: 10000 taka /year and other types of donations',
+            bn: 'অনুদান: ১০,০০০ টাকা /বছর এবং অন্যান্য ধরনের অনুদান'
+        },
+        
     };
 
     for (const id in elements) {
