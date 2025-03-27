@@ -307,8 +307,8 @@ function setLanguage(language) {
         },
         
         'migrant1-name': {
-            en: 'Kaiser Ahmed',
-            bn: 'কায়সার আহমেদ'
+            en: 'Dr. Kaiser Ahmed',
+            bn: 'ড. কায়সার আহমেদ'
         },
         'migrant1-designation': {
             en: 'Civil Engineer',
