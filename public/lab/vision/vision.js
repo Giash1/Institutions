@@ -109,11 +109,14 @@ function setLanguage(language) {
     };
 
     for (const id in elements) {
-        if (Array.isArray(elements[id][language])) {
-            const listItems = elements[id][language].map(item => `<li>${item}</li>`).join('');
-            document.getElementById(id).innerHTML = listItems;
-        } else {
-            document.getElementById(id).innerHTML = elements[id][language];
+        const element = document.getElementById(id);
+        if (element && elements[id][language]) {
+            if (Array.isArray(elements[id][language])) {
+                const listItems = elements[id][language].map(item => `<li>${item}</li>`).join('');
+                element.innerHTML = listItems;
+            } else {
+                element.textContent = elements[id][language];
+            }
         }
     }
 }

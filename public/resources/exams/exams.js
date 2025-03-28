@@ -54,8 +54,8 @@ function setLanguage(language) {
             bn: '<strong>পরীক্ষার নিয়মাবলী:</strong> লিখিত এবং মৌখিক পরীক্ষা'
         },
         'exam-timing': {
-            en: '<strong>Exam Timing:</strong> Zilkod (زيلكاد), Safar (سفر), and Saban (سابان) (for all departments)',
-            bn: '<strong>পরীক্ষার সময়:</strong> জিলকদ (زيلكاد), সফর (سفر), এবং সাবান (سابان) (সকল বিভাগের জন্য)'
+            en: '<strong>Exam Timing:</strong> Zilkod (ذو القعدة), Safar ( صفر), and Saban ( شعبان) (for all departments)',
+            bn: '<strong>পরীক্ষার সময়:</strong> জিলকদ  (ذو القعدة), সফর  ( صفر), এবং সাবান( شعبان) (সকল বিভাগের জন্য)'
         },
         'marking-system-title': {
             en: 'Marking System',

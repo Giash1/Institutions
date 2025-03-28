@@ -62,24 +62,31 @@ function setLanguage(language) {
         'heading-description': {
             en: 'Providing quality Islamic education along with modern academic subjects.',
             bn: 'আধুনিক একাডেমিক বিষয়গুলির পাশাপাশি মানসম্পন্ন ইসলামী শিক্ষা প্রদান।'
-        },
+        }
         // Add more elements as needed
     };
 
     for (const id in elements) {
-        if (Array.isArray(elements[id][language])) {
-            const listItems = elements[id][language].map(item => `<li>${item}</li>`).join('');
-            document.getElementById(id).innerHTML = listItems;
-        } else {
-            document.getElementById(id).innerHTML = elements[id][language];
+        const element = document.getElementById(id);
+        if (element) {
+            if (elements[id][language]) {
+                element.textContent = elements[id][language];
+            }
         }
     }
 }
 
 // Add event listeners for language buttons
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById('language-en').addEventListener('click', () => setLanguage('en'));
-    document.getElementById('language-bn').addEventListener('click', () => setLanguage('bn'));
+    const languageEn = document.getElementById('language-en');
+    const languageBn = document.getElementById('language-bn');
+
+    if (languageEn) {
+        languageEn.addEventListener('click', () => setLanguage('en'));
+    }
+    if (languageBn) {
+        languageBn.addEventListener('click', () => setLanguage('bn'));
+    }
 
     // Set initial state for "More" content and button text
     const moreContent = document.getElementById("moreContent");

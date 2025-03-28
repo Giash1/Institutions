@@ -71,6 +71,30 @@ function loadNavScripts() {
 // Function to set the language
 function setLanguage(language) {
     const elements = {
+        'main-title': {
+            en: 'Welcome to Poschim Gaon Madrasha -E- Islamia Jameul Ulum',
+            bn: 'পশ্চিমগাঁও মাদ্রাসা -ই- ইসলামিয়া জামেউল উলুমে স্বাগতম'
+        },
+        'main-description': {
+            en: 'Providing quality Islamic education along with modern academic subjects.',
+            bn: 'আধুনিক একাডেমিক বিষয়গুলির পাশাপাশি মানসম্পন্ন ইসলামী শিক্ষা প্রদান।'
+        },
+        'support-title': {
+            en: 'Support Islamic Education',
+            bn: 'ইসলামী শিক্ষায় সহায়তা করুন'
+        },
+        'support-description': {
+            en: 'For over 50 years, Paschimgaon Madrasa has provided Ilm-e-Din education to 360 students, including 32 orphans and 30 underprivileged children.',
+            bn: 'গত ৫০ বছর ধরে, পশ্চিমগাঁও মাদ্রাসা ৩৬০ জন শিক্ষার্থীকে ইলম-এ-দ্বীন শিক্ষা প্রদান করে আসছে, যার মধ্যে ৩২ জন এতিম এবং ৩০ জন সুবিধাবঞ্চিত শিশু রয়েছে।'
+        },
+        'impact-title': {
+            en: 'Make an Impact',
+            bn: 'প্রভাব ফেলুন'
+        },
+        'impact-description': {
+            en: 'With annual expenses of one crore taka, we rely on your halal donations to sustain Lillah (Zakat) and General Funds. Support us today!',
+            bn: 'বার্ষিক এক কোটি টাকা খরচ হওয়ায়, আমরা লিল্লাহ (যাকাত) এবং সাধারণ তহবিল টিকিয়ে রাখতে আপনার হালাল দানের উপর নির্ভর করি। আজই আমাদের সমর্থন করুন!'
+        },
         'islamic-institution-title': {
             en: 'Islamic Institution Overview',
             bn: 'ইসলামী প্রতিষ্ঠান ওভারভিউ'
@@ -152,11 +176,14 @@ function setLanguage(language) {
     };
 
     for (const id in elements) {
-        if (Array.isArray(elements[id][language])) {
-            const listItems = elements[id][language].map(item => `<li>${item}</li>`).join('');
-            document.getElementById(id).innerHTML = listItems;
-        } else {
-            document.getElementById(id).innerHTML = elements[id][language];
+        const element = document.getElementById(id);
+        if (element && elements[id][language]) {
+            if (Array.isArray(elements[id][language])) {
+                const listItems = elements[id][language].map(item => `<li>${item}</li>`).join('');
+                element.innerHTML = listItems;
+            } else {
+                element.textContent = elements[id][language];
+            }
         }
     }
 }
