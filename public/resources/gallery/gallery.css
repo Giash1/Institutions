@@ -76,7 +76,9 @@ body {
 #moreImages {
     display: none;
 }
-
+#moreImages-1{
+    display: none;
+}
 .donor-marquee {
     font-size: 15px;
     font-weight: bold;

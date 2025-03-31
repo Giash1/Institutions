@@ -85,7 +85,7 @@ function setLanguage(language) {
         },
         'support-description': {
             en: 'For over 50 years, Paschimgaon Madrasa has provided Ilm-e-Din education to 360 students, including 32 orphans and 30 underprivileged children.',
-            bn: 'গত ৫০ বছর ধরে, পশ্চিমগাঁও মাদ্রাসা ৩৬০ জন শিক্ষার্থীকে ইলম-এ-দ্বীন শিক্ষা প্রদান করে আসছে, যার মধ্যে ৩২ জন এতিম এবং ৩০ জন সুবিধাবঞ্চিত শিশু রয়েছে।'
+            bn: '৫০ বছর যাবৎ পশ্চিমগাঁও মাদ্রাসা শিক্ষার্থীদের  ইলমে দ্বীন শিক্ষা দিয়ে আসছে,বর্তমানে শিক্ষার্থী সংখ্যা ৩৬০ জন যার মধ্য ৩২ জন এতিম এবং ৩০ জন সুবিধা বঞ্চিত শিশু রয়েছে, প্রতিবছরই এদের সংখ্যা বৃদ্ধি পাচ্ছে।'
         },
         'impact-title': {
             en: 'Make an Impact',

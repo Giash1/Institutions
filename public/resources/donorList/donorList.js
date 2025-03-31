@@ -148,7 +148,7 @@ function setLanguage(language) {
         },
         'donor1-contribution': {
             en: 'Contribution: 20000 taka /year',
-            bn: 'অনুদান: ২০,০০০ টাকা /বছর'
+            bn: 'অনুদান: ২০,000টাকা /বছর'
         },
         'donor2-name': {
             en: 'Abdullah Al Mamun',
@@ -168,7 +168,7 @@ function setLanguage(language) {
         },
         'donor2-contribution': {
             en: 'Contribution: 5000 taka /year',
-            bn: 'অনুদান: ৫,০০০ টাকা /বছর'
+            bn: 'অনুদান: ৫,000 টাকা /বছর'
         },
         'donor3-name': {
             en: 'Advocate Mohammad Selim Mia',
@@ -188,7 +188,7 @@ function setLanguage(language) {
         },
         'donor3-contribution': {
             en: 'Contribution: 5000 taka /year',
-            bn: 'অনুদান: ৫,০০০ টাকা /বছর'
+            bn: 'অনুদান: ৫,000টাকা /বছর'
         },
         'donor4-name': {
             en: 'Md. Abdur Rahim',
@@ -208,7 +208,7 @@ function setLanguage(language) {
         },
         'donor4-contribution': {
             en: 'Contribution: 10000 taka /year',
-            bn: 'অনুদান: ১০,০০০ টাকা /বছর'
+            bn: 'অনুদান: ১০,000 টাকা /বছর'
         },
         'donor5-name': {
             en: 'Md Abdul Alim',
@@ -228,7 +228,7 @@ function setLanguage(language) {
         },
         'donor5-contribution': {
             en: 'Contribution: 5000 taka /year',
-            bn: 'অনুদান: ৫,০০০ টাকা /বছর'
+            bn: 'অনুদান: ৫,000 টাকা /বছর'
         },
         'donor6-name': {
             en: 'Md. Mofazzal Hossain Biplob',
@@ -244,7 +244,27 @@ function setLanguage(language) {
         },
         'donor6-contribution': {
             en: 'Contribution: 5000 taka /year',
-            bn: 'অনুদান: ৫,০০০ টাকা /বছর'
+            bn: 'অনুদান: ৫,000 টাকা /বছর'
+        },
+        'donor7-name': {
+            en: 'Md Masum Parvez Bhuiyan',
+            bn: 'মোঃ মাসুম পারভেজ ভূঁইয়া'
+        },
+        'donor7-designation': {
+            en: 'Director',
+            bn: 'পরিচালক'
+        },
+        'donor7-position': {
+            en: 'Muskan Pharmacy, Mitford road, Mitford Tower, Dhaka 1100',
+            bn: 'মুসকান ফার্মেসি, মিটফোর্ড রোড, মিটফোর্ড টাওয়ার, ঢাকা ১১০০'
+        },
+        'donor7-address': {
+            en: 'Tarabo, Dhaka',
+            bn: 'তারাবো, ঢাকা'
+        },
+        'donor7-contribution': {
+            en: 'Contribution: 5,000 taka /year',
+            bn: 'অনুদান: ৫,000 টাকা /বছর'
         },
         'contact-link-text': {
             en: 'Contact Us',
@@ -324,9 +344,29 @@ function setLanguage(language) {
         },
         'migrant1-contribution': {
             en: 'Contribution: 10000 taka /year and other types of donations',
-            bn: 'অনুদান: ১০,০০০ টাকা /বছর এবং অন্যান্য ধরনের অনুদান'
+            bn: 'অনুদান: ১০,000 টাকা /বছর এবং অন্যান্য ধরনের অনুদান'
         },
         
+        'migrant2-name': {
+            en: 'Parvez Ahmed',
+            bn: 'পারভেজ আহমেদ'
+        },
+        'migrant2-designation': {
+            en: 'Business Analyst',
+            bn: 'বিজনেস অ্যানালিস্ট'
+        },
+        'migrant2-position': {
+            en: 'Studynet Pvt Ltd, Melbourne, Australia',
+            bn: 'স্টাডিনেট প্রাইভেট লিমিটেড, মেলবোর্ন, অস্ট্রেলিয়া'
+        },
+        'migrant2-address': {
+            en: 'Melbourne, Australia',
+            bn: 'মেলবোর্ন, অস্ট্রেলিয়া'
+        },
+        'migrant2-contribution': {
+            en: 'Contribution: 10,000 taka /year',
+            bn: 'অনুদান: ১০,000 টাকা /বছর'
+        }
     };
 
     for (const id in elements) {

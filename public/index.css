@@ -26,6 +26,14 @@
     box-sizing: border-box;
 }
 
+/* General reset to avoid horizontal scrolling */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    box-sizing: border-box;
+}
+
 /* Applying the background video to the body */
 body {
     font-family: var(--primary-font); /* Use the primary font from the root variables */
@@ -59,6 +67,13 @@ section {
     padding: 20px; /* Uniform padding for all sections */
     margin: 10px; /* Uniform margin for all sections */
     box-shadow: var(--box-shadow); /* Slight shadow for all sections */
+}
+
+/* Ensure all sections fit within the viewport */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px; /* Add padding for spacing */
 }
 
 /* Header Styling */
@@ -111,11 +126,27 @@ section {
     box-shadow: var(--box-shadow); /* Slight shadow */
 }
 
+/* Ensure content is centered and responsive */
+.main-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
 /* Footer Section */
 #footer {
     background-color: var(--background-overlay); /* Semi-transparent background */
     text-align: center;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+/* Responsive typography */
+h1, h2, h3, p {
+    margin: 0;
+    padding: 10px 0;
+    word-wrap: break-word; /* Prevent text overflow */
 }
 
 /* Responsive Design */
@@ -146,6 +177,18 @@ section {
         padding: 15px;
         margin: 5px;
     }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
 }
 
 /* For mobile devices */
@@ -174,4 +217,46 @@ section {
         padding: 10px;
         margin: 5px;
     }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
+
+/* Responsive design for images and videos */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Language buttons styling */
+#language-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#language-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--background-overlay);
+    color: var(--primary-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#language-buttons button:hover {
+    background-color: var(--primary-color);
+    color: var(--background-overlay);
 }
