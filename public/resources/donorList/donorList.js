@@ -148,123 +148,155 @@ function setLanguage(language) {
         },
         'donor1-contribution': {
             en: 'Contribution: 20000 taka /year',
-            bn: 'অনুদান: ২০,000টাকা /বছর'
+            bn: 'অনুদান: ২০,০০০ টাকা /বছর'
         },
         'donor2-name': {
-            en: 'Abdullah Al Mamun',
-            bn: 'আব্দুল্লাহ আল মামুন'
+            en: 'Shahidul Islam Zia',
+            bn: 'শহিদুল ইসলাম জিয়া'
         },
         'donor2-designation': {
-            en: 'Businessman',
-            bn: 'ব্যবসায়ী'
-        },
-        'donor2-position': {
-            en: 'M/S Awora Traders, Demra Dhaka',
-            bn: 'মেসার্স আওরা ট্রেডার্স, ডেমরা ঢাকা'
+            en: 'Businessman,Schweizer-Reneke, South Africa',
+            bn: 'ব্যবসায়ী,শোয়েজার-রেনেক, দক্ষিণ আফ্রিকা '
         },
         'donor2-address': {
-            en: 'Demra, Dhaka, Bangladesh',
-            bn: 'ডেমরা, ঢাকা, বাংলাদেশ'
+            en: 'Schweizer-Reneke, South Africa',
+            bn: 'শোয়েজার-রেনেক, দক্ষিণ আফ্রিকা'
         },
         'donor2-contribution': {
-            en: 'Contribution: 5000 taka /year',
-            bn: 'অনুদান: ৫,000 টাকা /বছর'
+            en: 'Contribution: 20000 taka /year',
+            bn: 'অনুদান: ২০,০০০ টাকা /বছর'
         },
         'donor3-name': {
-            en: 'Advocate Mohammad Selim Mia',
-            bn: 'এডভোকেট মোহাম্মদ সেলিম মিয়া'
-        },
-        'donor3-designation': {
-            en: 'Vice-President',
-            bn: 'ভাইস প্রেসিডেন্ট'
-        },
-        'donor3-position': {
-            en: 'Bangladesh Survey and Valuation Companies, Farms and Individual Concerns Association',
-            bn: 'বাংলাদেশ সার্ভে এবং ভ্যালুয়েশন কোম্পানিজ, ফার্মস এবং ইনডিভিজুয়াল কনসার্নস এসোসিয়েশন'
-        },
-        'donor3-address': {
-            en: 'Tarabo, Dhaka, Bangladesh',
-            bn: 'তারাবো, ঢাকা, বাংলাদেশ'
-        },
-        'donor3-contribution': {
-            en: 'Contribution: 5000 taka /year',
-            bn: 'অনুদান: ৫,000টাকা /বছর'
-        },
-        'donor4-name': {
             en: 'Md. Abdur Rahim',
             bn: 'মোঃ আব্দুর রহিম'
         },
-        'donor4-designation': {
+        'donor3-designation': {
             en: 'Director',
             bn: 'পরিচালক'
         },
-        'donor4-position': {
+        'donor3-position': {
             en: 'Tropical Hospital & Diagnostic Centre (pvt) Ltd, Staff Quarter, Demra Road, Dhaka',
             bn: 'ট্রপিক্যাল হাসপাতাল ও ডায়াগনস্টিক সেন্টার (প্রা.) লিমিটেড, স্টাফ কোয়ার্টার, ডেমরা রোড, ঢাকা'
         },
-        'donor4-address': {
+        'donor3-address': {
             en: 'Noraibag, Demra, Dhaka, Bangladesh',
             bn: 'নরাইবাগ, ডেমরা, ঢাকা, বাংলাদেশ'
         },
-        'donor4-contribution': {
-            en: 'Contribution: 10000 taka /year',
-            bn: 'অনুদান: ১০,000 টাকা /বছর'
+        'donor3-contribution': {
+            en: 'Contribution: 10,000 taka /year',
+            bn: 'অনুদান: ১০,০০০ টাকা প্রতি বছর'
         },
-        'donor5-name': {
-            en: 'Md Abdul Alim',
-            bn: 'মোঃ আবদুল আলিম'
+        'donor4-name': {
+            en: 'Abdullah Al Mamun',
+            bn: 'আব্দুল্লাহ আল মামুন'
         },
-        'donor5-designation': {
-            en: 'Director',
-            bn: 'পরিচালক'
-        },
-        'donor5-position': {
-            en: 'Hass International Ltd',
-            bn: 'হাস ইন্টারন্যাশনাল লিমিটেড'
-        },
-        'donor5-address': {
-            en: 'Demra, Dhaka, Bangladesh',
-            bn: 'ডেমরা, ঢাকা, বাংলাদেশ'
-        },
-        'donor5-contribution': {
-            en: 'Contribution: 5000 taka /year',
-            bn: 'অনুদান: ৫,000 টাকা /বছর'
-        },
-        'donor6-name': {
-            en: 'Md. Mofazzal Hossain Biplob',
-            bn: 'মোঃ মফাজ্জল হোসেন বিপ্লব'
-        },
-        'donor6-designation': {
+        'donor4-designation': {
             en: 'Businessman',
             bn: 'ব্যবসায়ী'
         },
-        'donor6-address': {
-            en: 'Noraipur, Demra, Dhaka, Bangladesh',
-            bn: 'নরাইপুর, ডেমরা, ঢাকা, বাংলাদেশ'
+        'donor4-position': {
+            en: 'M/S Awora Traders, Demra Dhaka',
+            bn: 'মেসার্স আওরা ট্রেডার্স, ডেমরা ঢাকা'
         },
-        'donor6-contribution': {
+        'donor4-address': {
+            en: 'Demra, Dhaka, Bangladesh',
+            bn: 'ডেমরা, ঢাকা, বাংলাদেশ'
+        },
+        'donor4-contribution': {
             en: 'Contribution: 5000 taka /year',
-            bn: 'অনুদান: ৫,000 টাকা /বছর'
+            bn: 'অনুদান: ৫,০০০ টাকা /বছর'
         },
-        'donor7-name': {
-            en: 'Md Masum Parvez Bhuiyan',
-            bn: 'মোঃ মাসুম পারভেজ ভূঁইয়া'
+        'donor5-name': {
+            en: 'Advocate Mohammad Selim Mia',
+            bn: 'এডভোকেট মোহাম্মদ সেলিম মিয়া'
         },
-        'donor7-designation': {
+        'donor5-designation': {
+            en: 'Vice-President',
+            bn: 'ভাইস প্রেসিডেন্ট'
+        },
+        'donor5-position': {
+            en: 'Bangladesh Survey and Valuation Companies, Farms and Individual Concerns Association',
+            bn: 'বাংলাদেশ সার্ভে ও ভ্যালুয়েশন কোম্পানিজ, ফার্মস ও ইনডিভিজ্যুয়াল কনসার্নস এসোসিয়েশন'
+        },
+        'donor5-address': {
+            en: 'Tarabo, Dhaka, Bangladesh',
+            bn: 'তারাবো, ঢাকা, বাংলাদেশ'
+        },
+        'donor5-contribution': {
+            en: 'Contribution: 5000 taka /year',
+            bn: 'অনুদান: ৫,০০০ টাকা /বছর'
+        },
+        'donor6-name': {
+            en: 'Md Abdul Alim',
+            bn: 'মোঃ আবদুল আলিম'
+        },
+        'donor6-designation': {
             en: 'Director',
             bn: 'পরিচালক'
         },
-        'donor7-position': {
+        'donor6-position': {
+            en: 'Hass International Ltd, Uttara, Dhaka',
+            bn: 'হাস ইন্টারন্যাশনাল লিমিটেড, উত্তরা, ঢাকা'
+        },
+        'donor6-address': {
+            en: 'Demra, Dhaka, Bangladesh',
+            bn: 'ডেমরা, ঢাকা, বাংলাদেশ'
+        },
+        'donor6-contribution': {
+            en: 'Contribution: 5000 taka /year',
+            bn: 'অনুদান: ৫,০০০ টাকা /বছর'
+        },
+        'donor7-name': {
+            en: 'Md. Mofazzal Hossain Biplob',
+            bn: 'মোঃ মফাজ্জল হোসেন বিপ্লব'
+        },
+        'donor7-designation': {
+            en: 'Businessman',
+            bn: 'ব্যবসায়ী'
+        },
+        'donor7-address': {
+            en: 'Noraipur, Demra, Dhaka, Bangladesh',
+            bn: 'নরাইপুর, ডেমরা, ঢাকা, বাংলাদেশ'
+        },
+        'donor7-contribution': {
+            en: 'Contribution: 5000 taka /year',
+            bn: 'অনুদান: ৫,০০০ টাকা /বছর'
+        },
+        'donor8-name': {
+            en: 'Md Masum Parvez Bhuiyan',
+            bn: 'মোঃ মাসুম পারভেজ ভূঁইয়া'
+        },
+        'donor8-designation': {
+            en: 'Director',
+            bn: 'পরিচালক'
+        },
+        'donor8-position': {
             en: 'Muskan Pharmacy, Mitford road, Mitford Tower, Dhaka 1100',
             bn: 'মুসকান ফার্মেসি, মিটফোর্ড রোড, মিটফোর্ড টাওয়ার, ঢাকা ১১০০'
         },
-        'donor7-address': {
+        'donor8-address': {
             en: 'Tarabo, Dhaka',
             bn: 'তারাবো, ঢাকা'
         },
-        'donor7-contribution': {
-            en: 'Contribution: 5,000 taka /year',
-            bn: 'অনুদান: ৫,000 টাকা /বছর'
+        'donor8-contribution': {
+            en: 'Contribution: 5000 taka /year',
+            bn: 'অনুদান: ৫,০০০ টাকা /বছর'
+        },
+        'donor9-name': {
+            en: 'Donor Name 9',
+            bn: 'দাতা নাম ৯'
+        },
+        'donor9-designation': {
+            en: 'Architect',
+            bn: 'স্থপতি'
+        },
+        'donor9-address': {
+            en: 'Berlin, Germany',
+            bn: 'বার্লিন, জার্মানি'
+        },
+        'donor9-contribution': {
+            en: 'Contribution: $800',
+            bn: 'অনুদান: $৮০০'
         },
         'contact-link-text': {
             en: 'Contact Us',
@@ -343,8 +375,8 @@ function setLanguage(language) {
             bn: 'সিডনি, অষ্ট্রেলিয়া'
         },
         'migrant1-contribution': {
-            en: 'Contribution: 10000 taka /year and other types of donations',
-            bn: 'অনুদান: ১০,000 টাকা /বছর এবং অন্যান্য ধরনের অনুদান'
+            en: 'Contribution: 20000 taka /year and other types of donations',
+            bn: 'অনুদান: 20,000 টাকা /বছর এবং অন্যান্য ধরনের অনুদান'
         },
         
         'migrant2-name': {
@@ -365,7 +397,23 @@ function setLanguage(language) {
         },
         'migrant2-contribution': {
             en: 'Contribution: 10,000 taka /year',
-            bn: 'অনুদান: ১০,000 টাকা /বছর'
+            bn: 'অনুদান: ১০,০০০ টাকা /বছর'
+        },
+        'overseas-donor8-name': {
+            en: 'Donor Name 8',
+            bn: 'দাতা নাম ৮'
+        },
+        'overseas-donor8-designation': {
+            en: 'Professor',
+            bn: 'অধ্যাপক'
+        },
+        'overseas-donor8-address': {
+            en: 'Toronto, Canada',
+            bn: 'টরন্টো, কানাডা'
+        },
+        'overseas-donor8-contribution': {
+            en: 'Contribution: $1000',
+            bn: 'অনুদান: $১০০০'
         }
     };
 
@@ -374,9 +422,10 @@ function setLanguage(language) {
         if (element) {
             if (Array.isArray(elements[id][language])) {
                 const listItems = elements[id][language].map(item => `<li>${item}</li>`).join('');
+
                 element.innerHTML = listItems;
             } else {
-                element.innerHTML = elements[id][language];
+                element.textContent = elements[id][language];
             }
         }
     }

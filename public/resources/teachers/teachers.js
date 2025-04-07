@@ -125,16 +125,12 @@ function setLanguage(language) {
             bn: 'বিষয়: নজেরা বিভাগ'
         },
         'teacher10-name': {
-            en: 'Hafej Mawlana Shibbir Ahmed',
-            bn: 'হাফেজ মাওলানা শিব্বির আহমেদ'
+            en: 'Md Saiful Islam',
+            bn: 'মোঃ সাইফুল ইসলাম'
         },
         'teacher10-designation': {
-            en: 'Designation: General Teacher',
-            bn: 'পদবী: সাধারণ শিক্ষক'
-        },
-        'teacher10-subjects': {
-            en: 'Subjects: Nazera Department',
-            bn: 'বিষয়: নজেরা বিভাগ'
+            en: 'Director, Bangladesh Railway, Dhaka / Part time instructor, Computer Lab Poschim Gaon Madrasa / Expert in Microsoft Office, Mathematics and English Language',
+            bn: 'ডাইরেক্টর, বাংলাদেশ রেলওয়ে, ঢাকা / পার্ট টাইম ইনস্ট্রাক্টর, কম্পিউটার ল্যাব, পশ্চিমগাঁও মাদ্রাসা / মাইক্রোসফট অফিস, গণিত ও ইংরেজি ভাষায় বিশেষজ্ঞ'
         },
         'teacher11-name': {
             en: 'Hafej Kari Habibur Rahman',
