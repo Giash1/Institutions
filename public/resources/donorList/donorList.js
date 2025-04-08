@@ -155,8 +155,8 @@ function setLanguage(language) {
             bn: 'শহিদুল ইসলাম জিয়া'
         },
         'donor2-designation': {
-            en: 'Businessman,Schweizer-Reneke, South Africa',
-            bn: 'ব্যবসায়ী,শোয়েজার-রেনেক, দক্ষিণ আফ্রিকা '
+            en: 'Businessman',
+            bn: 'ব্যবসায়ী'
         },
         'donor2-address': {
             en: 'Schweizer-Reneke, South Africa',
@@ -164,7 +164,7 @@ function setLanguage(language) {
         },
         'donor2-contribution': {
             en: 'Contribution: 20000 taka /year',
-            bn: 'অনুদান: ২০,০০০ টাকা /বছর'
+            bn: 'অনুদান: ২০,000 টাকা /বছর'
         },
         'donor3-name': {
             en: 'Md. Abdur Rahim',
@@ -184,7 +184,7 @@ function setLanguage(language) {
         },
         'donor3-contribution': {
             en: 'Contribution: 10,000 taka /year',
-            bn: 'অনুদান: ১০,০০০ টাকা প্রতি বছর'
+            bn: 'অনুদান: ১০,000 টাকা প্রতি বছর'
         },
         'donor4-name': {
             en: 'Abdullah Al Mamun',
@@ -204,7 +204,7 @@ function setLanguage(language) {
         },
         'donor4-contribution': {
             en: 'Contribution: 5000 taka /year',
-            bn: 'অনুদান: ৫,০০০ টাকা /বছর'
+            bn: 'অনুদান: ৫,000 টাকা /বছর'
         },
         'donor5-name': {
             en: 'Advocate Mohammad Selim Mia',
@@ -224,7 +224,7 @@ function setLanguage(language) {
         },
         'donor5-contribution': {
             en: 'Contribution: 5000 taka /year',
-            bn: 'অনুদান: ৫,০০০ টাকা /বছর'
+            bn: 'অনুদান: ৫,000 টাকা /বছর'
         },
         'donor6-name': {
             en: 'Md Abdul Alim',
@@ -244,7 +244,7 @@ function setLanguage(language) {
         },
         'donor6-contribution': {
             en: 'Contribution: 5000 taka /year',
-            bn: 'অনুদান: ৫,০০০ টাকা /বছর'
+            bn: 'অনুদান: ৫,000টাকা /বছর'
         },
         'donor7-name': {
             en: 'Md. Mofazzal Hossain Biplob',
@@ -260,7 +260,7 @@ function setLanguage(language) {
         },
         'donor7-contribution': {
             en: 'Contribution: 5000 taka /year',
-            bn: 'অনুদান: ৫,০০০ টাকা /বছর'
+            bn: 'অনুদান: ৫,000 টাকা /বছর'
         },
         'donor8-name': {
             en: 'Md Masum Parvez Bhuiyan',
@@ -280,7 +280,7 @@ function setLanguage(language) {
         },
         'donor8-contribution': {
             en: 'Contribution: 5000 taka /year',
-            bn: 'অনুদান: ৫,০০০ টাকা /বছর'
+            bn: 'অনুদান: ৫,000 টাকা /বছর'
         },
         'donor9-name': {
             en: 'Donor Name 9',
@@ -375,7 +375,7 @@ function setLanguage(language) {
             bn: 'সিডনি, অষ্ট্রেলিয়া'
         },
         'migrant1-contribution': {
-            en: 'Contribution: 20000 taka /year and other types of donations',
+            en: 'Contribution: 10000 taka /year and other types of donations',
             bn: 'অনুদান: 20,000 টাকা /বছর এবং অন্যান্য ধরনের অনুদান'
         },
         
@@ -397,7 +397,7 @@ function setLanguage(language) {
         },
         'migrant2-contribution': {
             en: 'Contribution: 10,000 taka /year',
-            bn: 'অনুদান: ১০,০০০ টাকা /বছর'
+            bn: 'অনুদান: ১০,000 টাকা /বছর'
         },
         'overseas-donor8-name': {
             en: 'Donor Name 8',

@@ -112,12 +112,12 @@ function setLanguage(language) {
         },
         'teacher10-designation': {
             en: [
-                'Director, Bangladesh Railway, Dhaka Division',
+                'In Charge of Train, Bangladesh Railway, Dhaka',
                 'Part time instructor, Computer Lab Poschim Gaon Madrasa',
                 'Expert in Microsoft Office, Mathematics and English Language'
             ],
             bn: [
-               'পরিচালক, বাংলাদেশ রেলওয়ে, ঢাকা বিভাগ',
+               'ট্রেনের ভারপ্রাপ্ত কর্মকর্তা, বাংলাদেশ রেলওয়ে, ঢাকা',
 
 'খন্ডকালীন প্রশিক্ষক, কম্পিউটার ল্যাব, পছিম গাঁও মাদ্রাসা',
 
