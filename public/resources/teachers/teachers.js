@@ -18,7 +18,7 @@ function setLanguage(language) {
         },
         'teacher1-name': {
             en: 'Hafej Mawlana Mufti Anamul Haque Sharif',
-            bn: 'হাফেজ মাওলানা মুফতি আনামুল হক শরীফ'
+            bn: 'হাফেজ মাওলানা মুফতি এনামুল হক শরীফ'
         },
         'teacher1-designation': {
             en: 'Designation: Principle',

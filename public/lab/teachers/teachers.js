@@ -92,7 +92,7 @@ function setLanguage(language) {
         },
         'teacher9-name': {
             en: 'Hafej Mawlana Mufti Anamul Haque Sharif',
-            bn: 'হাফেজ মাওলানা মুফতি আনামুল হক শরীফ'
+            bn: 'হাফেজ মাওলানা মুফতি এনামুল হক শরীফ'
         },
         'teacher9-designation': {
             en: [
@@ -106,7 +106,7 @@ function setLanguage(language) {
                 'মাইক্রোসফট অফিস, আরবি এবং ইংরেজি ভাষা বিশেষজ্ঞ'
             ]
         },
-        'teacher9-name': {
+        'teacher10-name': {
             en: 'Md Saiful Islam',
          bn: 'মোঃ সাইফুল ইসলাম'
         },
@@ -125,8 +125,9 @@ function setLanguage(language) {
             ]
         },
         'teacher3-name': {
-            en: 'Engr. Mohammad Asraful Islam Nazim',
-            bn: 'ইঞ্জিনিয়ার মোহাম্মদ আসরাফুল ইসলাম নাজিম'
+            en: 
+            'Engr. Md. Asraful Islam, B.Sc.(ME)',
+            bn: 'ইঞ্জি. মোঃ আসরাফুল ইসলাম, বিএসসি (এমই)'
         },
         'teacher3-designation': {
             en: [

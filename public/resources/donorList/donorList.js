@@ -112,14 +112,18 @@ function setLanguage(language) {
                 'Resident of Poschimgaon, Kewdala, and Dokhinpara but currently live abroad (Remitance fighter).',
                 'Commit to donating monthly or annually.',
                 'To be listed as a donor, one must pay the amount of money they have declared to donate to the Madrasa',
-                'Support the mission and values of our Madrasha as a dedicated well-wisher.'
+                'Support the mission and values of our Madrasha as a dedicated well-wisher.',
+                'Donors who donate more money, their names come first in the donor list.',
+                'If two donors donate the same amount, the one who donated earlier appears first in the donor list.',
             ],
             bn: [
                 'পশ্চিমগাঁও, কেউঢালা এবং দক্ষিণপাড়ার স্থায়ী বা অস্থায়ী বাসিন্দা হওয়া যাবে না।',
                 'পশ্চিম গাঁও, কেওডালে এবং দক্ষিণপাড়ার বাসিন্দা কিন্তু বর্তমানে বিদেশে থাকেন (রেমিট্যান্স যোদ্ধা)।',
                 'মাসিক বা বার্ষিক ভিত্তিতে নিয়মিত অনুদানের প্রতিশ্রুতিবদ্ধ ।',
                 'দাতা হিসেবে তালিকাভুক্ত হতে হলে, মাদ্রাসায় অনুদানের ঘোষণা করা অর্থের পরিমাণ অবশ্যই দিতে হবে।',
-                'একজন নিবেদিতপ্রাণ শুভাকাঙ্ক্ষী হিসেবে আমাদের মাদ্রাসার লক্ষ্য এবং মূল্যবোধকে সমর্থন করতে হবে।'
+                'একজন নিবেদিতপ্রাণ শুভাকাঙ্ক্ষী হিসেবে আমাদের মাদ্রাসার লক্ষ্য এবং মূল্যবোধকে সমর্থন করতে হবে।',
+                'যারা বেশি অর্থ দান করেন, তাদের নাম দাতা তালিকায় প্রথমে আসে।',
+                'যদি দুজন দাতা একই পরিমাণ দান করেন, তাহলে যিনি আগে দান করেছিলেন, তিনি দাতা তালিকায় প্রথমে উপস্থিত হন।'
             ]
         },
         'contact-us-title': {
@@ -184,7 +188,7 @@ function setLanguage(language) {
         },
         'donor3-contribution': {
             en: 'Contribution: 10,000 taka /year',
-            bn: 'অনুদান: ১০,000 টাকা প্রতি বছর'
+            bn: 'অনুদান: ১০,০০০ টাকা প্রতি বছর'
         },
         'donor4-name': {
             en: 'Abdullah Al Mamun',
@@ -283,20 +287,24 @@ function setLanguage(language) {
             bn: 'অনুদান: ৫,000 টাকা /বছর'
         },
         'donor9-name': {
-            en: 'Donor Name 9',
-            bn: 'দাতা নাম ৯'
+            en: 'Md. Nuruzzaman Sarker',
+            bn: 'মোঃ নুরুজ্জামান সরকার'
         },
         'donor9-designation': {
-            en: 'Architect',
-            bn: 'স্থপতি'
+            en: 'Director',
+            bn: 'পরিচালক'
+        },
+        'donor9-position': {
+            en: 'Waterline Ship Design & Consultant. Motijheel,Dhaka.',
+            bn: 'ওয়াটারলাইন শিপ ডিজাইন অ্যান্ড কনসালটেন্ট। মতিঝিল, ঢাকা।'
         },
         'donor9-address': {
-            en: 'Berlin, Germany',
-            bn: 'বার্লিন, জার্মানি'
+            en: 'Matuail, kadamtoli, Dhaka.',
+            bn: 'মাতুয়াইল, কদমতলী, ঢাকা।'
         },
         'donor9-contribution': {
-            en: 'Contribution: $800',
-            bn: 'অনুদান: $৮০০'
+           en: 'Contribution: 10,000 taka /year',
+            bn: 'অনুদান: ১০,০০০ টাকা প্রতি বছর'
         },
         'contact-link-text': {
             en: 'Contact Us',
@@ -380,22 +388,42 @@ function setLanguage(language) {
         },
         
         'migrant2-name': {
+            en: 'Syekh Kawsar Ahmed',
+            bn: 'শেখ কাওসার আহমেদ'
+        },
+        'migrant2-designation': {
+            en: 'Imam',
+            bn: 'ইমাম'
+        },
+        'migrant2-position': {
+            en: 'Mosjid Al Abeat, Taef, Saudi Arabia',
+            bn: 'মসজিদ আল আবেআত, তায়েফ, সৌদি আরব'
+        },
+        'migrant2-address': {
+            en: 'Taef, Saudi Arabia',
+            bn: 'তায়েফ, সৌদি আরব'
+        },
+        'migrant2-contribution': {
+            en: 'Contribution: 20,000 taka /year',
+            bn: 'অনুদান: 20,000 টাকা /বছর এবং অন্যান্য ধরনের অনুদান'
+        },
+        'migrant3-name': {
             en: 'Parvez Ahmed',
             bn: 'পারভেজ আহমেদ'
         },
-        'migrant2-designation': {
+        'migrant3-designation': {
             en: 'Business Analyst',
             bn: 'বিজনেস অ্যানালিস্ট'
         },
-        'migrant2-position': {
+        'migrant3-position': {
             en: 'Studynet Pvt Ltd, Melbourne, Australia',
             bn: 'স্টাডিনেট প্রাইভেট লিমিটেড, মেলবোর্ন, অস্ট্রেলিয়া'
         },
-        'migrant2-address': {
+        'migrant3-address': {
             en: 'Melbourne, Australia',
             bn: 'মেলবোর্ন, অস্ট্রেলিয়া'
         },
-        'migrant2-contribution': {
+        'migrant3-contribution': {
             en: 'Contribution: 10,000 taka /year',
             bn: 'অনুদান: ১০,000 টাকা /বছর'
         },
