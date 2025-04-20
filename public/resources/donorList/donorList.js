@@ -427,6 +427,23 @@ function setLanguage(language) {
             en: 'Contribution: 10,000 taka /year',
             bn: 'অনুদান: ১০,000 টাকা /বছর'
         },
+        'migrant4-name': {
+            en: 'Md Amir Hamza',
+            bn: 'মোঃ আমির হামজা'
+        },
+        'migrant4-designation': {
+            en: 'Employee',
+            bn: 'চাকরিজীবী'
+        },
+        
+        'migrant4-address': {
+            en: 'Qatar',
+            bn: 'কাতার'
+        },
+        'migrant4-contribution': {
+            en: 'Contribution: 5,000 taka /year',
+            bn: 'অনুদান:৫,০০০ টাকা /বছর'
+        },
         'overseas-donor8-name': {
             en: 'Donor Name 8',
             bn: 'দাতা নাম ৮'
