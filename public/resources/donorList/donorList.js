@@ -306,6 +306,26 @@ function setLanguage(language) {
            en: 'Contribution: 10,000 taka /year',
             bn: 'অনুদান: ১০,০০০ টাকা প্রতি বছর'
         },
+        'donor10-name': {
+            en: 'Md Arshad Sharker',
+            bn: 'মোঃ এরশাদ সরকার'
+        },
+        'donor10-designation': {
+            en: 'Businessman',
+            bn: 'ব্যবসায়ী'
+        },
+        'donor10-position': {
+            en: 'Mohammad Arshad Sharker Trading & Contacting Service W.L.L',
+            bn: 'মোহাম্মদ এরশাদ সরকার ট্রেডিং এবং কন্টাক্টিং সার্ভিস ডব্লিউ.এল.এল.।'
+        },
+        'donor10-address': {
+            en: 'Qatar',
+            bn: 'কাতার'
+        },
+        'donor10-contribution': {
+           en: 'Contribution: 5,000 taka /year',
+            bn: 'অনুদান: ৫,০০০ টাকা প্রতি বছর'
+        },
         'contact-link-text': {
             en: 'Contact Us',
             bn: 'যোগাযোগ করুন'
