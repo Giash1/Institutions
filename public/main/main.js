@@ -73,7 +73,7 @@ function setLanguage(language) {
     const elements = {
         'main-title': {
             en: 'Welcome to Poschim Gaon Madrasha -E- Islamia Jameul Ulum',
-            bn: 'পশ্চিমগাঁও মাদ্রাসা -ই- ইসলামিয়া জামেউল উলুমে স্বাগতম'
+            bn: 'পশ্চিমগাঁও মাদ্রাসা-ই-ইসলামিয়া জামেউল উলুম'
         },
         'main-description': {
             en: 'Providing quality Islamic education along with modern academic subjects.',
