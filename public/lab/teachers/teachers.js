@@ -174,19 +174,19 @@ function setLanguage(language) {
             ]
         },
         'teacher6-name': {
-            en: 'Rahatul Islam',
-            bn: 'রাহাতুল ইসলাম'
+            en: 'Adnan Bhuiyan Tushar, BSc(civil engineering )',
+            bn: 'আদনান ভূঁইয়া তুষার, বিএসসি (সিভিল ইঞ্জিনিয়ারিং)'
         },
         'teacher6-designation': {
             en: [
-                'Homeopath, Private Farmacy',
+                'Civil Engineer, BRAC',
                 'Part time instructor, Computer Lab Poschim Gaon Madrasa',
-                'Expert in English Language'
+                'Expert in English English, Mathematics and Computer'
             ],
             bn: [
-                'হোহোমিওপ্যাথ, বেসরকারি ফার্মেসি',
+                'সিভিল ইঞ্জিনিয়ার, ব্র্যাক',
                 'খন্ডকালীন প্রশিক্ষক, কম্পিউটার ল্যাব পশ্চিমগাঁও মাদ্রাসা',
-                'ইংরেজি ভাষার বিশেষজ্ঞ'
+                'ইংরেজি, গণিত এবং কম্পিউটার বিশেষজ্ঞ'
             ]
         },
         'teacher7-name': {
