@@ -117,8 +117,7 @@ function setLanguage(language) {
                 'If two donors donate the same amount, the one who donated earlier appears first in the donor list.',
             ],
             bn: [
-                'পশ্চিমগাঁও, কেউঢালা এবং দক্ষিণপাড়ার স্থায়ী বা অস্থায়ী বাসিন্দা হওয়া যাবে না।',
-                'পশ্চিম গাঁও, কেওডালে এবং দক্ষিণপাড়ার বাসিন্দা কিন্তু বর্তমানে বিদেশে থাকেন (রেমিট্যান্স যোদ্ধা)।',
+                
                 'মাসিক বা বার্ষিক ভিত্তিতে নিয়মিত অনুদানের প্রতিশ্রুতিবদ্ধ ।',
                 'দাতা হিসেবে তালিকাভুক্ত হতে হলে, মাদ্রাসায় অনুদানের ঘোষণা করা অর্থের পরিমাণ অবশ্যই দিতে হবে।',
                 'একজন নিবেদিতপ্রাণ শুভাকাঙ্ক্ষী হিসেবে আমাদের মাদ্রাসার লক্ষ্য এবং মূল্যবোধকে সমর্থন করতে হবে।',
@@ -369,8 +368,8 @@ function setLanguage(language) {
             bn: 'অনাবাসী দাতা'  // Donors who live outside the territory but in Bangladesh
         },
         'migrant-btn-text': {
-            en: 'Foreign Resident Donors',
-            bn: 'প্রবাসী দাতা'  // Donors who are from the territory but live abroad
+            en: 'Resident Donors',
+            bn: 'আবাসিক দাতা'  // Donors who are from the territory but live abroad
         },
         
         'non-resident-title': {
@@ -382,12 +381,12 @@ function setLanguage(language) {
             bn: 'এই দাতারা আমাদের এলাকার বাইরে কিন্তু বাংলাদেশের মধ্যে বসবাস করেন। তারা দেশের অন্যান্য অঞ্চলে বসবাস করার সময় আমাদের মাদ্রাসায় অবদান রাখেন।'
         },
         'foreign-resident-title': {
-            en: 'Foreign Resident Donors',
-            bn: 'প্রবাসী দাতা'
+            en: 'Resident Donors',
+            bn: 'আবাসিক দাতা'
         },
         'foreign-resident-text': {
-            en: 'These donors are originally from our local community but currently live abroad. They support our madrasha through their foreign earnings.',
-            bn: 'এই দাতারা মূলত আমাদের স্থানীয় সম্প্রদায়ের অংশ কিন্তু বর্তমানে বিদেশে বসবাস করেন। তারা তাদের বিদেশী আয় থেকে আমাদের মাদ্রাসাকে সহায়তা করেন।'
+            en: 'These donors are originally from our local community .',
+            bn: 'এই দাতারা মূলত আমাদের স্থানীয় সম্প্রদায়ের অংশ '
         },
         'click-instruction-text': {
             en: 'Click below to view donor lists',
