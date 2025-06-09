@@ -326,6 +326,40 @@ function setLanguage(language) {
            en: 'Contribution: 5,000 taka /year',
             bn: 'অনুদান: ৫,০০০ টাকা প্রতি বছর'
         },
+        'donor11-name': {
+            en: 'Eng Md Salim Hossain',
+            bn: 'ইঞ্জিনিয়ার মোঃ সেলিম হোসেন'
+        },
+        'donor11-designation': {
+            en: 'Businessman',
+            bn: 'ব্যবসায়ী'
+        },
+       
+        'donor11-address': {
+            en: 'Noraipur, Demra, Dhaka.',
+            bn: 'নরাইপুর, ডেমরা, ঢাকা।'
+        },
+        'donor11-contribution': {
+           en: 'Contribution: 10,000 taka /year',
+            bn: 'অনুদান: ১০,০০০ টাকা প্রতি বছর'
+        },
+        'donor12-name': {
+            en: 'Jisan Ahmed',
+            bn: 'জিসান আহমেদ'
+        },
+        
+        'donor12-position': {
+            en: 'QC Inspector, Saudi Arabia',
+            bn: 'কিউসি ইন্সপেক্টর, সৌদি আরব'
+        },
+        'donor12-address': {
+            en: 'Daudkandi, Comilla',
+            bn: 'দাউদকান্দি,  কুমিল্লা।'
+        },
+        'donor12-contribution': {
+           en: 'Contribution: 5,000 taka /year',
+            bn: 'অনুদান: ৫,০০০ টাকা প্রতি বছর'
+        },
         'contact-link-text': {
             en: 'Contact Us',
             bn: 'যোগাযোগ করুন'
