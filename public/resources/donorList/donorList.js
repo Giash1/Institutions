@@ -512,7 +512,7 @@ function setLanguage(language) {
         },
         'migrant5-contribution': {
             en: 'Contribution: 5,000 taka /year',
-            bn: 'অনুদান:৫,০০০ টাকা /বছর'
+            bn: 'অনুদান:৫,০০০ টাকা /বছর এবং অন্যান্য ধরনের অনুদান'
         },
         'overseas-donor8-name': {
             en: 'Donor Name 8',
