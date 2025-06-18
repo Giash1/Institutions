@@ -497,6 +497,23 @@ function setLanguage(language) {
             en: 'Contribution: 5,000 taka /year',
             bn: 'অনুদান:৫,০০০ টাকা /বছর'
         },
+        'migrant5-name': {
+            en: 'Mohammad Asgar Hossain Khokon',
+            bn: 'মুহাম্মদ আজগর হোসেন খোকন'
+        },
+        'migrant5-designation': {
+            en: 'Managing Director, A3 Apparels',
+            bn: 'ম্যানেজিং ডিরেক্টর, এ৩ এ্যাপারেলস'
+        },
+        
+        'migrant5-address': {
+            en: 'Sarulia, Demra, Dhaka - 1361',
+            bn: 'সারুলিয়া, ডেমরা, ঢাকা - ১৩৬১।'
+        },
+        'migrant5-contribution': {
+            en: 'Contribution: 5,000 taka /year',
+            bn: 'অনুদান:৫,০০০ টাকা /বছর'
+        },
         'overseas-donor8-name': {
             en: 'Donor Name 8',
             bn: 'দাতা নাম ৮'
