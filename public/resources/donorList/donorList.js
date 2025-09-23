@@ -415,8 +415,8 @@ function setLanguage(language) {
             bn: 'স্টকহোম, সুইডেন'
         },
         'migrant0-contribution': {
-            en: 'Contribution: 50.000 taka /year and other types of donations',
-            bn: 'অনুদান: ৫০,০০০টাকা /বছর এবং অন্যান্য ধরনের অনুদান'
+            en: 'Contribution: 40.000 taka /year and other types of donations',
+            bn: 'অনুদান: 40,000 টাকা /বছর এবং অন্যান্য ধরনের অনুদান'
         },
         
         'migrant1-name': {
