@@ -65,8 +65,8 @@ function setLanguage(language) {
         bn: 'পশ্চিমগাঁও মাদ্রাসা কম্পিউটার ল্যাব উদ্বোধনের তারিখ'
     },
     'lab-opening-date': {
-        en: '<strong>November 11, 2024</strong>',
-        bn: '<strong>১১ নভেম্বর, ২০২৪</strong>'
+        en: 'November 11, 2024',
+        bn: '১১ নভেম্বর, ২০২৪'
     },
     'founder-title': {
         en: 'Founder of the Poschimgaon Madrasha Computer Lab',
