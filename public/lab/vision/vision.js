@@ -60,6 +60,46 @@ function setLanguage(language) {
             en: 'Our Vision: Empowering Minds for a Bright Future',
             bn: 'আমাদের দৃষ্টি: উজ্জ্বল ভবিষ্যতের জন্য মেধা বিকাশ'
         },
+        'lab-opening-title': {
+        en: 'Poschimgaon Madrasha Computer Lab Opening Date',
+        bn: 'পশ্চিমগাঁও মাদ্রাসা কম্পিউটার ল্যাব উদ্বোধনের তারিখ'
+    },
+    'lab-opening-date': {
+        en: '<strong>November 11, 2024</strong>',
+        bn: '<strong>১১ নভেম্বর, ২০২৪</strong>'
+    },
+    'founder-title': {
+        en: 'Founder of the Poschimgaon Madrasha Computer Lab',
+        bn: 'পশ্চিমগাঁও মাদ্রাসা কম্পিউটার ল্যাবের প্রতিষ্ঠাতা'
+    },
+    'founder-name': {
+        en: 'Mohammad Giash Uddin Bhuiyan, MSc (Triple MSc)',
+        bn: 'মোহাম্মদ গিয়াস উদ্দিন ভূঁইয়া, এমএসসি (ট্রিপল এমএসসি)'
+    },
+    'founder-role': {
+        en: 'Developer of the Poschimgaon Madrasha Website',
+        bn: 'পশ্চিমগাঁও মাদ্রাসা ওয়েবসাইটের ডেভেলপার'
+    },
+    'founder-location': {
+        en: 'Stockholm, Sweden',
+        bn: 'স্টকহোম, সুইডেন'
+    },
+    'founder-description': {
+        en: 'A JavaScript Full-Stack Developer, social counsellor, and community educator dedicated to promoting digital literacy for Madrasha students. He established the Computer Lab and developed the official website to support modern learning.',
+        bn: 'একজন জাভাস্ক্রিপ্ট ফুল-স্ট্যাক ডেভেলপার, সামাজিক পরামর্শদাতা এবং কমিউনিটি শিক্ষক যিনি মাদ্রাসা ছাত্রদের জন্য ডিজিটাল সাক্ষরতা প্রচারে নিবেদিত। তিনি কম্পিউটার ল্যাব প্রতিষ্ঠা করেছেন এবং আধুনিক শিক্ষাকে সমর্থন করার জন্য অফিসিয়াল ওয়েবসাইট তৈরি করেছেন।'
+    },
+    'publications-title': {
+        en: 'Published Works:',
+        bn: 'প্রকাশিত গ্রন্থসমূহ:'
+    },
+    'book1-title': {
+        en: 'Democracy and Political Parties in Theoretical & Practical Perspective',
+        bn: 'তাত্ত্বিক ও ব্যবহারিক দৃষ্টিকোণে গণতন্ত্র এবং রাজনৈতিক দল'
+    },
+    'book2-title': {
+        en: 'Electoral Violence in Bangladesh: A Study of the 2001 & 2008 Parliamentary Elections',
+        bn: 'বাংলাদেশে নির্বাচনী সহিংসতা: ২০০১ ও ২০০৮ সালের সংসদীয় নির্বাচনের একটি গবেষণা'
+    },
         'why-opened-title': {
             en: 'Why We Opened This Lab',
             bn: 'আমরা কেন এই ল্যাবটি খুললাম'
