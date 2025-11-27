@@ -99,6 +99,14 @@ function setLanguage(language) {
     'book2-title': {
         en: 'Electoral Violence in Bangladesh: A Study of the 2001 & 2008 Parliamentary Elections',
         bn: 'বাংলাদেশে নির্বাচনী সহিংসতা: ২০০১ ও ২০০৮ সালের সংসদীয় নির্বাচনের একটি গবেষণা'
+        },
+    'founder-linkedin-text': {
+        en: 'To know more about the founder visit: ',
+        bn: 'প্রতিষ্ঠাতা সম্পর্কে আরও জানতে ভিজিট করুন: '
+    },
+    'founder-linkedin-link': {
+        en: 'LinkedIn Profile',
+        bn: 'লিংকডইন প্রোফাইল'
     },
         'why-opened-title': {
             en: 'Why We Opened This Lab',
@@ -108,6 +116,22 @@ function setLanguage(language) {
             en: 'We envisioned a space where students could develop essential skills in Computer Science and English, ensuring they are well-prepared for modern educational and professional challenges. His goal was to provide young learners with the tools they need to succeed in a rapidly evolving digital world while maintaining a strong foundation in Islamic education.',
             bn: 'আমরা এমন একটি স্থান কল্পনা করেছি যেখানে শিক্ষার্থীরা কম্পিউটার বিজ্ঞান এবং ইংরেজিতে প্রয়োজনীয় দক্ষতা বিকাশ করতে পারে, নিশ্চিত করে যে তারা আধুনিক শিক্ষাগত এবং পেশাদার চ্যালেঞ্জগুলির জন্য ভালভাবে প্রস্তুত। তার লক্ষ্য ছিল তরুণ শিক্ষার্থীদের দ্রুত পরিবর্তিত ডিজিটাল বিশ্বে সফল হওয়ার জন্য প্রয়োজনীয় সরঞ্জামগুলি সরবরাহ করা, একই সাথে ইসলামী শিক্ষার একটি শক্ত ভিত্তি বজায় রাখা।'
         },
+        'lab-purpose-title': {
+        en: 'Main Purpose of the Computer Lab',
+        bn: 'কম্পিউটার ল্যাবের মূল উদ্দেশ্য'
+    },
+    'lab-purpose-p1': {
+        en: 'The main purpose of the Computer Lab is to help students learn English, Mathematics and Bangla so they can better understand and explain the Qur\'an and Hadith in Arabic, English, and Bangla.',
+        bn: 'কম্পিউটার ল্যাব প্রতিষ্ঠার মূল উদ্দেশ্য হলো শিক্ষার্থীদের ইংরেজি, গণিত ও বাংলা শেখানো, যাতে তারা আরবি, ইংরেজি ও বাংলায় কুরআন ও হাদীসকে আরও ভালোভাবে বুঝতে ও ব্যাখ্যা করতে সক্ষম হয়।'
+    },
+    'lab-purpose-p2': {
+        en: 'Through computer education, students gain the ability to search for authentic Islamic resources, access global knowledge, and use essential software for their daily academic and personal needs.',
+        bn: 'কম্পিউটার শিক্ষার মাধ্যমে শিক্ষার্থীরা নির্ভরযোগ্য ইসলামী উপকরণ খুঁজে পাওয়া, বৈশ্বিক জ্ঞান অর্জন এবং দৈনন্দিন শিক্ষা ও ব্যক্তিগত প্রয়োজনের গুরুত্বপূর্ণ সফটওয়্যার ব্যবহার করার দক্ষতা অর্জন করবে।'
+    },
+    'lab-purpose-p3': {
+        en: 'With these skills, they will be able to share the beauty of Islamic teachings with people around the world.',
+        bn: 'এই জ্ঞান ও দক্ষতার মাধ্যমে তারা বিশ্বের সামনে ইসলামের সৌন্দর্য তুলে ধরতে সক্ষম হবে।'
+    },
         'importance-title': {
             en: 'The Importance of Our Lab',
             bn: 'আমাদের ল্যাবের গুরুত্ব'

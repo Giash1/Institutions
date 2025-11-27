@@ -55,7 +55,77 @@
     padding: 10px 0;
     white-space: nowrap;
 }
+/* ...existing code... */
 
+.lab-info-section, .founder-section {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.founder-card {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.founder-image {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.founder-details {
+    flex: 1;
+    min-width: 300px;
+}
+
+.founder-details h3 {
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+.founder-publications {
+    margin-top: 15px;
+}
+
+.founder-publications ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.founder-publications li {
+    margin: 10px 0;
+}
+
+.founder-publications a {
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.founder-publications a:hover {
+    color: #ff4500;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .founder-card {
+        flex-direction: column;
+    }
+    
+    .founder-image {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
 /* Styles for the "More" button */
 #moreBtn {
     color: blue;
