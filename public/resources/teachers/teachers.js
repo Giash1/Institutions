@@ -78,7 +78,7 @@ function setLanguage(language) {
         },
         'teacher6-name': {
             en: 'Mawlana Mufti Monir Hossain',
-            bn: 'মাওলানা মুফতি মোনির হোসেন'
+            bn: 'মাওলানা মুফতি মনির হোসাইন'
         },
         'teacher6-designation': {
             en: 'Designation: Resident In-charge',

@@ -1,0 +1,171 @@
+/* Main content styling */
+#home-cleaning-content {
+    background-color: var(--background-overlay);
+    padding: 30px;
+    margin: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    text-align: center;
+}
+
+#home-cleaning-content h1 {
+    font-size: var(--h1-font-size);
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#home-cleaning-content p {
+    font-size: var(--p-font-size);
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+#home-cleaning-content h2 {
+    font-size: var(--h2-font-size);
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.donor-marquee {
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+#language-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#language-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--background-overlay);
+    color: var(--primary-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#language-buttons button:hover {
+    background-color: var(--primary-color);
+    color: var(--background-overlay);
+}
+
+#language-buttons button:focus {
+    outline: none;
+    box-shadow: 0 0 5px var(--primary-color);
+}
+
+/* Introductory Text Styles */
+.intro-text {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.intro-text h2 {
+    font-size: 32px;
+   
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro-text p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Board Section Styling */
+.board-section {
+    margin: 40px 0;
+}
+
+.board-section h2 {
+    font-size: 28px;
+   
+    margin-bottom: 20px;
+    border-bottom: 3px solid hsl(313, 20%, 81%);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+/* Teachers Section Styling (Board Members) */
+.teachers-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Individual Teacher Card (Board Member) */
+.teacher-card {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    width: calc(33.333% - 40px); /* Three cards in a row with space */
+    box-sizing: border-box;
+}
+
+.teacher-image {
+    width: 100%; /* Responsive image */
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: 15px;
+}
+
+.teacher-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.teacher-card p {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    margin: 5px 0;
+}
+
+/* Hide alt text when image doesn't load */
+.teacher-image[alt] {
+    font-size: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .teacher-card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .teacher-card {
+        width: 100%;
+    }
+    
+    #home-cleaning-content {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    #home-cleaning-content h1 {
+        font-size: var(--h3-font-size);
+    }
+
+    #home-cleaning-content h2 {
+        font-size: var(--p-font-size);
+    }
+}

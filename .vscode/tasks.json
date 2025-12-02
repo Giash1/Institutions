@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "add_styles",
+			"type": "shell",
+			"command": "echo \"Adding featured donor styles to landDonors.css\""
+		}
+	]
+}

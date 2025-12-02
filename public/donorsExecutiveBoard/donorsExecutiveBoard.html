@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <title>Donors & Executive Board | Poschimgaon Madrasha</title>
+    <link rel="stylesheet" href="/donorsExecutiveBoard/donorsExecutiveBoard.css">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/heading/heading.css">
+    <link rel="stylesheet" href="/nav/nav.css">
+    <link rel="stylesheet" href="/footer/footer.css">
+</head>
+<body>
+    <marquee behavior="scroll" direction="left" scrollamount="8" class="donor-marquee">
+        🕌 Honoring Our Supporters & Leaders | Donors & Executive Board of Poschimgaon Madrasha 🕌
+    </marquee>
+
+    <div id="heading"></div>
+    <div id="nav"></div>
+
+    <div id="home-lab-content">
+        <video id="background-video" autoplay muted loop playsinline>
+            <source src="/images/reading-quran.mp4" type="video/mp4">
+        </video>
+        
+        <div id="language-buttons">
+            <button onclick="setLanguage('en')">English</button>
+            <button onclick="setLanguage('bn')">বাংলা</button>
+        </div>
+
+        <h1 id="main-title">Donors & Executive Board</h1>
+        
+        <section class="intro-text">
+            <p id="intro-description">Explore the dedicated individuals and organizations that support our institution through their generous contributions and wise leadership.</p>
+        </section>
+
+        <!-- Navigation Cards -->
+        <section class="lab-cards">
+            <div class="lab-card" onclick="window.location.href='/donorsExecutiveBoard/executiveBoard/executiveBoard.html'">
+                <div class="card-icon">👥</div>
+                <h3 id="card1-title">Executive Board</h3>
+                <p id="card1-description">Meet the leaders who guide our institution with wisdom and dedication.</p>
+            </div>
+
+            <div class="lab-card" onclick="window.location.href='/donorsExecutiveBoard/landDonors/landDonors.html'">
+                <div class="card-icon">🏡</div>
+                <h3 id="card2-title">Land Donors</h3>
+                <p id="card2-description">Honoring those who donated land for our Madrasha and Mosque.</p>
+            </div>
+
+            <div class="lab-card" onclick="window.location.href='/donorsExecutiveBoard/keyContributors/keyContributors.html'">
+                <div class="card-icon">💰</div>
+                <h3 id="card3-title">Key Contributors</h3>
+                <p id="card3-description">Recognizing our generous financial supporters and donors.</p>
+            </div>
+
+            <div class="lab-card" onclick="window.location.href='/donorsExecutiveBoard/managementCommitee/managementCommitee.html'">
+                <div class="card-icon">📋</div>
+                <h3 id="card4-title">Management Committee</h3>
+                <p id="card4-description">Our dedicated committee members managing daily operations.</p>
+            </div>
+        </section>
+    </div>
+
+    <div id="footer"></div>
+    <script src="/donorsExecutiveBoard/donorsExecutiveBoard.js"></script>
+</body>
+</html>
