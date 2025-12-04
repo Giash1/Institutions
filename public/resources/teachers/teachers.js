@@ -309,25 +309,23 @@ window.addEventListener('languageChange', function(event) {
 });
 
 // Initialize with current stored language or default to English
-    // Initialize with current stored language or default to English
-    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
-    updateResourcesTeachersContent(currentLanguage);
-    
-    // Initially hide the "More" content and "Less" button
-    const moreContent = document.getElementById("moreContent");
-    const moreBtn = document.getElementById("moreBtn");
-    const lessBtn = document.getElementById("lessBtn");
+const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+updateResourcesTeachersContent(currentLanguage);
 
-    if (moreContent) moreContent.style.display = "none";
-    if (moreBtn) {
-        moreBtn.style.display = "inline-block";
-        moreBtn.innerText = currentLanguage === 'bn' ? "আরও" : "More";
-    }
-    if (lessBtn) {
-        lessBtn.style.display = "none";
-        lessBtn.innerText = currentLanguage === 'bn' ? "কম" : "Less";
-    }
-});
+// Initially hide the "More" content and "Less" button
+const moreContent = document.getElementById("moreContent");
+const moreBtn = document.getElementById("moreBtn");
+const lessBtn = document.getElementById("lessBtn");
+
+if (moreContent) moreContent.style.display = "none";
+if (moreBtn) {
+    moreBtn.style.display = "inline-block";
+    moreBtn.innerText = currentLanguage === 'bn' ? "আরও" : "More";
+}
+if (lessBtn) {
+    lessBtn.style.display = "none";
+    lessBtn.innerText = currentLanguage === 'bn' ? "কম" : "Less";
+}
 
 // Load components
 loadHTML('heading', '../../heading/heading.html', '../../heading/heading.css', '../../heading/heading.js');

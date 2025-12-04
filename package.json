@@ -1,7 +1,7 @@
 {
-  "name": "vi4dig-services-ab",
+  "name": "poschimgaon-madrasha",
   "version": "1.0.0",
-  "description": "Cleaning Company Website: Html, Css, JavaScript and Node.js",
+  "description": "Poschimgaon Madrasha Website: Html, Css, JavaScript and Node.js",
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Giash1/Vi4Dig-Services-AB.git"
+    "url": "git+https://github.com/Giash1/institutions.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Giash1/Vi4Dig-Services-AB/issues"
+    "url": "https://github.com/Giash1/institutions/issues"
   },
-  "homepage": "https://github.com/Giash1/Vi4Dig-Services-AB#readme",
+  "homepage": "https://github.com/Giash1/institutions#readme",
   "dependencies": {
     "express": "^4.19.2"
   }
