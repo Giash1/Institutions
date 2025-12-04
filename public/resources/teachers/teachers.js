@@ -1,4 +1,4 @@
-function setLanguage(language) {
+function updateResourcesTeachersContent(language) {
     const elements = {
         'lab-services-title': {
             en: 'Madrasah Services',
@@ -240,6 +240,19 @@ function setLanguage(language) {
             document.getElementById(key).innerText = elements[key][language];
         }
     }
+
+    // Update More/Less Button Text based on current state
+    const moreContent = document.getElementById("moreContent");
+    const moreBtn = document.getElementById("moreBtn");
+    const lessBtn = document.getElementById("lessBtn");
+    
+    if (moreContent && moreBtn && lessBtn) {
+        if (moreContent.style.display === "none" || moreContent.style.display === "") {
+             moreBtn.innerText = language === 'bn' ? "আরও" : "More";
+        } else {
+             lessBtn.innerText = language === 'bn' ? "কম" : "Less";
+        }
+    }
 }
 
 // Function to dynamically load HTML components
@@ -274,33 +287,45 @@ function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
     const lessBtn = document.getElementById("lessBtn");
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
 
     if (moreContent.style.display === "none" || moreContent.style.display === "") {
         moreContent.style.display = "flex";
         moreContent.style.flexWrap = "wrap";
         moreBtn.style.display = "none";
         lessBtn.style.display = "inline-block";
-        moreBtn.innerText = "Less"; // Change button text to "Less"
+        lessBtn.innerText = currentLang === 'bn' ? "কম" : "Less";
     } else {
         moreContent.style.display = "none";
         moreBtn.style.display = "inline-block";
         lessBtn.style.display = "none";
-        moreBtn.innerText = "More"; // Change button text to "More"
+        moreBtn.innerText = currentLang === 'bn' ? "আরও" : "More";
     }
 }
 
-// Initially hide the "More" content and "Less" button
-document.addEventListener("DOMContentLoaded", () => {
+// Listen for global language change event
+window.addEventListener('languageChange', function(event) {
+    updateResourcesTeachersContent(event.detail);
+});
+
+// Initialize with current stored language or default to English
+    // Initialize with current stored language or default to English
+    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    updateResourcesTeachersContent(currentLanguage);
+    
+    // Initially hide the "More" content and "Less" button
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
     const lessBtn = document.getElementById("lessBtn");
 
-    moreContent.style.display = "none";
+    if (moreContent) moreContent.style.display = "none";
     if (moreBtn) {
         moreBtn.style.display = "inline-block";
+        moreBtn.innerText = currentLanguage === 'bn' ? "আরও" : "More";
     }
     if (lessBtn) {
         lessBtn.style.display = "none";
+        lessBtn.innerText = currentLanguage === 'bn' ? "কম" : "Less";
     }
 });
 

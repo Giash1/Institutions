@@ -39,7 +39,7 @@ loadHTML('nav', '../../nav/nav.html', '../../nav/nav.css', '../../nav/nav.js');
 loadHTML('footer', '../../footer/footer.html', '../../footer/footer.css', '../../footer/footer.js');
 
 // Function to set the language
-function setLanguage(language) {
+function updateGalleryContent(language) {
     const elements = {
         'gallery-title': {
             en: 'Explore Our Vibrant Gallery',
@@ -115,6 +115,17 @@ function setLanguage(language) {
             document.getElementById(id).innerHTML = elements[id][language];
         }
     }
+
+    // Update More Button Text based on current state
+    const moreContent = document.getElementById("moreContent");
+    const moreBtn = document.getElementById("moreBtn");
+    if (moreContent && moreBtn) {
+        if (moreContent.style.display === "none" || moreContent.style.display === "") {
+             moreBtn.innerText = language === 'bn' ? "আরও" : "More";
+        } else {
+             moreBtn.innerText = language === 'bn' ? "কম" : "Less";
+        }
+    }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -125,13 +136,14 @@ document.addEventListener("DOMContentLoaded", function() {
     function toggleMore() {
         const moreContent = document.getElementById("moreContent");
         const moreBtn = document.getElementById("moreBtn");
+        const currentLang = localStorage.getItem('preferredLanguage') || 'en';
 
         if (moreContent.style.display === "none" || moreContent.style.display === "") {
             moreContent.style.display = "block";
-            moreBtn.innerText = "Less";
+            moreBtn.innerText = currentLang === 'bn' ? "কম" : "Less";
         } else {
             moreContent.style.display = "none";
-            moreBtn.innerText = "More";
+            moreBtn.innerText = currentLang === 'bn' ? "আরও" : "More";
         }
     }
 
@@ -140,7 +152,13 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// Listen for global language change event
+window.addEventListener('languageChange', function(event) {
+    updateGalleryContent(event.detail);
+});
+
 // Load initial content
 document.addEventListener('DOMContentLoaded', () => {
-    setLanguage(document.documentElement.lang || 'en');
+    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    updateGalleryContent(currentLanguage);
 });

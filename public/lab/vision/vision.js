@@ -42,19 +42,20 @@ loadHTML('footer', '../../footer/footer.html', '../../footer/footer.css', '../..
 function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
 
     // Check the actual computed style
     if (window.getComputedStyle(moreContent).display === "none") {
         moreContent.style.display = "block";
-        moreBtn.innerText = "Less";
+        moreBtn.innerText = currentLang === 'bn' ? "কম" : "Less";
     } else {
         moreContent.style.display = "none";
-        moreBtn.innerText = "More";
+        moreBtn.innerText = currentLang === 'bn' ? "আরও" : "More";
     }
 }
 
 // Function to set the language
-function setLanguage(language) {
+function updateVisionContent(language) {
     const elements = {
         'vision-title': {
             en: 'Our Vision: Empowering Minds for a Bright Future',
@@ -183,15 +184,32 @@ function setLanguage(language) {
             }
         }
     }
+
+    const moreBtn = document.getElementById("moreBtn");
+    const moreContent = document.getElementById("moreContent");
+    if (moreBtn && moreContent) {
+        const isExpanded = window.getComputedStyle(moreContent).display !== "none";
+        if (language === 'bn') {
+            moreBtn.innerText = isExpanded ? "কম" : "আরও";
+        } else {
+            moreBtn.innerText = isExpanded ? "Less" : "More";
+        }
+    }
 }
 
 // Add event listeners for language buttons
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById('language-en').addEventListener('click', () => setLanguage('en'));
-    document.getElementById('language-bn').addEventListener('click', () => setLanguage('bn'));
+    // Initial content update based on global language
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    updateVisionContent(currentLang);
 
     const moreContent = document.getElementById("moreContent");
     if (moreContent) {
         moreContent.style.display = "none";
     }
+});
+
+// Listen for global language change events
+window.addEventListener('languageChange', (event) => {
+    updateVisionContent(event.detail);
 });

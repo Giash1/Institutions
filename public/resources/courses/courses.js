@@ -42,18 +42,19 @@ loadHTML('footer', '../../footer/footer.html', '../../footer/footer.css', '../..
 function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
 
     if (moreContent.style.display === "none" || moreContent.style.display === "") {
         moreContent.style.display = "block";
-        moreBtn.innerText = "Less"; // Change button text to "Less"
+        moreBtn.innerText = currentLang === 'bn' ? "কম" : "Less";
     } else {
         moreContent.style.display = "none";
-        moreBtn.innerText = "More"; // Change button text to "More"
+        moreBtn.innerText = currentLang === 'bn' ? "আরও" : "More";
     }
 }
 
 // Function to set the language
-function setLanguage(language) {
+function updateCoursesContent(language) {
     const elements = {
         'departments-title': {
             en: 'Our Departments',
@@ -129,16 +130,37 @@ function setLanguage(language) {
             document.getElementById(id).innerHTML = elements[id][language];
         }
     }
+
+    // Update More Button Text based on current state
+    const moreContent = document.getElementById("moreContent");
+    const moreBtn = document.getElementById("moreBtn");
+    if (moreContent && moreBtn) {
+        if (moreContent.style.display === "none" || moreContent.style.display === "") {
+             moreBtn.innerText = language === 'bn' ? "আরও" : "More";
+        } else {
+             moreBtn.innerText = language === 'bn' ? "কম" : "Less";
+        }
+    }
 }
 
 // Add event listeners for language buttons
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById('language-en').addEventListener('click', () => setLanguage('en'));
-    document.getElementById('language-bn').addEventListener('click', () => setLanguage('bn'));
+    // Initial content update based on global language
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    updateCoursesContent(currentLang);
 
     // Set initial state for "More" content and button text
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
-    moreContent.style.display = "none";
-    moreBtn.innerText = "More";
+    if (moreContent) {
+        moreContent.style.display = "none";
+    }
+    if (moreBtn) {
+        moreBtn.innerText = "More";
+    }
+});
+
+// Listen for global language change events
+window.addEventListener('languageChange', (event) => {
+    updateCoursesContent(event.detail);
 });

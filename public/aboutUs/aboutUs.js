@@ -42,18 +42,19 @@ loadHTML('footer', '../footer/footer.html', '../footer/footer.css', '../footer/f
 function toggleMore() {
     const moreContent = document.getElementById('moreContent');
     const moreBtn = document.getElementById('moreBtn');
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
 
     if (moreContent.style.display === 'none' || moreContent.style.display === '') {
         moreContent.style.display = 'block';
-        moreBtn.textContent = 'Less'; // Change button text to "Less"
+        moreBtn.textContent = currentLang === 'bn' ? 'কম দেখুন' : 'Less';
     } else {
         moreContent.style.display = 'none';
-        moreBtn.textContent = 'More'; // Change button text to "More"
+        moreBtn.textContent = currentLang === 'bn' ? 'আরও দেখুন' : 'More';
     }
 }
 
 // Function to set the language
-function setLanguage(language) {
+function updateAboutUsContent(language) {
     const elements = {
         'about-title': {
             en: 'About Us',
@@ -159,13 +160,9 @@ function setLanguage(language) {
             en: 'Additional Information',
             bn: 'অতিরিক্ত তথ্য'
         },
-        'moreBtn': {
-            en: 'More',
-            bn: 'আরও দেখুন'
-        },
-        'lessBtn': {
-            en: 'Less',
-            bn: 'কম দেখুন'
+        'contact-page-btn': {
+            en: 'Go to Contact Us Page',
+            bn: 'যোগাযোগ পেজে যান'
         }
     };
 
@@ -175,13 +172,25 @@ function setLanguage(language) {
             element.textContent = elements[id][language];
         }
     }
+
+    const moreBtn = document.getElementById('moreBtn');
+    const moreContent = document.getElementById('moreContent');
+    if (moreBtn && moreContent) {
+        const isExpanded = moreContent.style.display === 'block';
+        if (language === 'bn') {
+            moreBtn.textContent = isExpanded ? 'কম দেখুন' : 'আরও দেখুন';
+        } else {
+            moreBtn.textContent = isExpanded ? 'Less' : 'More';
+        }
+    }
 }
 
-// Add event listeners for language buttons
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById('language-en').addEventListener('click', () => setLanguage('en'));
-    document.getElementById('language-bn').addEventListener('click', () => setLanguage('bn'));
+// Listen for global language change event
+window.addEventListener('languageChange', function(event) {
+    updateAboutUsContent(event.detail);
+});
 
+document.addEventListener("DOMContentLoaded", () => {
     // Set initial state for "More" content and button text
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
@@ -192,6 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
         moreBtn.innerText = moreBtn.dataset.more;
     }
 
-    // Set initial language based on document language or default to English
-    setLanguage(document.documentElement.lang || 'en');
+    // Initialize language
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    updateAboutUsContent(savedLanguage);
 });

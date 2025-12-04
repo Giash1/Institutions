@@ -28,18 +28,19 @@ loadHTML('footer', '../../footer/footer.html', '../../footer/footer.css', '../..
 function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
 
     if (moreContent.style.display === "none") {
         moreContent.style.display = "block";
-        moreBtn.innerText = "Less"; // Change button text to "Less"
+        moreBtn.innerText = currentLang === 'bn' ? "কম" : "Less";
     } else {
         moreContent.style.display = "none";
-        moreBtn.innerText = "More"; // Change button text to "More"
+        moreBtn.innerText = currentLang === 'bn' ? "আরও" : "More";
     }
 }
 
 // Function to set the language
-function setLanguage(language) {
+function updateExamsContent(language) {
     const elements = {
         'exam-terms-title': {
             en: 'Exam Terms and Norms',
@@ -84,6 +85,31 @@ function setLanguage(language) {
     };
 
     for (const id in elements) {
-        document.getElementById(id).innerHTML = elements[id][language];
+        const element = document.getElementById(id);
+        if (element) {
+            element.innerHTML = elements[id][language];
+        }
+    }
+
+    // Update More Button Text based on current state
+    const moreContent = document.getElementById("moreContent");
+    const moreBtn = document.getElementById("moreBtn");
+    if (moreContent && moreBtn) {
+        if (moreContent.style.display === "none") {
+             moreBtn.innerText = language === 'bn' ? "আরও" : "More";
+        } else {
+             moreBtn.innerText = language === 'bn' ? "কম" : "Less";
+        }
     }
 }
+
+// Listen for global language change event
+window.addEventListener('languageChange', function(event) {
+    updateExamsContent(event.detail);
+});
+
+// Initialize with current stored language or default to English
+document.addEventListener("DOMContentLoaded", () => {
+    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    updateExamsContent(currentLanguage);
+});

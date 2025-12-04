@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Function to set the language
-function setLanguage(language) {
+function updateDonorListContent(language) {
     const elements = {
         'donor-list-title': {
             en: 'Our Generous Donors',
@@ -132,6 +132,22 @@ function setLanguage(language) {
         'contact-us-description': {
             en: 'If you\'re interested in becoming a donor, please reach out to us through our contact page for more information on how you can help.',
             bn: 'আপনি যদি দাতা হতে আগ্রহী হন, অনুগ্রহ করে আমাদের যোগাযোগ পৃষ্ঠার মাধ্যমে আমাদের সাথে যোগাযোগ করুন কিভাবে আপনি সাহায্য করতে পারেন তার আরও তথ্যের জন্য।'
+        },
+        'moreBtn-overseas': {
+            en: 'More',
+            bn: 'আরও'
+        },
+        'lessBtn-overseas': {
+            en: 'Less',
+            bn: 'কম'
+        },
+        'moreBtn-migrant': {
+            en: 'More',
+            bn: 'আরও'
+        },
+        'lessBtn-migrant': {
+            en: 'Less',
+            bn: 'কম'
         },
         'donor1-name': {
             en: 'Dm Mosharaf Hossain',
@@ -547,12 +563,15 @@ function setLanguage(language) {
 }
 
 // Add event listeners for language buttons
+// Listen for global language change event
+window.addEventListener('languageChange', function(event) {
+    updateDonorListContent(event.detail);
+});
+
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById('language-en').addEventListener('click', () => setLanguage('en'));
-    document.getElementById('language-bn').addEventListener('click', () => setLanguage('bn'));
-    
-    // Set initial language
-    setLanguage('en');
+    // Initialize with current stored language or default to English
+    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    updateDonorListContent(currentLanguage);
     
     // Initially hide all donor sections and more content
     document.querySelectorAll('.donor-section').forEach(section => {

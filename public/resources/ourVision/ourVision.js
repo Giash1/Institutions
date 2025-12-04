@@ -42,12 +42,14 @@ loadHTML('footer', '../../footer/footer.html', '../../footer/footer.css', '../..
 function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+
     if (window.getComputedStyle(moreContent).display === "none") {
         moreContent.style.display = "block";
-        moreBtn.innerText = "Less";
+        moreBtn.innerText = currentLang === 'bn' ? "কম" : "Less";
     } else {
         moreContent.style.display = "none";
-        moreBtn.innerText = "More";
+        moreBtn.innerText = currentLang === 'bn' ? "আরও" : "More";
     }
 }
 
@@ -59,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Function to set the language
-function setLanguage(language) {
+function updateOurVisionContent(language) {
     const elements = {
         'vision-title': {
             en: 'Our Vision: Empowering Minds for a Bright Future',
@@ -117,10 +119,25 @@ function setLanguage(language) {
             document.getElementById(id).innerHTML = elements[id][language];
         }
     }
+
+    // Update More Button Text based on current state
+    const moreContent = document.getElementById("moreContent");
+    const moreBtn = document.getElementById("moreBtn");
+    if (moreContent && moreBtn) {
+        if (window.getComputedStyle(moreContent).display === "none") {
+             moreBtn.innerText = language === 'bn' ? "আরও" : "More";
+        } else {
+             moreBtn.innerText = language === 'bn' ? "কম" : "Less";
+        }
+    }
 }
 
 // Add event listeners for language buttons
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById('language-en').addEventListener('click', () => setLanguage('en'));
-    document.getElementById('language-bn').addEventListener('click', () => setLanguage('bn'));
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    updateOurVisionContent(currentLang);
+});
+
+window.addEventListener('languageChange', (event) => {
+    updateOurVisionContent(event.detail);
 });
