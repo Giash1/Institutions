@@ -42,13 +42,14 @@ loadHTML('footer', '../../footer/footer.html', '../../footer/footer.css', '../..
 function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
 
-    if (moreContent.style.display === "none" || moreContent.style.display === "") {
+    if (moreContent.style.display === "none") {
         moreContent.style.display = "block";
-        moreBtn.innerText = "Less"; // Change button text to "Less"
+        moreBtn.innerText = currentLang === 'bn' ? "কম" : "Less";
     } else {
         moreContent.style.display = "none";
-        moreBtn.innerText = "More"; // Change button text to "More"
+        moreBtn.innerText = currentLang === 'bn' ? "আরও" : "More";
     }
 }
 
@@ -169,23 +170,31 @@ function updateAdmissionContent(language) {
             document.getElementById(id).innerHTML = elements[id][language];
         }
     }
+
+    // Update "More" button text based on current language and state
+    const moreBtn = document.getElementById("moreBtn");
+    const moreContent = document.getElementById("moreContent");
+    if (moreBtn && moreContent) {
+        const isExpanded = moreContent.style.display === "block";
+        if (language === 'bn') {
+            moreBtn.innerText = isExpanded ? "কম" : "আরও";
+        } else {
+            moreBtn.innerText = isExpanded ? "Less" : "More";
+        }
+    }
 }
 
 // Add event listeners for language buttons
 document.addEventListener("DOMContentLoaded", () => {
-    // Initial content update based on global language
-    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
-    updateAdmissionContent(currentLang);
-
-    // Set initial state for "More" content and button text
+    // Set initial state for "More" content
     const moreContent = document.getElementById("moreContent");
-    const moreBtn = document.getElementById("moreBtn");
     if (moreContent) {
         moreContent.style.display = "none";
     }
-    if (moreBtn) {
-        moreBtn.innerText = "More";
-    }
+
+    // Initial content update based on global language
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    updateAdmissionContent(currentLang);
 });
 
 // Listen for global language change events
