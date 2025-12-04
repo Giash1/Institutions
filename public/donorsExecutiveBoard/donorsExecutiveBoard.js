@@ -30,7 +30,7 @@ loadHTML('heading', '/heading/heading.html', '/heading/heading.css', '/heading/h
 loadHTML('nav', '/nav/nav.html', '/nav/nav.css', '/nav/nav.js');
 loadHTML('footer', '/footer/footer.html', '/footer/footer.css', '/footer/footer.js');
 
-function setLanguage(language) {
+function updateDonorsExecutiveBoardContent(language) {
     const elements = {
         'main-title': {
             en: 'Donors & Executive Board',
@@ -58,7 +58,7 @@ function setLanguage(language) {
         },
         'card3-title': {
             en: 'Key Contributors',
-            bn: 'প্রধান অবদানকারী'
+            bn: 'অন্যান্য গুরুত্বপূর্ণ অবদানকারী'
         },
         'card3-description': {
             en: 'Recognizing our generous financial supporters and donors.',
@@ -82,7 +82,13 @@ function setLanguage(language) {
     }
 }
 
+// Listen for global language change event
+window.addEventListener('languageChange', function(event) {
+    updateDonorsExecutiveBoardContent(event.detail);
+});
+
 // Wait for DOM to be ready before setting language
 window.addEventListener('load', () => {
-    setLanguage('en');
+    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    updateDonorsExecutiveBoardContent(currentLanguage);
 });

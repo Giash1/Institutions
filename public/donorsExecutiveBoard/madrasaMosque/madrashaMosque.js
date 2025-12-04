@@ -30,14 +30,14 @@ loadHTML('heading', '/heading/heading.html', '/heading/heading.css', '/heading/h
 loadHTML('nav', '/nav/nav.html', '/nav/nav.css', '/nav/nav.js');
 loadHTML('footer', '/footer/footer.html', '/footer/footer.css', '/footer/footer.js');
 
-// Global function to handle language switch for both page and nav
-window.changeLanguage = function(language) {
-    updateMosqueContent(language);
-    // Update nav if the function is available from nav.js
-    if (typeof window.setLanguage === 'function') {
-        window.setLanguage(language);
-    }
-};
+// Listen for global language change event
+window.addEventListener('languageChange', function(event) {
+    updateMosqueContent(event.detail);
+});
+
+// Initialize with current stored language or default to English
+const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+updateMosqueContent(currentLanguage);
 
 function updateMosqueContent(language) {
     const elements = {
@@ -102,8 +102,3 @@ function updateMosqueContent(language) {
         }
     }
 }
-
-// Initialize English on page load
-window.addEventListener('load', function() {
-    changeLanguage('en');
-});

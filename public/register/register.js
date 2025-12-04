@@ -47,3 +47,54 @@ function loadHTML(section, filePath, cssPath, jsPath) {
 loadHTML('heading', '../../heading/heading.html', '../../heading/heading.css', '../../heading/heading.js');
 loadHTML('nav', '../../nav/nav.html', '../../nav/nav.css', '../../nav/nav.js');
 loadHTML('footer', '../../footer/footer.html', '../../footer/footer.css', '../../footer/footer.js');
+
+function updateRegisterContent(language) {
+    const elements = {
+        'register-title': {
+            en: 'Register',
+            bn: 'নিবন্ধন করুন'
+        },
+        'username-label': {
+            en: 'Username:',
+            bn: 'ব্যবহারকারীর নাম:'
+        },
+        'email-label': {
+            en: 'Email:',
+            bn: 'ইমেল:'
+        },
+        'password-label': {
+            en: 'Password:',
+            bn: 'পাসওয়ার্ড:'
+        },
+        'confirm-password-label': {
+            en: 'Confirm Password:',
+            bn: 'পাসওয়ার্ড নিশ্চিত করুন:'
+        },
+        'register-btn': {
+            en: 'Register',
+            bn: 'নিবন্ধন করুন'
+        },
+        'login-link-text': {
+            en: 'Already have an account? <a href="../login/login.html" id="login-link">Login here</a>',
+            bn: 'ইতিমধ্যে একটি অ্যাকাউন্ট আছে? <a href="../login/login.html" id="login-link">এখানে লগইন করুন</a>'
+        }
+    };
+
+    for (const id in elements) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.innerHTML = elements[id][language];
+        }
+    }
+}
+
+// Listen for global language change event
+window.addEventListener('languageChange', function(event) {
+    updateRegisterContent(event.detail);
+});
+
+// Initialize with current stored language or default to English
+document.addEventListener("DOMContentLoaded", () => {
+    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    updateRegisterContent(currentLanguage);
+});

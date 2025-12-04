@@ -53,7 +53,7 @@ cssFiles.forEach(file => {
 });
 
 // Function to set the language
-function setLanguage(language) {
+function updateIndexContent(language) {
     const elements = {
         'heading-title': {
             en: 'Welcome to Poschim Gaon Madrasha -E- Islamia Jameul Ulum',
@@ -76,17 +76,17 @@ function setLanguage(language) {
     }
 }
 
+// Listen for global language change event
+window.addEventListener('languageChange', function(event) {
+    updateIndexContent(event.detail);
+});
+
 // Add event listeners for language buttons
 document.addEventListener("DOMContentLoaded", () => {
-    const languageEn = document.getElementById('language-en');
-    const languageBn = document.getElementById('language-bn');
+    // Initialize language
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    updateIndexContent(savedLanguage);
 
-    if (languageEn) {
-        languageEn.addEventListener('click', () => setLanguage('en'));
-    }
-    if (languageBn) {
-        languageBn.addEventListener('click', () => setLanguage('bn'));
-    }
 
     // Set initial state for "More" content and button text
     const moreContent = document.getElementById("moreContent");

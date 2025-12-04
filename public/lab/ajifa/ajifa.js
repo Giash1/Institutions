@@ -52,7 +52,7 @@ function toggleMore() {
     }
 }
 // Function to set the language
-function setLanguage(language) {
+function updateAjifaContent(language) {
     const elements = {
         'dua-title': {
             en: 'Duas and Supplications',
@@ -153,8 +153,9 @@ function setLanguage(language) {
 
 // Add event listeners for language buttons
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById('language-en').addEventListener('click', () => setLanguage('en'));
-    document.getElementById('language-bn').addEventListener('click', () => setLanguage('bn'));
+    // Initial content update based on global language
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    updateAjifaContent(currentLang);
 
     // Set initial state for "More" content and button text
     const moreContent = document.getElementById("moreContent");
@@ -163,4 +164,9 @@ document.addEventListener("DOMContentLoaded", () => {
         moreContent.style.display = "none";
         moreBtn.innerText = "More";
     }
+});
+
+// Listen for global language change events
+window.addEventListener('languageChange', (event) => {
+    updateAjifaContent(event.detail);
 });

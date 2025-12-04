@@ -52,7 +52,7 @@ window.updateContributorsContent = function(language) {
     const elements = {
         'contributors-title': {
             en: 'List of Key Contributors',
-            bn: 'মূল অবদানকারীদের তালিকা'
+            bn: 'অন্যান্য গুরুত্বপূর্ণ অবদানকারীদের তালিকা'
         },
         'intro-title': {
             en: '"Our Pillars of Support"',
@@ -64,7 +64,7 @@ window.updateContributorsContent = function(language) {
         },
         'section-title': {
             en: 'Key Contributors',
-            bn: 'মূল অবদানকারী'
+            bn: 'অন্যান্য গুরুত্বপূর্ণ অবদানকারী'
         },
         // Contributor 1
         'contributor1-name': { en: 'Contributor Name 1', bn: 'অবদানকারীর নাম ১' },
@@ -226,16 +226,12 @@ window.updateContributorsContent = function(language) {
     }
 }
 
-// Global function to handle language switch for both page and nav
-window.changeLanguage = function(language) {
-    updateContributorsContent(language);
-    // Update nav if the function is available from nav.js
-    if (typeof window.setLanguage === 'function') {
-        window.setLanguage(language);
-    }
-};
-
-// Initialize English on page load
-window.addEventListener('load', function() {
-    changeLanguage('en');
+// Listen for global language change event
+window.addEventListener('languageChange', function(event) {
+    updateContributorsContent(event.detail);
 });
+
+// Initialize with current stored language or default to English
+const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+updateContributorsContent(currentLanguage);
+

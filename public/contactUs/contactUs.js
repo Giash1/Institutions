@@ -39,7 +39,7 @@ loadHTML('nav', '../../nav/nav.html', '../../nav/nav.css', '../../nav/nav.js');
 loadHTML('footer', '../../footer/footer.html', '../../footer/footer.css', '../../footer/footer.js');
 
 // Function to set the language
-function setLanguage(language) {
+function updateContactUsContent(language) {
     const elements = {
         'contact-title': {
             en: 'Contact Us',
@@ -92,11 +92,53 @@ function setLanguage(language) {
         'inquiries-email': {
             en: 'Email: <strong>pgmadrasha@gmail.com</strong>',
             bn: 'ইমেল: <strong>pgmadrasha@gmail.com</strong>'
+        },
+        'contact-address': {
+            en: '<strong>Address:</strong> Poschimgaon Madrasha, Poschimgaon, Demra 1320, Rupgonj, Narayangong, Dhaka, Bangladesh',
+            bn: '<strong>ঠিকানা:</strong> পশ্চিমগাঁও মাদ্রাসা, পশ্চিমগাঁও, ডেমরা ১৩২০, রূপগঞ্জ, নারায়ণগঞ্জ, ঢাকা, বাংলাদেশ'
+        },
+        'additional-info-title': {
+            en: 'Additional Information',
+            bn: 'অতিরিক্ত তথ্য'
+        },
+        'additional-info-desc': {
+            en: 'More about our mission, vision, and future goals...',
+            bn: 'আমাদের লক্ষ্য, দৃষ্টি এবং ভবিষ্যতের লক্ষ্য সম্পর্কে আরও...'
+        },
+        'view-larger-map': {
+            en: 'View Larger Map',
+            bn: 'বড় মানচিত্র দেখুন'
         }
     };
 
     for (const id in elements) {
-        document.getElementById(id).innerHTML = elements[id][language];
+        const element = document.getElementById(id);
+        if (element) {
+            element.innerHTML = elements[id][language];
+        }
+    }
+
+    // Update buttons based on state and language
+    const moreBtn = document.getElementById("moreBtn");
+    const moreContent = document.getElementById("moreContent");
+    if (moreBtn && moreContent) {
+        const isExpanded = window.getComputedStyle(moreContent).display !== "none";
+        if (language === 'bn') {
+            moreBtn.innerText = isExpanded ? "কম দেখুন" : "আরও দেখুন";
+        } else {
+            moreBtn.innerText = isExpanded ? "Less" : "More";
+        }
+    }
+
+    const mapBtn = document.getElementById("mapBtn");
+    const mapContainer = document.getElementById("mapContainer");
+    if (mapBtn && mapContainer) {
+        const isMapVisible = window.getComputedStyle(mapContainer).display !== "none";
+        if (language === 'bn') {
+            mapBtn.innerText = isMapVisible ? "মানচিত্র লুকান" : "মানচিত্র দেখুন";
+        } else {
+            mapBtn.innerText = isMapVisible ? "Hide Map" : "Show Map";
+        }
     }
 }
 
@@ -104,12 +146,14 @@ function setLanguage(language) {
 function toggleMap() {
     const mapContainer = document.getElementById("mapContainer");
     const mapBtn = document.getElementById("mapBtn");
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+
     if (window.getComputedStyle(mapContainer).display === "none") {
         mapContainer.style.display = "block";
-        mapBtn.innerText = "Hide Map";
+        mapBtn.innerText = currentLang === 'bn' ? "মানচিত্র লুকান" : "Hide Map";
     } else {
         mapContainer.style.display = "none";
-        mapBtn.innerText = "Show Map";
+        mapBtn.innerText = currentLang === 'bn' ? "মানচিত্র দেখুন" : "Show Map";
     }
 }
 
@@ -117,14 +161,21 @@ function toggleMap() {
 function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+
     if (window.getComputedStyle(moreContent).display === "none") {
         moreContent.style.display = "block";
-        moreBtn.innerText = "Less";
+        moreBtn.innerText = currentLang === 'bn' ? "কম দেখুন" : "Less";
     } else {
         moreContent.style.display = "none";
-        moreBtn.innerText = "More";
+        moreBtn.innerText = currentLang === 'bn' ? "আরও দেখুন" : "More";
     }
 }
+
+// Listen for global language change event
+window.addEventListener('languageChange', function(event) {
+    updateContactUsContent(event.detail);
+});
 
 document.addEventListener("DOMContentLoaded", () => {
     const moreContent = document.getElementById("moreContent");
@@ -135,4 +186,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (mapContainer) {
         mapContainer.style.display = "none"; // Ensure initial state is set
     }
+
+    // Initialize language
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    updateContactUsContent(savedLanguage);
 });

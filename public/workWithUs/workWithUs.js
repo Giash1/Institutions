@@ -39,7 +39,7 @@ loadHTML('nav', '../../nav/nav.html', '../../nav/nav.css', '../../nav/nav.js');
 loadHTML('footer', '../../footer/footer.html', '../../footer/footer.css', '../../footer/footer.js');
 
 // Function to set the language
-function setLanguage(language) {
+function updateWorkWithUsContent(language) {
     const elements = {
         'page-title': {
             en: 'Join Our Team at Poschim Gaon Madrasha -E- Islamia Jameul Ulum!',
@@ -105,29 +105,48 @@ function setLanguage(language) {
             document.getElementById(id).innerHTML = elements[id][language];
         }
     }
+
+    // Update "More" button text based on current state
+    const moreContent = document.getElementById("moreContent");
+    const moreBtn = document.getElementById("moreBtn");
+    if (moreContent && moreBtn) {
+        const isExpanded = moreContent.style.display === "block";
+        if (language === 'bn') {
+            moreBtn.innerText = isExpanded ? "কম দেখুন" : "আরও দেখুন";
+        } else {
+            moreBtn.innerText = isExpanded ? "Less" : "More";
+        }
+    }
 }
 
 // Function to toggle the visibility of the "More" content
 function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
+    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
 
     if (moreContent.style.display === "none" || moreContent.style.display === "") {
         moreContent.style.display = "block";
-        moreBtn.innerText = "Less"; // Change button text to "Less"
+        moreBtn.innerText = currentLang === 'bn' ? "কম দেখুন" : "Less";
     } else {
         moreContent.style.display = "none";
-        moreBtn.innerText = "More"; // Change button text to "More"
+        moreBtn.innerText = currentLang === 'bn' ? "আরও দেখুন" : "More";
     }
 }
 
+// Listen for global language change event
+window.addEventListener('languageChange', function(event) {
+    updateWorkWithUsContent(event.detail);
+});
+
 // Load initial content
 document.addEventListener('DOMContentLoaded', () => {
-    setLanguage(document.documentElement.lang || 'en');
-
-    // Set initial state for "More" content and button text
+    // Set initial state for "More" content
     const moreContent = document.getElementById("moreContent");
-    const moreBtn = document.getElementById("moreBtn");
-    moreContent.style.display = "none";
-    moreBtn.innerText = "More";
+    if (moreContent) {
+        moreContent.style.display = "none";
+    }
+
+    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    updateWorkWithUsContent(currentLanguage);
 });

@@ -275,15 +275,13 @@ window.updateLandDonorsContent = function(language) {
     }
 }
 
-// Global function to handle language switch for both page and nav
-window.changeLanguage = function(language) {
-    updateLandDonorsContent(language);
-    // Update nav if the function is available from nav.js
-    if (typeof window.setLanguage === 'function') {
-        window.setLanguage(language);
-    }
-};
+// Listen for global language change event
+window.addEventListener('languageChange', function(event) {
+    updateLandDonorsContent(event.detail);
+});
 
 document.addEventListener("DOMContentLoaded", () => {
-    changeLanguage('en');
+    // Initialize with current stored language or default to English
+    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    updateLandDonorsContent(currentLanguage);
 });

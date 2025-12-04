@@ -47,3 +47,46 @@ function loadHTML(section, filePath, cssPath, jsPath) {
 loadHTML('heading', '../../heading/heading.html', '../../heading/heading.css', '../../heading/heading.js');
 loadHTML('nav', '../../nav/nav.html', '../../nav/nav.css', '../../nav/nav.js');
 loadHTML('footer', '../../footer/footer.html', '../../footer/footer.css', '../../footer/footer.js');
+
+function updateLoginContent(language) {
+    const elements = {
+        'login-title': {
+            en: 'Login',
+            bn: 'লগইন'
+        },
+        'username-label': {
+            en: 'Username:',
+            bn: 'ব্যবহারকারীর নাম:'
+        },
+        'password-label': {
+            en: 'Password:',
+            bn: 'পাসওয়ার্ড:'
+        },
+        'login-btn': {
+            en: 'Login',
+            bn: 'লগইন'
+        },
+        'register-link-text': {
+            en: 'Don\'t have an account? <a href="../register/register.html" id="register-link">Register here</a>',
+            bn: 'কোন অ্যাকাউন্ট নেই? <a href="../register/register.html" id="register-link">এখানে নিবন্ধন করুন</a>'
+        }
+    };
+
+    for (const id in elements) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.innerHTML = elements[id][language];
+        }
+    }
+}
+
+// Listen for global language change event
+window.addEventListener('languageChange', function(event) {
+    updateLoginContent(event.detail);
+});
+
+// Initialize with current stored language or default to English
+document.addEventListener("DOMContentLoaded", () => {
+    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    updateLoginContent(currentLanguage);
+});

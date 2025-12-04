@@ -4,47 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Load navigation scripts
     loadNavScripts();
 
-    // Select the language toggle button
-    const languageToggleButton = document.getElementById("language-toggle-btn");
-
-    // Ensure the button exists before adding event listeners
-    if (languageToggleButton) {
-        console.log("✅ Language toggle button found");
-
-        languageToggleButton.addEventListener("click", () => {
-            console.log("🖱️ Language toggle button clicked");
-
-            // Select all elements with `data-en` and `data-bn`
-            const elements = document.querySelectorAll("[data-en], [data-bn]");
-            console.log(`📌 Found ${elements.length} translatable elements`);
-
-            elements.forEach((element) => {
-                const currentText = element.textContent.trim();
-                console.log("🔄 Before:", currentText);
-
-                // Toggle text based on the current language
-                element.textContent =
-                    currentText === element.dataset.en
-                        ? element.dataset.bn
-                        : element.dataset.en;
-
-                console.log("✅ After:", element.textContent);
-            });
-
-            // Toggle the button text to indicate the current language state
-            const buttonText = languageToggleButton.textContent.trim();
-            console.log("📝 Button text before:", buttonText);
-
-            languageToggleButton.textContent = buttonText.includes("Bengali")
-                ? "Switch to English"
-                : "Switch to Bengali";
-
-            console.log("✅ Button text after:", languageToggleButton.textContent);
-        });
-    } else {
-        console.warn("⚠️ Language toggle button not found! Check HTML ID.");
-    }
-
     // Hover effect for .main-box
     const boxes = document.querySelectorAll(".main-box");
 
@@ -60,7 +19,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     console.log("✅ Hover effects added to main-box elements");
+
+    // Initialize language
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    updateMainContent(savedLanguage);
 });
+
+// Listen for global language change event
+window.addEventListener('languageChange', function(event) {
+    updateMainContent(event.detail);
+});
+
 
 // Define `loadNavScripts` function
 function loadNavScripts() {
@@ -69,7 +38,7 @@ function loadNavScripts() {
 }
 
 // Function to set the language
-function setLanguage(language) {
+function updateMainContent(language) {
     const elements = {
         'main-title': {
             en: 'Welcome to Poschim Gaon Madrasha -E- Islamia Jameul Ulum',
@@ -172,6 +141,10 @@ function setLanguage(language) {
         'enroll-now-description': {
             en: 'Contact us to join one of the most prestigious Islamic educational institutions.',
             bn: 'সবচেয়ে মর্যাদাপূর্ণ ইসলামী শিক্ষামূলক প্রতিষ্ঠানগুলির মধ্যে একটিতে যোগ দিতে আমাদের সাথে যোগাযোগ করুন।'
+        },
+        'cta-button': {
+            en: 'Get in Touch',
+            bn: 'যোগাযোগ করুন'
         }
     };
 

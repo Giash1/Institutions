@@ -160,16 +160,12 @@ window.updateCommitteeContent = function(language) {
     }
 }
 
-// Global function to handle language switch for both page and nav
-window.changeLanguage = function(language) {
-    updateCommitteeContent(language);
-    // Update nav if the function is available from nav.js
-    if (typeof window.setLanguage === 'function') {
-        window.setLanguage(language);
-    }
-};
-
-// Initialize English on page load
-window.addEventListener('load', function() {
-    changeLanguage('en');
+// Listen for global language change event
+window.addEventListener('languageChange', function(event) {
+    updateCommitteeContent(event.detail);
 });
+
+// Initialize with current stored language or default to English
+const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+updateCommitteeContent(currentLanguage);
+

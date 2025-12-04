@@ -38,7 +38,7 @@ loadHTML('nav', '../../nav/nav.html', '../../nav/nav.css', '../../nav/nav.js');
 loadHTML('footer', '../../footer/footer.html', '../../footer/footer.css', '../../footer/footer.js');
 
 // Function to set the language
-function setLanguage(language) {
+function updateLabTeachersContent(language) {
     const elements = {
         'lab-services-title': {
             en: 'Lab Services',
@@ -232,3 +232,14 @@ function setLanguage(language) {
         }
     }
 }
+
+// Listen for global language change event
+window.addEventListener('languageChange', function(event) {
+    updateLabTeachersContent(event.detail);
+});
+
+// Initialize with current stored language or default to English
+document.addEventListener("DOMContentLoaded", () => {
+    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    updateLabTeachersContent(currentLanguage);
+});

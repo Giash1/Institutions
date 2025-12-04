@@ -25,10 +25,7 @@
             <source src="../images/reading-quran.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <div id="language-buttons">
-            <button onclick="setLanguage('en')">English</button>
-            <button onclick="setLanguage('bn')">বাংলা</button>
-        </div>
+
     
         <h1 id="contact-title">Contact Us</h1>
         <p id="contact-description">
@@ -41,8 +38,8 @@
 
          <!-- More Content Section -->
          <div id="moreContent" style="display: none;">
-            <h2>Additional Information</h2>
-            <p>More about our mission, vision, and future goals...</p>
+            <h2 id="additional-info-title">Additional Information</h2>
+            <p id="additional-info-desc">More about our mission, vision, and future goals...</p>
         </div>
         <button id="moreBtn" onclick="toggleMore()">More</button>
         <button id="mapBtn" onclick="toggleMap()" style="margin-top: 10px;">Show Map</button>
@@ -50,7 +47,7 @@
         <!-- New Map Section -->
         <div id="mapContainer" style="display: none; margin-top: 20px;">
             <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=90.47391414642334%2C23.740902941736127%2C90.49601554870607%2C23.752216141870505&amp;layer=mapnik" style="border: 1px solid black"></iframe>
-            <br/><small><a href="https://www.openstreetmap.org/?#map=16/23.74656/90.48496&amp;layers=N" style="color: crimson; font-weight: bold; font-size: 16px">View Larger Map</a></small>
+            <br/><small><a id="view-larger-map" href="https://www.openstreetmap.org/?#map=16/23.74656/90.48496&amp;layers=N" style="color: crimson; font-weight: bold; font-size: 16px">View Larger Map</a></small>
         </div>
 
        

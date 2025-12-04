@@ -49,6 +49,31 @@
     transition: background-color var(--transition-speed) ease;
 }
 
+.language-switch {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.lang-btn {
+    margin: 0 5px;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--background-overlay);
+    color: var(--primary-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.lang-btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: #fff; /* Added to make it visible on dark navbar */
+}
+
 .nav-list a:hover {
     background-color: var(--link-hover-color);
 }
