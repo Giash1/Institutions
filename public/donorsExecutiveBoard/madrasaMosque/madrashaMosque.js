@@ -90,8 +90,8 @@ function updateMosqueContent(language) {
             bn: 'তিনি ১লা ফেব্রুয়ারি ২০২৪ সালে ইন্তেকাল করেন, রেখে যান দুই ছেলে ও দুই মেয়ের এক নিবেদিত পরিবার। তার বড় ছেলে, আব্দুল্লাহ আল মামুন সাব, মাদ্রাসার কল্যাণে সক্রিয়ভাবে অবদান রেখে এবং মাদ্রাসা পরিচালনা পর্ষদের সহ-সভাপতি হিসেবে দায়িত্ব পালন করে তার বাবার উত্তরাধিকার অব্যাহত রেখেছেন। আব্দুল্লাহ আল মামুন সাব এবং তার পরিবারের মাধ্যমে আলহাজ্ব আব্দুল মোতালিব সাহেবের দর্শন ও লক্ষ্য বিকশিত হতে থাকে, যা আগামী প্রজন্মকে অনুপ্রাণিত করবে।'
         },
         'bio-p5': {
-            en: 'Alhaj Abdul Motalib Saheb will always be remembered as a compassionate leader, a generous philanthropist, and a pioneer in social and religious welfare. His life stands as a shining example of selfless service and unwavering commitment to community development.',
-            bn: 'আলহাজ্ব আব্দুল মোতালিব সাহেব সর্বদা একজন সহানুভূতিশীল নেতা, উদার জনহিতৈষী এবং সামাজিক ও ধর্মীয় কল্যাণের অগ্রদূত হিসেবে স্মরণীয় হয়ে থাকবেন। তার জীবন নিঃস্বার্থ সেবা এবং সম্প্রদায়ের উন্নয়নে অবিচল প্রতিশ্রুতির এক উজ্জ্বল দৃষ্টান্ত হিসেবে দাঁড়িয়ে আছে।'
+            en: 'Alhaj Abdul Motalib Saheb will always be remembered as a compassionate leader, a generous philanthropist, and a pioneer in social and religious welfare. His life stands as a shining example of selfless service and unwavering commitment to community development. May Allah grant him Jannatul Ferdaous.',
+            bn: 'আলহাজ্ব আব্দুল মোতালিব সাহেব সর্বদা একজন সহানুভূতিশীল নেতা, উদার জনহিতৈষী এবং সামাজিক ও ধর্মীয় কল্যাণের অগ্রদূত হিসেবে স্মরণীয় হয়ে থাকবেন। তার জীবন নিঃস্বার্থ সেবা এবং সম্প্রদায়ের উন্নয়নে অবিচল প্রতিশ্রুতির এক উজ্জ্বল দৃষ্টান্ত হিসেবে দাঁড়িয়ে আছে। আল্লাহ তাকে জান্নাতুল ফেরদৌস দান করুন।'
         }
     };
 

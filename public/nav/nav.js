@@ -1,24 +1,30 @@
-function setLanguage(language) {
+window.setLanguage = function(language) {
     const elements = {
         'nav-home': { en: 'Home', bn: 'হোম' },
-        'nav-about': { en: 'About Us', bn: 'আমাদের সম্পর্কে' },
+        'nav-resources': { en: 'Resources', bn: 'রিসোর্স' },
+        'nav-admission': { en: 'Admission', bn: 'ভর্তি' },
+        'nav-courses': { en: 'Courses', bn: 'কোর্স' },
+        'nav-exams': { en: 'Exams', bn: 'পরীক্ষা' },
+        'nav-donation': { en: 'Donation', bn: 'অনুদান' },
+        'nav-donor-list': { en: 'Donor List', bn: 'দাতা তালিকা' },
         'nav-history': { en: 'History', bn: 'ইতিহাস' },
-        'nav-mission': { en: 'Mission & Vision', bn: 'লক্ষ্য ও উদ্দেশ্য' },
-        'nav-achievements': { en: 'Achievements', bn: 'অর্জন' },
-        'nav-academics': { en: 'Academics', bn: 'শিক্ষাবিষয়ক' },
-        'nav-courses': { en: 'Courses Offered', bn: 'কোর্স সমূহ' },
-        'nav-curriculum': { en: 'Curriculum', bn: 'পাঠ্যক্রম' },
-        'nav-faculty': { en: 'Faculty', bn: 'শিক্ষকমণ্ডলী' },
-        'nav-students': { en: 'Students', bn: 'শিক্ষার্থী' },
-        'nav-admissions': { en: 'Admissions', bn: 'ভর্তি' },
-        'nav-student-life': { en: 'Student Life', bn: 'শিক্ষার্থী জীবন' },
-        'nav-alumni': { en: 'Alumni', bn: 'প্রাক্তন শিক্ষার্থী' },
-        'nav-facilities': { en: 'Facilities', bn: 'সুবিধা' },
-        'nav-library': { en: 'Library', bn: 'লাইব্রেরি' },
-        'nav-hostel': { en: 'Hostel', bn: 'হোস্টেল' },
+        'nav-gallery': { en: 'Gallery', bn: 'গ্যালারি' },
+        'nav-vision': { en: 'Our Vision', bn: 'আমাদের লক্ষ্য' },
+        'nav-teachers-res': { en: 'Teachers', bn: 'শিক্ষকবৃন্দ' },
         'nav-lab': { en: 'Lab', bn: 'ল্যাব' },
-        'nav-donors': { en: 'Donors & Board', bn: 'দাতা ও পর্ষদ' },
-        'nav-contact': { en: 'Contact Us', bn: 'যোগাযোগ' }
+        'nav-objective': { en: 'Objective', bn: 'উদ্দেশ্য' },
+        'nav-teachers-lab': { en: 'Teachers', bn: 'শিক্ষকবৃন্দ' },
+        'nav-qr': { en: 'QR Research', bn: 'কিউআর গবেষণা' },
+        'nav-duas': { en: 'Duas & Supplications', bn: 'দোয়া ও মোনাজাত' },
+        'nav-donors-board': { en: 'Donors & Executive Board', bn: 'দাতা ও নির্বাহী পর্ষদ' },
+        'nav-exec-board': { en: 'Executive Board', bn: 'নির্বাহী পর্ষদ' },
+        'nav-land-donors': { en: 'Land Donors', bn: 'জমি দাতা' },
+        'nav-mosque': { en: 'Madrasha Mosque', bn: 'মাদ্রাসা মসজিদ' },
+        'nav-contributors': { en: 'Key Contributors', bn: 'মূল অবদানকারী' },
+        'nav-management': { en: 'Management Committee', bn: 'ব্যবস্থাপনা কমিটি' },
+        'nav-about': { en: 'About Us', bn: 'আমাদের সম্পর্কে' },
+        'nav-contact': { en: 'Contact Us', bn: 'যোগাযোগ' },
+        'nav-work': { en: 'Work with Us', bn: 'আমাদের সাথে কাজ করুন' }
     };
 
     for (const [id, translations] of Object.entries(elements)) {
@@ -27,8 +33,7 @@ function setLanguage(language) {
             element.textContent = translations[language];
         }
     }
-}
+};
 
-document.addEventListener("DOMContentLoaded", () => {
-    setLanguage('en');
-});
+// Initialize immediately as the script is loaded after HTML injection
+window.setLanguage('en');
