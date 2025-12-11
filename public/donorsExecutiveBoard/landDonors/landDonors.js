@@ -282,6 +282,6 @@ window.addEventListener('languageChange', function(event) {
 
 document.addEventListener("DOMContentLoaded", () => {
     // Initialize with current stored language or default to English
-    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLanguage = localStorage.getItem('preferredLanguage') || 'bn';
     updateLandDonorsContent(currentLanguage);
 });

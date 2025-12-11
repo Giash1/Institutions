@@ -240,6 +240,6 @@ window.addEventListener('languageChange', function(event) {
 
 // Initialize with current stored language or default to English
 document.addEventListener("DOMContentLoaded", () => {
-    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLanguage = localStorage.getItem('preferredLanguage') || 'bn';
     updateLabTeachersContent(currentLanguage);
 });

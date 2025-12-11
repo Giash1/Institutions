@@ -130,7 +130,7 @@ function updateQhJournalContent(language) {
 // Add event listeners for language buttons
 document.addEventListener("DOMContentLoaded", () => {
     // Initial content update based on global language
-    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLang = localStorage.getItem('preferredLanguage') || 'bn';
     updateQhJournalContent(currentLang);
 
     // Set initial state for "More" content and button text

@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function toggleMore() {
         const moreContent = document.getElementById("moreContent");
         const moreBtn = document.getElementById("moreBtn");
-        const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+        const currentLang = localStorage.getItem('preferredLanguage') || 'bn';
 
         if (moreContent.style.display === "none" || moreContent.style.display === "") {
             moreContent.style.display = "block";
@@ -159,6 +159,6 @@ window.addEventListener('languageChange', function(event) {
 
 // Load initial content
 document.addEventListener('DOMContentLoaded', () => {
-    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLanguage = localStorage.getItem('preferredLanguage') || 'bn';
     updateGalleryContent(currentLanguage);
 });

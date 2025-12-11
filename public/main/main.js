@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("✅ Hover effects added to main-box elements");
 
     // Initialize language
-    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'bn';
     updateMainContent(savedLanguage);
 });
 

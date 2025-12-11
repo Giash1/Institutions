@@ -42,7 +42,7 @@ loadHTML('footer', '../../footer/footer.html', '../../footer/footer.css', '../..
 function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
-    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLang = localStorage.getItem('preferredLanguage') || 'bn';
 
     // Check the actual computed style
     if (window.getComputedStyle(moreContent).display === "none") {
@@ -200,7 +200,7 @@ function updateVisionContent(language) {
 // Add event listeners for language buttons
 document.addEventListener("DOMContentLoaded", () => {
     // Initial content update based on global language
-    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLang = localStorage.getItem('preferredLanguage') || 'bn';
     updateVisionContent(currentLang);
 
     const moreContent = document.getElementById("moreContent");

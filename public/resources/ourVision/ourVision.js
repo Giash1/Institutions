@@ -42,7 +42,7 @@ loadHTML('footer', '../../footer/footer.html', '../../footer/footer.css', '../..
 function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
-    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLang = localStorage.getItem('preferredLanguage') || 'bn';
 
     if (window.getComputedStyle(moreContent).display === "none") {
         moreContent.style.display = "block";
@@ -134,7 +134,7 @@ function updateOurVisionContent(language) {
 
 // Add event listeners for language buttons
 document.addEventListener("DOMContentLoaded", () => {
-    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLang = localStorage.getItem('preferredLanguage') || 'bn';
     updateOurVisionContent(currentLang);
 });
 

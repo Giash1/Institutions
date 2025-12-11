@@ -25,7 +25,7 @@ window.addEventListener('languageChange', function(event) {
 
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize language
-    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'bn';
     updateFooterContent(savedLanguage);
     console.log('Footer loaded successfully');
 });

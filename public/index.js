@@ -84,7 +84,7 @@ window.addEventListener('languageChange', function(event) {
 // Add event listeners for language buttons
 document.addEventListener("DOMContentLoaded", () => {
     // Initialize language
-    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'bn';
     updateIndexContent(savedLanguage);
 
 

@@ -28,7 +28,7 @@ loadHTML('footer', '../../footer/footer.html', '../../footer/footer.css', '../..
 function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
-    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLang = localStorage.getItem('preferredLanguage') || 'bn';
 
     if (moreContent.style.display === "none") {
         moreContent.style.display = "block";
@@ -110,6 +110,6 @@ window.addEventListener('languageChange', function(event) {
 
 // Initialize with current stored language or default to English
 document.addEventListener("DOMContentLoaded", () => {
-    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLanguage = localStorage.getItem('preferredLanguage') || 'bn';
     updateExamsContent(currentLanguage);
 });

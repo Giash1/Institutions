@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
         updateContent(e.detail);
     });
 
-    // Initial load (check localStorage or default to English)
-    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    // Initial load (check localStorage or default to Bangla)
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'bn';
     updateContent(savedLanguage);
 });

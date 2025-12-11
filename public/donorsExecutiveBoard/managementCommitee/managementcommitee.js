@@ -166,6 +166,6 @@ window.addEventListener('languageChange', function(event) {
 });
 
 // Initialize with current stored language or default to English
-const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+const currentLanguage = localStorage.getItem('preferredLanguage') || 'bn';
 updateCommitteeContent(currentLanguage);
 

@@ -146,7 +146,7 @@ function updateContactUsContent(language) {
 function toggleMap() {
     const mapContainer = document.getElementById("mapContainer");
     const mapBtn = document.getElementById("mapBtn");
-    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLang = localStorage.getItem('preferredLanguage') || 'bn';
 
     if (window.getComputedStyle(mapContainer).display === "none") {
         mapContainer.style.display = "block";
@@ -161,7 +161,7 @@ function toggleMap() {
 function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
-    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLang = localStorage.getItem('preferredLanguage') || 'bn';
 
     if (window.getComputedStyle(moreContent).display === "none") {
         moreContent.style.display = "block";
@@ -188,6 +188,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Initialize language
-    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'bn';
     updateContactUsContent(savedLanguage);
 });

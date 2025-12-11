@@ -49,12 +49,12 @@ window.switchGlobalLanguage = function(language) {
 };
 
 // Initialize immediately
-const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+const savedLanguage = localStorage.getItem('preferredLanguage') || 'bn';
 window.updateNavContent(savedLanguage);
 
 // Re-dispatch event on load for pages that might need it immediately
 window.addEventListener('load', () => {
-    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLang = localStorage.getItem('preferredLanguage') || 'bn';
     const event = new CustomEvent('languageChange', { detail: currentLang });
     window.dispatchEvent(event);
 });

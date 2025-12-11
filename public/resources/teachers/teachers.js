@@ -287,7 +287,7 @@ function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
     const lessBtn = document.getElementById("lessBtn");
-    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLang = localStorage.getItem('preferredLanguage') || 'bn';
 
     if (moreContent.style.display === "none" || moreContent.style.display === "") {
         moreContent.style.display = "flex";
@@ -309,7 +309,7 @@ window.addEventListener('languageChange', function(event) {
 });
 
 // Initialize with current stored language or default to English
-const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+const currentLanguage = localStorage.getItem('preferredLanguage') || 'bn';
 updateResourcesTeachersContent(currentLanguage);
 
 // Initially hide the "More" content and "Less" button

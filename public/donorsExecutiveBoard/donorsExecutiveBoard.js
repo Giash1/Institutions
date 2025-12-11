@@ -89,6 +89,6 @@ window.addEventListener('languageChange', function(event) {
 
 // Wait for DOM to be ready before setting language
 window.addEventListener('load', () => {
-    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLanguage = localStorage.getItem('preferredLanguage') || 'bn';
     updateDonorsExecutiveBoardContent(currentLanguage);
 });

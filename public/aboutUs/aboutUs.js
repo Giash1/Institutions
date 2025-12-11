@@ -42,7 +42,7 @@ loadHTML('footer', '../footer/footer.html', '../footer/footer.css', '../footer/f
 function toggleMore() {
     const moreContent = document.getElementById('moreContent');
     const moreBtn = document.getElementById('moreBtn');
-    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLang = localStorage.getItem('preferredLanguage') || 'bn';
 
     if (moreContent.style.display === 'none' || moreContent.style.display === '') {
         moreContent.style.display = 'block';
@@ -202,6 +202,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Initialize language
-    const savedLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    const savedLanguage = localStorage.getItem('preferredLanguage') || 'bn';
     updateAboutUsContent(savedLanguage);
 });

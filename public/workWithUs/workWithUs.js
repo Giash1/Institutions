@@ -123,7 +123,7 @@ function updateWorkWithUsContent(language) {
 function toggleMore() {
     const moreContent = document.getElementById("moreContent");
     const moreBtn = document.getElementById("moreBtn");
-    const currentLang = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLang = localStorage.getItem('preferredLanguage') || 'bn';
 
     if (moreContent.style.display === "none" || moreContent.style.display === "") {
         moreContent.style.display = "block";
@@ -147,6 +147,6 @@ document.addEventListener('DOMContentLoaded', () => {
         moreContent.style.display = "none";
     }
 
-    const currentLanguage = localStorage.getItem('preferredLanguage') || 'en';
+    const currentLanguage = localStorage.getItem('preferredLanguage') || 'bn';
     updateWorkWithUsContent(currentLanguage);
 });
