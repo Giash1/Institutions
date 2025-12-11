@@ -7,6 +7,7 @@ window.updateNavContent = function(language) {
         'nav-exams': { en: 'Exams', bn: 'পরীক্ষা' },
         'nav-donation': { en: 'Donation', bn: 'অনুদান' },
         'nav-donor-list': { en: 'Donor List', bn: 'দাতা তালিকা' },
+        'nav-financial-reports': { en: 'Financial Reports', bn: 'আর্থিক প্রতিবেদন' },
         'nav-history': { en: 'History', bn: 'ইতিহাস' },
         'nav-gallery': { en: 'Gallery', bn: 'গ্যালারি' },
         'nav-vision': { en: 'Our Vision', bn: 'আমাদের লক্ষ্য' },
