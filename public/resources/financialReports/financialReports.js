@@ -133,7 +133,10 @@ document.addEventListener("DOMContentLoaded", function () {
         updateContent(e.detail);
     });
 
-    // Initial load (check localStorage or default to Bangla)
+    // Initial load - set Bangla as default if no preference is saved
+    if (!localStorage.getItem('preferredLanguage')) {
+        localStorage.setItem('preferredLanguage', 'bn');
+    }
     const savedLanguage = localStorage.getItem('preferredLanguage') || 'bn';
     updateContent(savedLanguage);
 });

@@ -49,6 +49,10 @@ window.switchGlobalLanguage = function(language) {
 };
 
 // Initialize immediately
+// Set Bangla as default if no preference is saved
+if (!localStorage.getItem('preferredLanguage')) {
+    localStorage.setItem('preferredLanguage', 'bn');
+}
 const savedLanguage = localStorage.getItem('preferredLanguage') || 'bn';
 window.updateNavContent(savedLanguage);
 
